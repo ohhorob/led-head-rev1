@@ -128,8 +128,7 @@ place(control,'PicoL','J10','Pico socket 1-20',(60,95),{2:'DEBUG_COPY',3:G,6:'GP
 place(control,'PicoR','J11','Pico socket 21-40',(160,95),{3:G,8:G,11:'BAT_ADC',13:G,16:V,18:G,19:'PICO_VSYS'},socket,(7.74,57.78),'',90)
 # The Pico's onboard 3.3 V regulator drives the socket output.
 control.comp('PWR_FLAG','#FLG04','',258,42,{'1':V})
-place(control,'Fuse','F4','500mA PTC',(245,75),[RAIL,'PICO_5V_FUSED'],fp('Fuse','Fuse_1206_3216Metric'),(58,31),'MF-NSMF050-2')
-place(control,'Schottky','D1','SS14',(340,75),{2:'PICO_5V_FUSED',1:'PICO_VSYS'},fp('Diode_SMD','D_SMA'),(51,52),'SS14-E3/61T',180)
+place(control,'Schottky','D1','SS14',(340,75),{2:RAIL,1:'PICO_VSYS'},fp('Diode_SMD','D_SMA'),(51,52),'SS14-E3/61T',180)
 place(control,'Trellis','J12','NEOTRELLIS JST-PH',(255,120),[G,V,'I2C_SDA','I2C_SCL'],fp('Connector_JST','JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical'),(13,29),'B4B-PH-K-S(LF)(SN)')
 r(control,'R7','4.7k I2C SDA pull-up',(245,155),[V,'I2C_SDA'],(29,28))
 r(control,'R8','4.7k I2C SCL pull-up',(345,155),[V,'I2C_SCL'],(35,33))
@@ -235,6 +234,11 @@ track('EXT_5V',k.B_Cu,4.2,(75,69.2),(75,70.35),(55.84,70.35),pxy('J3',3))
 track('BUCK_5V',k.F_Cu,4.0,pxy('J4',3),(85,41.16),(84,42.16),(84,53),(76,61),(69,61),pxy('J3',1))
 track('BAT_RAW',k.F_Cu,2.4,pxy('J1',1),(89,22),(89,27),pxy('J4',1))
 track(RAIL,k.B_Cu,2.3,pxy('C2',1),(64,47))
+# Short VSYS run and a bottom-layer feed from the bulk capacitor to the isolation diode.
+track('PICO_VSYS',k.F_Cu,.65,pxy('D1',1),(53,57.32),pxy('J11',19))
+track(RAIL,k.F_Cu,.65,pxy('D1',2),(49,50.4))
+via(RAIL,49,50.4)
+track(RAIL,k.B_Cu,.65,(49,50.4),(52.4,47),(64,47))
 # The ground return plane is filled after routing. Heavy pads use solid attachment.
 for layer in (k.In1_Cu,k.B_Cu):
  z=k.ZONE(b);z.SetLayer(layer);z.SetNet(nets[G]);z.SetLocalClearance(k.FromMM(.26));z.SetPadConnection(k.ZONE_CONNECTION_FULL)

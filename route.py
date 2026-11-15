@@ -198,7 +198,8 @@ def route_board(b, k, loaded, parts, nets, track, via):
         'BAT_RAW': [{('J1','1'),('J4','1')}],
         'BUCK_5V': [{('J3','1'),('J4','3')}],
         'EXT_5V': [{('J2','1'),('J3','3')}],
-        'LED_5V': [{('J3','2'),('C2','1'),*((f'F{i}','1') for i in range(1,4))}],
+        'PICO_VSYS': [{('D1','1'),('J11','19')}],
+        'LED_5V': [{('D1','2'),('J3','2'),('C2','1'),*((f'F{i}','1') for i in range(1,4))}],
     }
     for i in range(1,4):
         already[f'S{i}_SHUNT_HI']=[{(f'F{i}','2'),(f'R{10+i}','1')}]

@@ -44,4 +44,8 @@ The firmware is unchanged in its original project. The preserved outputs can dri
 
 References: [IPC-2221 screening calculator](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-pcb-trace-width), [Pico 2 W datasheet](https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf), [Pololu D36V50F5](https://www.pololu.com/product/4091), [NKK S-series](https://www.nkk.com/pdf/toggle_S.pdf), [TI TXU0101](https://www.ti.com/product/TXU0101), [TI INA3221](https://www.ti.com/product/INA3221), [JLCPCB assembly files](https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad), [PCBWay assembly files](https://www.pcbway.com/assembly-file-requirements.html).
 
-The archive includes the Gerbers and separate plated/non-plated drill files for quote review, a top-side assembly drawing, and a bare carrier STEP model for enclosure fit in Fusion 360. The KiCad 10.0.7 checks on the archived revision returned zero ERC violations, zero DRC violations, zero unconnected items and zero schematic-parity issues. The 36 SMT positions and rotations were compared against KiCad's own placement export.
+This revision includes Gerbers and separate plated/non-plated drill files for quote review. The KiCad 10.0.7 checks on the archived revision returned zero ERC violations, zero DRC violations, zero unconnected items and zero schematic-parity issues. The SMT BOM and placement file contain 35 positions. The fabrication and placement files in this package supersede the earlier Rev 1 exports.
+
+## VSYS update
+
+F4 was removed. The switched LED_5V rail now feeds D1 directly via a 0.65 mm branch with a 0.40 mm drill through via. D1 remains in series for USB isolation. Its cathode reaches J11 pad 19 on 0.65 mm front copper. The LED string fuses F1–F3 are retained.
