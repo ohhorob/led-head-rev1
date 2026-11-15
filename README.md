@@ -6,7 +6,7 @@ Open `led-head-rev1.kicad_pro` in KiCad 10. The project contains the schematic, 
 
 | Ref | Connection |
 | --- | --- |
-| J1 | 1 battery +, 2 ground. Connect to a keyed XT60 panel pigtail with a 5 A battery-side fuse. Input is 3S LiPo or a fused, BMS-protected LiFePO₄ camper circuit. |
+| J1 | Board-mounted male AMASS XT60PW-M with a female harness mate. Pin 1 is ground, pin 2 is battery +. Keep the 5 A fuse at the battery side of the harness. Input is 3S LiPo or a fused, BMS-protected LiFePO₄ camper circuit. |
 | J2 | 1 regulated external +5 V, 2 ground. Use a keyed or clearly segregated panel harness and source-side fuse sized for the feed wiring. External source polarity is mandatory. |
 | J3 | High-current panel toggle connections. Board pin 1 to S333 lug 1, pin 2 to lug 2, pin 3 to lug 3. |
 | J5 | Toggle auxiliary pole. Board pin 1 to S333 lug 6, pin 2 to lug 5, pin 3 to lug 4. |
@@ -34,7 +34,7 @@ IPC-2221 external-trace screening at nominal 35 µm copper gives approximately 3
 
 ## SMT quote
 
-Request top-side SMT only. Load the supplied BOM and centroid files as quote drafts and review the pin-one and diode orientation on the vendor placement preview. The Pico sockets, screw terminals, XT30s, XH headers, NeoTrellis PH header and bulk electrolytic are through-hole and installed separately. The panel switch, XT60 harness and Pololu module are off-board. If using JLCPCB, match the exact manufacturer parts to its catalog before placing the order. In particular, confirm sourcing for the three TXU0101DBVRs, the INA3221, 3 A fuse and shunts. PCBWay can quote these by manufacturer part number. Release Gerbers and the placement files together from the same verified PCB revision.
+Request top-side SMT only. Load the supplied BOM and centroid files as quote drafts and review the pin-one and diode orientation on the vendor placement preview. The Pico sockets, screw terminals, XT30s, XT60 and XH headers, NeoTrellis PH header and bulk electrolytic are through-hole and installed separately. The panel switch, mating battery harness and Pololu module are off-board. If using JLCPCB, match the exact manufacturer parts to its catalog before placing the order. In particular, confirm sourcing for the three TXU0101DBVRs, the INA3221, 3 A fuse and shunts. PCBWay can quote these by manufacturer part number. Release Gerbers and the placement files together from the same verified PCB revision.
 
 ## Review status
 
@@ -56,4 +56,4 @@ J12 NEOTRELLIS marks the four-pin JST-PH on the left. The matching string data h
 
 ## Connector access
 
-J2 external 5 V exits the top edge. J1 battery input and J4 buck power exit the right edge. Verify enclosure openings and wire bend radius with the actual harnesses.
+J2 external 5 V exits the top edge. The J1 XT60 inlet and J4 buck power exit the right edge. The J1 mating face projects approximately 5.4 mm beyond the PCB edge. The installed KiCad library has no STEP model for XT60PW-M; use the footprint fabrication outline to review the projection. Verify enclosure openings and wire bend radius with the actual harnesses.
