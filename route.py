@@ -43,10 +43,10 @@ def route_board(b, k, loaded, parts, nets, track, via):
     placed_vias=[]
     names = {n.GetNetCode(): name for name,n in nets.items()}
     for ref,f in loaded.items():
-        for p in f.Pads():
+        for p in sorted(f.Pads(), key=lambda pad: -pad.GetSize().x * pad.GetSize().y):
             net=names.get(p.GetNetCode(),f'!{ref}.{p.GetNumber()}')
             add_pad(p,net)
-            if net not in nets or not p.GetNumber():
+            if net not in nets or not p.GetNumber() or any(ep[:2] == (ref,p.GetNumber()) for ep in endpoints[net]):
                 continue
             xy=tuple(map(k.ToMM,(p.GetPosition().x,p.GetPosition().y)))
             endpoints[net].append((ref,p.GetNumber(),xy,tuple(l for l,layer in enumerate(layers) if p.IsOnLayer(layer))))
@@ -58,6 +58,32 @@ def route_board(b, k, loaded, parts, nets, track, via):
         levels=range(len(layers)) if isinstance(t,k.PCB_VIA) else (layers.index(t.GetLayer()),)
         for l in levels:
             add_segment(l,start,end,width,net)
+
+    # Bring the fine-pitch eFuse control pins out beyond the body before grid routing.
+    efuse_escapes = {
+        'BYPASS_OV': ('2', (83.85, 7.2625)),
+        'BYPASS_ILM': ('9', (88.7, 7.2625)),
+        'BYPASS_DVDT': ('7', (88.55, 8.2125)),
+    }
+    for net, (pin, endpoint) in efuse_escapes.items():
+        ends = endpoints[net]
+        index = next(j for j, item in enumerate(ends) if item[:2] == ('U5', pin))
+        prior = ends[index]
+        track(net, k.F_Cu, .2, prior[2], endpoint)
+        add_segment(0, prior[2], endpoint, .2, net)
+        ends[index] = (*prior[:2], endpoint, (0,))
+    for net, pin, target, level in [('BAT_RAW','5',(84,13),0), ('EXT_5V','6',(87.4,11.5),2)]:
+        ends = endpoints[net]
+        index = next(j for j, item in enumerate(ends) if item[:2] == ('U5', pin))
+        ends[index] = ('U5', pin, target, (level,))
+    ground = next(p for p in endpoints['GND'] if p[:2] == ('U5','8'))
+    ground_via = (89.3, 7.7375)
+    track('GND',k.F_Cu,.2,ground[2],ground_via)
+    add_segment(0,ground[2],ground_via,.2,'GND')
+    via('GND',*ground_via,.55,.3)
+    placed_vias.append(ground_via)
+    for l in range(len(layers)):
+        add_segment(l,ground_via,ground_via,.55,'GND')
 
     # Dedicated staggered through-vias escape the QFN into the inner routing layer.
     for n,ends in endpoints.items():
@@ -195,9 +221,10 @@ def route_board(b, k, loaded, parts, nets, track, via):
 
     already = {
         '3V3': [{('U4','4'),('U4','16')}],
-        'BAT_RAW': [{('J1','2'),('MOD1','6'),('MOD1','12')}],
+        'BAT_RAW': [{('J1','2'),('MOD1','6'),('MOD1','12'),('U5','5')}],
         'BUCK_5V': [{('J3','1'),('MOD1','3'),('MOD1','4'),('MOD1','9'),('MOD1','10')}],
-        'EXT_5V': [{('J2','1'),('J3','3')}],
+        'BUCK_FAULT': [{('U7','4'),('R48','1')}],
+        'EXT_5V': [{('U5','6'),('J3','3')}],
         'PICO_VSYS': [{('D1','1'),('J11','19')}],
         'LED_5V': [{('D1','2'),('J3','2'),('C2','1'),*((f'F{i}','1') for i in range(1,4))}],
     }
@@ -243,7 +270,7 @@ def route_board(b, k, loaded, parts, nets, track, via):
     # SMT ground pads get local vias. Through-hole returns are joined by the ground pours.
     grounded=[p for p in endpoints['GND'] if len(p[3])>1]
     for ep in sorted(endpoints['GND'],key=lambda e:e[0]):
-        if len(ep[3])!=1 or ep[:2]==('U4','17'): continue
+        if len(ep[3])!=1 or ep[:2] in (('U4','17'),('U5','8')): continue
         x,y=ep[2]
         target=[]
         for u in range(grid(x)-9,grid(x)+10):
