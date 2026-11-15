@@ -20,7 +20,7 @@ The NKK S333 pole 1 selects the Pololu output or the protected 5 V bypass with O
 
 The 13.7 kΩ EN pull-down works with the Pololu's nominal internal 100 kΩ pull-up. Nominal loaded cutoff is 9.96 V and restart is 11.20 V from the 1.2/1.35 V EN thresholds. Confirm both with the actual module. The firmware should blank the LEDs before the hardware cutoff. A pack-level threshold cannot identify an imbalanced cell. The camper source uses its own BMS/low-voltage protection. ADC reporting should show volts without inferring chemistry.
 
-Pico GP4/GP5/GP6 remain LED lanes 1–3. GP8/GP9 are I²C0 SDA/SCL respectively. GP7 reads the active-low battery-select signal, GP10 reads buck PG, and GP26 is battery ADC. Firmware must add current monitoring, keypad, source sensing and current limiting on top of the existing output paths. The nominal budgets are 1.8 A per string and 4.5 A aggregate LED load on battery. The board power distribution target is 6 A of LEDs plus controller and keypad overhead on external 5 V.
+Pico GP4/GP5/GP6 remain LED lanes 1–3. GP8/GP9 are hardware I²C0 SDA/SCL for the INA3221, with R7/R8 pull-ups and TP2/TP3 probe pads. NeoTrellis is on a separate software I²C bus: physical pin 17 (GP13) is SDA and physical pin 16 (GP12) is SCL. The carrier adds no pull-ups to this bus. Configure the firmware for open-drain GPIO and use the pull-ups on the connected keypad. GP7 reads the active-low battery-select signal, GP10 reads buck PG, and GP26 is battery ADC. Firmware must add current monitoring, keypad, source sensing and current limiting on top of the existing output paths. The nominal budgets are 1.8 A per string and 4.5 A aggregate LED load on battery. The board power distribution target is 6 A of LEDs plus controller and keypad overhead on external 5 V.
 
 Three TXU0101 buffers replace the originally planned AHCT125. Each output-side supply is taken after its own fuse and shunt, so the data driver isolates when that rail or Pico 3.3 V is absent. Each shunt is 50 mΩ, dropping 100 mV and dissipating 0.20 W at 2 A. Check fuse trip coordination, inrush through the switch and actual connector voltage at full load. Fuse removal and harness changes are performed with power off.
 
@@ -50,7 +50,7 @@ F4 was removed. The switched LED_5V rail now feeds D1 directly via a 0.65 mm bra
 
 ## Connector silkscreen
 
-J12 NEOTRELLIS marks the four-pin JST-PH on the left. The matching string data headers are marked DATA 1–3. J5 identifies the switch logic harness. MOD1 identifies the direct-mount regulator. The shared XT60 input has + and − markings.
+J12 NEOTRELLIS marks the rotated four-pin JST-PH on the left. The matching string data headers are marked DATA 1–3. J5 identifies the switch logic harness. MOD1 identifies the direct-mount regulator. The shared XT60 input has + and − markings.
 
 ## Connector access
 

@@ -177,33 +177,37 @@ for i,(x,n) in enumerate([(142,G),(220,RAIL),(272,'PICO_VSYS')],1):
  power.comp('PWR_FLAG',f'#FLG0{i}','',x,248,{'1':n})
 control.note(15,12,'PICO 2 W / SOCKETED',2)
 socket=fp('Connector_PinSocket_2.54mm','PinSocket_1x20_P2.54mm_Vertical')
-place(control,'PicoL','J10','Pico socket 1-20',(60,95),{2:'DEBUG_COPY',3:G,6:'GP4',7:'GP5',8:G,9:'GP6',10:'PICO_BATT_SEL_N',11:'I2C_SDA',12:'I2C_SCL',13:G,14:'PICO_PG',18:G},socket,(56,40),'',270)
+place(control,'PicoL','J10','Pico socket 1-20',(60,95),{2:'DEBUG_COPY',3:G,6:'GP4',7:'GP5',8:G,9:'GP6',10:'PICO_BATT_SEL_N',11:'I2C_SDA',12:'I2C_SCL',13:G,14:'PICO_PG',16:'TRELLIS_SCL',17:'TRELLIS_SDA',18:G},socket,(56,40),'',270)
 place(control,'PicoR','J11','Pico socket 21-40',(160,95),{3:G,8:G,11:'BAT_ADC',13:G,16:V,18:G,19:'PICO_VSYS'},socket,(7.74,57.78),'',90)
 # The Pico's onboard 3.3 V regulator drives the socket output.
 control.comp('PWR_FLAG','#FLG04','',258,42,{'1':V})
-place(control,'Schottky','D1','SS14',(340,75),{2:RAIL,1:'PICO_VSYS'},fp('Diode_SMD','D_SMA'),(51,52),'SS14-E3/61T',180)
-place(control,'Trellis','J12','NEOTRELLIS JST-PH',(255,120),[G,V,'I2C_SDA','I2C_SCL'],fp('Connector_JST','JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical'),(13,29),'B4B-PH-K-S(LF)(SN)')
-r(control,'R7','4.7k I2C SDA pull-up',(245,155),[V,'I2C_SDA'],(29,28))
-r(control,'R8','4.7k I2C SCL pull-up',(345,155),[V,'I2C_SCL'],(35,33))
+place(control,'Schottky','D1','SS14',(340,75),{2:RAIL,1:'PICO_VSYS'},fp('Diode_SMD','D_SMA'),(51,52.5),'SS14-E3/61T',180)
+place(control,'Trellis','J12','NEOTRELLIS JST-PH',(255,120),[G,V,'TRELLIS_SDA','TRELLIS_SCL'],fp('Connector_JST','JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical'),(10.05,27.5),'B4B-PH-K-S(LF)(SN)',270)
+r(control,'R7','4.7k I2C SDA pull-up',(245,155),[V,'I2C_SDA'],(24.5,35),rot=270)
+r(control,'R8','4.7k I2C SCL pull-up',(345,155),[V,'I2C_SCL'],(26,31.5),rot=270)
 con('Probe',['PROBE'])
 place(control,'Probe','TP1','GP1 SCOPE COPY',(255,190),['DEBUG_COPY'],fp('TestPoint','TestPoint_Pad_D1.5mm'),(54,32))
-control.note(220,207,'GP8/9 = I2C0; GP7 = battery select; GP10 = buck PG.\nGP26 = ADC0. Existing pixel outputs GP4/5/6.\nVerify NeoTrellis cable pin order at both mating faces.\nFit one effective set of I2C pull-ups; check keypad board.\nUSB-only: VSYS diode blocks rail backfeed.',1.3)
+place(control,'Probe','TP2','I2C0 SDA TEST',(245,177),['I2C_SDA'],fp('TestPoint','TestPoint_Pad_D1.5mm'),(20,35))
+place(control,'Probe','TP3','I2C0 SCL TEST',(345,177),['I2C_SCL'],fp('TestPoint','TestPoint_Pad_D1.5mm'),(20,31.5))
+control.note(220,207,'GP8/9 = I2C0; GP7 = battery select; GP10 = buck PG.\nGP26 = ADC0. Existing pixel outputs GP4/5/6.\nVerify NeoTrellis cable pin order at both mating faces.\nNeoTrellis uses software I2C: GP13 SDA (pin 17), GP12 SCL (pin 16).\nNeoTrellis uses keypad pull-ups. R7/R8 bias hardware I2C0 only.\nUSB-only: VSYS diode blocks rail backfeed.',1.3)
 # Three physically identical power lanes, arranged at the connector edge.
 from math import *
 for i,x in enumerate([23,43,63],1):
  sx=70+(i-1)*130
+ bx=x-3.5 if i==1 else x
+ dy=-.045 if i==1 else 0
  sense=f'S{i}_SHUNT_HI'; load=f'S{i}_5V'; buf=f'S{i}_BUF'; data=f'S{i}_DATA'
  io.comp('PWR_FLAG',f'#FLG{4+i:02}','',sx+28,60,{'1':load})
  io.note(sx-40,12,f'STRING {i}',1.8)
- place(io,'Fuse',f'F{i}','3A 125V NANO2',(sx,27),[RAIL,sense],fp('Fuse','Fuse_Littelfuse-NANO2-451_453'),(x,22.5),'0451003.MRL',90)
- r(io,f'R{10+i}','50m 1W 1%',(sx,42),[sense,load],(x,14),'WSL2512R0500FEA',fp('Resistor_SMD','R_2512_6332Metric'),90)
- place(io,'Power2',f'J{20+i}','XT30PW-F / FUSED 5V',(sx,63),[G,load],fp('HeadUnit',xt_name),(x-5,7),'XT30PW-F')
- place(io,'TXU0101',f'U{i}','TXU0101DBVR',(sx,94),[V,G,f'GP{i+3}',buf,V,load],fp('Package_TO_SOT_SMD','SOT-23-6'),(x+12,24),'TXU0101DBVR')
- r(io,f'R{20+i}','220R DATA',(sx,118),[buf,data],(x+11,19.5))
+ place(io,'Fuse',f'F{i}','3A 125V NANO2',(sx,27),[RAIL,sense],fp('Fuse','Fuse_Littelfuse-NANO2-451_453'),(bx,22.5+dy),'0451003.MRL',90)
+ r(io,f'R{10+i}','50m 1W 1%',(sx,42),[sense,load],(bx,14+dy),'WSL2512R0500FEA',fp('Resistor_SMD','R_2512_6332Metric'),90)
+ place(io,'Power2',f'J{20+i}','XT30PW-F / FUSED 5V',(sx,63),[G,load],fp('HeadUnit',xt_name),(bx-5,7),'XT30PW-F')
+ place(io,'TXU0101',f'U{i}','TXU0101DBVR',(sx,94),[V,G,f'GP{i+3}',buf,V,load],fp('Package_TO_SOT_SMD','SOT-23-6'),(bx+12,24+dy),'TXU0101DBVR')
+ r(io,f'R{20+i}','220R DATA',(sx,118),[buf,data],(bx+11,19.5+dy))
  place(io,'Data2',f'J{30+i}','XH DATA / GND',(sx,139),[data,G],fp('Connector_JST','JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical'),(x+11,14.5),'B2B-XH-A(LF)(SN)')
- c(io,f'C{10+i}','100n VCCA',(sx,157),[V,G],(x+11,28))
- c(io,f'C{20+i}','100n VCCB',(sx,172),[load,G],(x+5.7,13))
- c(io,f'C{30+i}','10u 16V X7R',(sx,187),[load,G],(x+5.4,18.6),'',fp('Capacitor_SMD','C_1206_3216Metric'),90)
+ c(io,f'C{10+i}','100n VCCA',(sx,157),[V,G],((30.5,32) if i==1 else (x+11,28)))
+ c(io,f'C{20+i}','100n VCCB',(sx,172),[load,G],(bx+5.7,13+dy))
+ c(io,f'C{30+i}','10u 16V X7R',(sx,187),[load,G],(bx+5.4,18.6+dy),'',fp('Capacitor_SMD','C_1206_3216Metric'),90)
 inets={1:'S3_5V',2:'S3_SHUNT_HI',3:G,4:V,5:G,6:'I2C_SCL',7:'I2C_SDA',11:'S1_5V',12:'S1_SHUNT_HI',14:'S2_5V',15:'S2_SHUNT_HI',16:V,17:G}
 place(io,'INA3221','U4','INA3221AIRGVR / I2C 0x40',(105,245),inets,fp('Package_DFN_QFN','Texas_RGV0016A_VQFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm'),(46,33.3),'INA3221AIRGVR')
 c(io,'C40','100n INA supply',(260,230),[V,G],(51.6,34.4))
@@ -264,7 +268,7 @@ for ref,(value,footprint,pos,rot,pins,mpn) in parts.items():
  if f is None: raise ValueError(footprint)
  f.SetFPIDAsString(footprint)
  f.SetReference(ref); f.SetValue(value); f.Value().SetText(value)
- if ref=='TP1': f.SetAttributes(f.GetAttributes() & ~k.FP_EXCLUDE_FROM_BOM)
+ if ref.startswith('TP'): f.SetAttributes(f.GetAttributes() & ~k.FP_EXCLUDE_FROM_BOM)
  f.SetPath(k.KIID_PATH(next(sh.symbols[ref] for sh in (power,control,io,protection) if ref in sh.symbols)))
  f.SetPosition(point(*pos)); f.SetOrientationDegrees(rot)
  f.Value().SetVisible(False)
@@ -286,7 +290,7 @@ outline=[(0,0),(100,0),(100,73),(0,73),(0,52),(11,52),(11,42),(0,42)]
 for a,z in zip(outline,outline[1:]+outline[:1]): shape(a,z,k.Edge_Cuts,.05)
 def label(txt,xy,sz=1):
  t=k.PCB_TEXT(b);t.SetText(txt);t.SetPosition(point(*xy));t.SetLayer(k.F_SilkS);t.SetTextSize(point(sz,sz));t.SetTextThickness(k.FromMM(.15));b.Add(t)
-for i,x in enumerate([23,43,63],1):
+for i,x in enumerate([19.5,43,63],1):
  label(f'PWR {i}',(x-2.5,3.2))
  label('-', (x-7.4,9),.9)
  label('+', (x+2.4,9),.9)
@@ -297,7 +301,9 @@ label('XT60 INPUT',(81,22),.85)
 label('-',(85.7,16.5),.9)
 label('+',(85.7,23.7),.9)
 label('PANEL S333',(46,67))
-label('J12 NEOTRELLIS',(13,23.6),1)
+label('J12 NEOTRELLIS',(11,23.6),1)
+label('SDA',(17.5,35),.8)
+label('SCL',(17.5,31.5),.8)
 label('DATA 1',(34,10.4),0.9)
 label('DATA 2',(54,10.4),0.9)
 label('DATA 3',(74,10.4),0.9)
@@ -315,7 +321,7 @@ def track(net,ly,w,*points):
   t=k.PCB_TRACK(b); t.SetStart(point(*a));t.SetEnd(point(*z));t.SetWidth(k.FromMM(w));t.SetLayer(ly);t.SetNet(nets[net]);b.Add(t)
 def via(net,x,y,d=.85,dr=.4):
  v=k.PCB_VIA(b);v.SetPosition(point(x,y));v.SetWidth(k.FromMM(d));v.SetDrill(k.FromMM(dr));v.SetViaType(k.VIATYPE_THROUGH);v.SetLayerPair(k.F_Cu,k.B_Cu);v.SetNet(nets[net]);b.Add(v)
-for i,x in enumerate([23,43,63],1):
+for i,x in enumerate([19.5,43,63],1):
  a,z=pxy(f'F{i}',1),pxy(f'F{i}',2)
  # Pad 1 is the rail-side pad. Rotations are verified from actual pad coordinates.
  if a[1]<z[1]: raise ValueError((i,a,z))
@@ -324,7 +330,7 @@ for i,x in enumerate([23,43,63],1):
   for y in [25.4,26.7]: via(RAIL,x+dx,y,.80,.4)
  track(f'S{i}_SHUNT_HI',k.F_Cu,1.9,z,pxy(f'R{10+i}',1))
  track(f'S{i}_5V',k.F_Cu,1.9,pxy(f'R{10+i}',2),pxy(f'J{20+i}',2))
-track(RAIL,k.B_Cu,4.8,(23,25.8),(63,25.8),(64,56),(60.92,60),pxy('J3',2))
+track(RAIL,k.B_Cu,4.8,(19.5,25.8),(63,25.8),(64,56),(60.92,60),pxy('J3',2))
 # RPW power pads fan out on top copper. The bypass output changes layers through six vias.
 track('BAT_RAW',k.F_Cu,.3,(85.75,8.45),(85.75,9.15),(84.6,10.3))
 track('BAT_RAW',k.F_Cu,1.5,(84.6,10.3),(84,10.9),(84,13))
@@ -353,9 +359,9 @@ track('BUCK_FAULT',k.F_Cu,.25,(89.55,57.46),pxy('R48',1))
 track(RAIL,k.B_Cu,2.3,pxy('C2',1),(64,47))
 # Short VSYS run and a bottom-layer feed from the bulk capacitor to the isolation diode.
 track('PICO_VSYS',k.F_Cu,.65,pxy('D1',1),(53,57.32),pxy('J11',19))
-track(RAIL,k.F_Cu,.65,pxy('D1',2),(49,50.4))
+track(RAIL,k.F_Cu,.65,pxy('D1',2),(49,50.9))
 via(RAIL,49,50.4)
-track(RAIL,k.B_Cu,.65,(49,50.4),(52.4,47),(64,47))
+track(RAIL,k.B_Cu,.65,(49,50.9),(52.9,47),(64,47))
 # The ground return plane is filled after routing. Heavy pads use solid attachment.
 for layer in (k.In1_Cu,k.B_Cu):
  z=k.ZONE(b);z.SetLayer(layer);z.SetNet(nets[G]);z.SetLocalClearance(k.FromMM(.26));z.SetPadConnection(k.ZONE_CONNECTION_FULL)
