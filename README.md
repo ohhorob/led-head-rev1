@@ -53,3 +53,7 @@ F4 was removed. The switched LED_5V rail now feeds D1 directly via a 0.65 mm bra
 ## Connector silkscreen
 
 J12 NEOTRELLIS marks the four-pin JST-PH on the left. The matching string data headers are marked DATA 1–3. J4, J5 and J6 identify the buck power, switch logic and buck logic harnesses. The external 5 V input has + and − markings.
+
+## Connector access
+
+J2 external 5 V exits the top edge. J1 battery input and J4 buck power exit the right edge. Verify enclosure openings and wire bend radius with the actual harnesses.
