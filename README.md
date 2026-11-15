@@ -49,3 +49,7 @@ This revision includes Gerbers and separate plated/non-plated drill files for qu
 ## VSYS update
 
 F4 was removed. The switched LED_5V rail now feeds D1 directly via a 0.65 mm branch with a 0.40 mm drill through via. D1 remains in series for USB isolation. Its cathode reaches J11 pad 19 on 0.65 mm front copper. The LED string fuses F1–F3 are retained.
+
+## Connector silkscreen
+
+J12 NEOTRELLIS marks the four-pin JST-PH on the left. The matching string data headers are marked DATA 1–3. J4, J5 and J6 identify the buck power, switch logic and buck logic harnesses. The external 5 V input has + and − markings.

@@ -15327,35 +15327,13 @@
 			)
 		)
 	)
-	(gr_text "D1"
-		(at 33 3 0)
+	(gr_text "J5 SW LOGIC"
+		(at 82 60.2 0)
 		(layer "F.SilkS")
-		(uuid "6ad1efbe-504c-49b0-b76f-e660bb538bdf")
+		(uuid "a2091186-a1d8-4c98-8ead-0bae0ee8fb97")
 		(effects
 			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "D2"
-		(at 53 3 0)
-		(layer "F.SilkS")
-		(uuid "e2399851-fba9-46fb-a92c-8f16ae7aadc0")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "D3"
-		(at 73 3 0)
-		(layer "F.SilkS")
-		(uuid "17aa1c8f-18b0-40b2-879e-bd69027b9a44")
-		(effects
-			(font
-				(size 0.8 0.8)
+				(size 0.85 0.85)
 				(thickness 0.15)
 			)
 		)
@@ -15364,6 +15342,28 @@
 		(at 87 2.7 0)
 		(layer "F.SilkS")
 		(uuid "51a85964-2b95-4bff-a5f7-75a7bd337c2a")
+		(effects
+			(font
+				(size 0.85 0.85)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "J4 BUCK POWER"
+		(at 93 26.5 0)
+		(layer "F.SilkS")
+		(uuid "e691cd3c-1c50-4178-b6aa-f739b4463b91")
+		(effects
+			(font
+				(size 0.85 0.85)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "J6 BUCK LOGIC"
+		(at 93 51.6 0)
+		(layer "F.SilkS")
+		(uuid "06f9611a-833f-4fa9-9af3-df8957cb34ca")
 		(effects
 			(font
 				(size 0.85 0.85)
@@ -15404,6 +15404,17 @@
 			)
 		)
 	)
+	(gr_text "DATA 1"
+		(at 34 10.4 0)
+		(layer "F.SilkS")
+		(uuid "a0234c0a-8337-49bc-9c6e-98888a58177b")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "-"
 		(at 35.6 9 0)
 		(layer "F.SilkS")
@@ -15419,6 +15430,17 @@
 		(at 45.4 9 0)
 		(layer "F.SilkS")
 		(uuid "a8464b7d-fb55-49a7-94b2-e734c0652ebc")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "DATA 2"
+		(at 54 10.4 0)
+		(layer "F.SilkS")
+		(uuid "9630c96c-f8a6-4e1a-a727-1af1dde04c8d")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -15444,6 +15466,50 @@
 		(effects
 			(font
 				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "DATA 3"
+		(at 74 10.4 0)
+		(layer "F.SilkS")
+		(uuid "2335c232-f2fa-444a-86af-635f0d82e650")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "+"
+		(at 84 11.8 0)
+		(layer "F.SilkS")
+		(uuid "68b1b385-8bec-478c-bf16-7d0c00a15199")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "-"
+		(at 89.08 11.8 0)
+		(layer "F.SilkS")
+		(uuid "9f439bc0-916f-4707-8136-03be1cce6a8b")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "J12 NEOTRELLIS"
+		(at 13 23.6 0)
+		(layer "F.SilkS")
+		(uuid "e7f4fb68-6569-45c7-a2c6-860de8f1ad24")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -15496,17 +15562,6 @@
 		(at 60.5 3.2 0)
 		(layer "F.SilkS")
 		(uuid "3d3a2b82-dee9-4cad-88f9-e679cff0a226")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "BUCK HARNESS"
-		(at 92 61 0)
-		(layer "F.SilkS")
-		(uuid "afbf7aa0-8d04-478f-a2dd-afb6d41c4808")
 		(effects
 			(font
 				(size 1 1)
