@@ -10,15 +10,14 @@ Open `led-head-rev1.kicad_pro` in KiCad 10. The project contains the schematic, 
 | J2 | 1 regulated external +5 V, 2 ground. Use a keyed or clearly segregated panel harness and source-side fuse sized for the feed wiring. External source polarity is mandatory. |
 | J3 | High-current panel toggle connections. Board pin 1 to S333 lug 1, pin 2 to lug 2, pin 3 to lug 3. |
 | J5 | Toggle auxiliary pole. Board pin 1 to S333 lug 6, pin 2 to lug 5, pin 3 to lug 4. |
-| J4 | Wired Pololu D36V50F5 module. Board pins 1–4 to VIN, GND, VOUT, GND respectively. |
-| J6 | Pololu logic harness. Pins 1–3 to EN, VRP, PG respectively. |
+| MOD1 | Direct-mount Pololu D36V50F5 (4091). Solder two 1×6 straight headers on 2.54 mm centers. Use every VIN, VOUT and GND pad. See the mounting details below. |
 | J10/J11 | Female 1×20 sockets, on the standard 17.78 mm row spacing. J10 pin 1 is Pico pin 1. J11 pin 1 is Pico pin 21. |
 | J12 | NeoTrellis JST-PH. Pins 1–4 on this board are GND, 3.3 V, SDA, SCL. Map the harness wire by wire to the actual keypad; a generic straight-through JST-PH cable is provisional. Check the keypad power budget. |
 | J21–J23 | XT30PW-F outputs. Pad 1 ground, pad 2 fused and sensed +5 V. |
 | J31–J33 | JST-XH data outputs. Pad 1 DIN, pad 2 signal reference. Pair each data lead with its ground and connect to the matching string. |
 | TP1 | GP1 mirror of string 1 for scope probing. |
 
-The NKK S333 pole 1 selects buck output or external 5 V with OFF between. The second pole grounds buck EN on the external setting and grounds the source ID input on the battery setting. Verify switch terminal numbering and lever positions with continuity before marking the enclosure. The module and switch mount to the enclosure and connect using harnesses. Keep the module power and switch power loops short, use suitably rated wire and strain relief, and ventilate the module. The unit and all outputs share DC ground.
+The NKK S333 pole 1 selects buck output or external 5 V with OFF between. The second pole grounds buck EN on the external setting and grounds the source ID input on the battery setting. Verify switch terminal numbering and lever positions with continuity before marking the enclosure. The switch mounts to the enclosure and connects using a harness. Keep the switch power loop short, use suitably rated wire and strain relief, and ventilate the carrier-mounted Pololu module. The unit and all outputs share DC ground.
 
 The 13.7 kΩ EN pull-down works with the Pololu's nominal internal 100 kΩ pull-up. Nominal loaded cutoff is 9.96 V and restart is 11.20 V from the 1.2/1.35 V EN thresholds. Confirm both with the actual module. The firmware should blank the LEDs before the hardware cutoff. A pack-level threshold cannot identify an imbalanced cell. The camper source uses its own BMS/low-voltage protection. ADC reporting should show volts without inferring chemistry.
 
@@ -34,7 +33,7 @@ IPC-2221 external-trace screening at nominal 35 µm copper gives approximately 3
 
 ## SMT quote
 
-Request top-side SMT only. Load the supplied BOM and centroid files as quote drafts and review the pin-one and diode orientation on the vendor placement preview. The Pico sockets, screw terminals, XT30s, XT60 and XH headers, NeoTrellis PH header and bulk electrolytic are through-hole and installed separately. The panel switch, mating battery harness and Pololu module are off-board. If using JLCPCB, match the exact manufacturer parts to its catalog before placing the order. In particular, confirm sourcing for the three TXU0101DBVRs, the INA3221, 3 A fuse and shunts. PCBWay can quote these by manufacturer part number. Release Gerbers and the placement files together from the same verified PCB revision.
+Request top-side SMT only. Load the supplied BOM and centroid files as quote drafts and review the pin-one and diode orientation on the vendor placement preview. The Pico sockets, screw terminals, XT30s, XT60 and XH headers, NeoTrellis PH header and bulk electrolytic are through-hole and installed separately. Install the Pololu module and its two headers by hand. The panel switch and mating battery harness are off-board. If using JLCPCB, match the exact manufacturer parts to its catalog before placing the order. In particular, confirm sourcing for the three TXU0101DBVRs, the INA3221, 3 A fuse and shunts. PCBWay can quote these by manufacturer part number. Release Gerbers and the placement files together from the same verified PCB revision.
 
 ## Review status
 
@@ -52,8 +51,21 @@ F4 was removed. The switched LED_5V rail now feeds D1 directly via a 0.65 mm bra
 
 ## Connector silkscreen
 
-J12 NEOTRELLIS marks the four-pin JST-PH on the left. The matching string data headers are marked DATA 1–3. J4, J5 and J6 identify the buck power, switch logic and buck logic harnesses. The external 5 V input has + and − markings.
+J12 NEOTRELLIS marks the four-pin JST-PH on the left. The matching string data headers are marked DATA 1–3. J5 identifies the switch logic harness. MOD1 identifies the direct-mount regulator. The external 5 V input has + and − markings.
 
 ## Connector access
 
-J2 external 5 V exits the top edge. The J1 XT60 inlet and J4 buck power exit the right edge. The J1 mating face projects approximately 5.4 mm beyond the PCB edge. The installed KiCad library has no STEP model for XT60PW-M; use the footprint fabrication outline to review the projection. Verify enclosure openings and wire bend radius with the actual harnesses.
+J2 external 5 V exits the top edge. The J1 XT60 inlet exits the right edge. The J1 mating face projects approximately 5.4 mm beyond the PCB edge. The installed KiCad library has no STEP model for XT60PW-M; use the footprint fabrication outline to review the projection. Verify enclosure openings and wire bend radius with the actual harnesses.
+
+## Pololu mounting
+
+The Pololu STEP model is attached to MOD1. The preview places the module PCB underside nominally 8.5 mm above the carrier surface. Choose header length and printed support together, and check the actual underside clearance before soldering. The three module mounting-hole centers are indicated on the KiCad Drawings layer for support design. The carrier has no corresponding support holes.
+
+Viewed from the carrier top with the connector row toward the lower edge of the module, pads 1–6 are on the outer row and pads 7–12 on the inner row. Both rows run left to right.
+
+| Row | Left to right |
+| --- | --- |
+| Outer (1–6) | VRP, EN, VOUT, VOUT, GND, VIN |
+| Inner (7–12) | VRP, PG, VOUT, VOUT, GND, VIN |
+
+Compare the physical module labels to the carrier pin mapping before soldering. Keep airflow around the converter and the existing battery-mode power budget pending a loaded thermal test.

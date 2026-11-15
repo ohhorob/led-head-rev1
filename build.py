@@ -64,7 +64,29 @@ xt60_original = F/'Connector_AMASS.pretty'/(xt60_name+'.kicad_mod')
 # Housing projects past the PCB edge; keep the body outline on fabrication layers.
 xt60_body = xt60_original.read_text().replace('(layer "F.SilkS")', '(layer "Dwgs.User")')
 (custom/(xt60_name+'.kicad_mod')).write_text(xt60_body)
-Path('fp-lib-table').write_text('(fp_lib_table (version 7) (lib (name "HeadUnit")(type "KiCad")(uri "${KIPRJMOD}/HeadUnit.pretty")(options "")(descr "Edge-mounted XT power connector footprints")))')
+# Top view from the STEP file. KiCad Y is the inverse of the model Y.
+buck_footprint = 'Pololu_D36V50Fx_Direct'
+buck_x = (6.35, 8.89, 11.43, 13.97, 16.51, 19.05)
+buck_rows = (-1.27, -3.81)
+buck_pads = []
+for row, y in enumerate(buck_rows):
+ for col, x in enumerate(buck_x):
+  pin = row * len(buck_x) + col + 1
+  shape = 'rect' if pin == 1 else 'circle'
+  buck_pads.append(f'(pad "{pin}" thru_hole {shape} (at {x} {y}) (size 1.95 1.95) (drill 1.02) (layers "*.Cu" "*.Mask"))')
+buck_supports = [(2.159,-2.159),(23.241,-2.159),(2.159,-23.241)]
+support_marks = ''.join(
+ f'(fp_circle (center {x} {y}) (end {x+1.0922} {y}) (stroke (width 0.15) (type solid)) (fill none) (layer "Dwgs.User"))'
+ for x,y in buck_supports
+)
+(custom/(buck_footprint+'.kicad_mod')).write_text(
+ f'(footprint "{buck_footprint}" (version 20241229) (generator "pcbnew") (layer "F.Cu") (attr through_hole) '
+ '(fp_rect (start 0 0) (end 25.4 -25.4) (stroke (width 0.15) (type solid)) (fill none) (layer "F.Fab")) '
+ '(fp_rect (start 5.05 0) (end 20.35 -5.11) (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd")) '
+ + support_marks + ''.join(buck_pads)
+ + '(model "${KIPRJMOD}/models/d36v50fx-step-down-voltage-regulator.step" (offset (xyz 0 0 8.5)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0))))'
+)
+Path('fp-lib-table').write_text('(fp_lib_table (version 7) (lib (name "HeadUnit")(type "KiCad")(uri "${KIPRJMOD}/HeadUnit.pretty")(options "")(descr "Local XT connectors and Pololu module")))')
 
 root=Sheet('led-head-rev1','LED Head Unit | Rev 1',rootid)
 power=Sheet('power','Battery, power selection and distribution')
@@ -81,8 +103,7 @@ con('Power2',['+','GND'])
 con('Data2',['DATA','GND'])
 con('Switch',['BUCK 5V','RAIL RETURN','EXT 5V'])
 con('SwitchLogic',['BUCK EN','SW GND','BATT SELECT'])
-con('BuckIO',['VIN','GND','VOUT','GND'])
-con('BuckLogic',['EN','VRP','PG'])
+block('PololuBuck',[(1,'VRP','passive'),(2,'EN','passive'),(3,'VOUT','passive'),(4,'VOUT','passive'),(5,'GND','passive'),(6,'VIN','passive')],[(7,'VRP','passive'),(8,'PG','passive'),(9,'VOUT','passive'),(10,'VOUT','passive'),(11,'GND','passive'),(12,'VIN','passive')],19)
 con('Trellis',['GND','3V3','SDA','SCL'])
 # Socket symbols carry physical Pico pin numbers via net labels.
 con('PicoL',['GP0','GP1','GND','GP2','GP3','GP4','GP5','GND','GP6','GP7','GP8','GP9','GND','GP10','GP11','GP12','GP13','GND','GP14','GP15'])
@@ -113,8 +134,9 @@ place(power,'Power2','J1','XT60PW-M BATTERY INPUT',(55,55),[G,'BAT_RAW'],fp('Hea
 place(power,'Power2','J2','REGULATED EXTERNAL 5V',(55,84),['EXT_5V',G],terminal(2),(89.08,6),'1715721',180)
 place(power,'Switch','J3','NKK S333 PANEL HARNESS',(55,135),['BUCK_5V',RAIL,'EXT_5V'],terminal(3),(66,65.5),'1715734',180)
 place(power,'SwitchLogic','J5','PANEL LOGIC',(160,195),['BUCK_EN',G,'BATT_SEL_N'],fp('Connector_JST','JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical'),(79,65),'B3B-XH-A(LF)(SN)')
-place(power,'BuckIO','J4','POLOLU 4091 WIRED MODULE',(55,200),['BAT_RAW',G,'BUCK_5V',G],terminal(4),(92,32.5),'1715747',270)
-place(power,'BuckLogic','J6','BUCK LOGIC',(330,198),['BUCK_EN','VRP','PG'],fp('Connector_JST','JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical'),(91,56),'B3B-XH-A(LF)(SN)')
+place(power,'PololuBuck','MOD1','POLOLU D36V50F5 DIRECT MOUNT',(70,219),
+      ['VRP','BUCK_EN','BUCK_5V','BUCK_5V',G,'BAT_RAW','VRP','PG','BUCK_5V','BUCK_5V',G,'BAT_RAW'],
+      fp('HeadUnit',buck_footprint),(74,54),'4091')
 r(power,'R1','13.7k UVLO',(160,63),['BUCK_EN',G],(84,29))
 r(power,'R2','100k ADC top',(160,95),['BAT_SENSE_SW','BAT_ADC'],(70,32))
 r(power,'R3','10k ADC bottom',(255,95),['BAT_ADC',G],(66,32))
@@ -124,7 +146,7 @@ place(power,'MOS','Q2','2N7002 N-channel',(255,135),{1:V,2:G,3:'ADC_GATE'},sot23
 r(power,'R4','100k gate pull-up',(350,135),['VRP','ADC_GATE'],(77,31))
 r(power,'R5','10k PG pull-up',(160,175),[V,'PG'],(65,38))
 r(power,'R6','10k select pull-up',(255,175),[V,'BATT_SEL_N'],(69,39))
-c(power,'C2','1000uF 16V',(160,220),[RAIL,G],(67,47),'EEU-FR1C102L',fp('Capacitor_THT','CP_Radial_D10.0mm_P5.00mm'),0,'CP')
+c(power,'C2','1000uF 16V',(160,220),[RAIL,G],(65,47),'EEU-FR1C102L',fp('Capacitor_THT','CP_Radial_D10.0mm_P5.00mm'),0,'CP')
 for i,(x,n) in enumerate([(142,G),(220,RAIL),(272,'PICO_VSYS')],1):
  power.comp('PWR_FLAG',f'#FLG0{i}','',x,248,{'1':n})
 control.note(15,12,'PICO 2 W / SOCKETED',2)
@@ -218,8 +240,7 @@ label('DATA 1',(34,10.4),0.9)
 label('DATA 2',(54,10.4),0.9)
 label('DATA 3',(74,10.4),0.9)
 label('J5 SW LOGIC',(82,60.2),0.85)
-label('J6 BUCK LOGIC',(93,51.6),0.85)
-label('J4 BUCK POWER',(84.5,27.3),0.85)
+label('MOD1 POLOLU',(91,57),.85)
 label('-',(84,11.8),0.9)
 label('+',(89.08,11.8),0.9)
 def pxy(ref,num):
@@ -242,11 +263,17 @@ for i,x in enumerate([23,43,63],1):
  track(f'S{i}_SHUNT_HI',k.F_Cu,1.9,z,pxy(f'R{10+i}',1))
  track(f'S{i}_5V',k.F_Cu,1.9,pxy(f'R{10+i}',2),pxy(f'J{20+i}',2))
 track(RAIL,k.B_Cu,4.8,(23,25.8),(63,25.8),(64,56),(60.92,60),pxy('J3',2))
-track('EXT_5V',k.B_Cu,4.5,pxy('J2',1),(89.08,8),(81,16.08),(81,49),(75,55),(75,69.2)
+track('EXT_5V',k.B_Cu,4.5,pxy('J2',1),(89.08,8),(81,16.08),(81,24),(76.8,28.2),(76.8,53.2),(75,55),(75,69.2)
 )
 track('EXT_5V',k.B_Cu,4.2,(75,69.2),(75,70.35),(55.84,70.35),pxy('J3',3))
-track('BUCK_5V',k.F_Cu,4.0,pxy('J4',3),(85,42.66),(84,43.66),(84,53),(76,61),(69,61),pxy('J3',1))
-track('BAT_RAW',k.F_Cu,2.4,pxy('J1',2),(89,28),(90,29),pxy('J4',1))
+# Each regulator output contact contributes to the common 4 mm trunk.
+for upper, lower in [(9,3),(10,4)]:
+ track('BUCK_5V',k.F_Cu,1.9,pxy('MOD1',upper),pxy('MOD1',lower))
+track('BUCK_5V',k.F_Cu,1.9,pxy('MOD1',3),(85.43,55),(86.7,56.27))
+track('BUCK_5V',k.F_Cu,1.9,pxy('MOD1',4),(87.97,55),(86.7,56.27))
+track('BUCK_5V',k.F_Cu,4.0,(86.7,56.27),(79.5,56.27),(74.77,61),(69,61),pxy('J3',1))
+track('BAT_RAW',k.F_Cu,2.4,pxy('J1',2),(89,29),(96,36),(96,47.24),pxy('MOD1',12))
+track('BAT_RAW',k.F_Cu,1.9,pxy('MOD1',12),pxy('MOD1',6))
 track(RAIL,k.B_Cu,2.3,pxy('C2',1),(64,47))
 # Short VSYS run and a bottom-layer feed from the bulk capacitor to the isolation diode.
 track('PICO_VSYS',k.F_Cu,.65,pxy('D1',1),(53,57.32),pxy('J11',19))
