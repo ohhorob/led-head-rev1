@@ -1,0 +1,18 @@
+ERC report (2026-11-15T11:04:49, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+
+***** Sheet /Battery and power/
+
+***** Sheet /Controller/
+
+***** Sheet /LED outputs and sensing/
+
+ ** ERC messages: 0  Errors 0  Warnings 0
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
