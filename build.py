@@ -87,28 +87,35 @@ support_marks = ''.join(
  + support_marks + ''.join(buck_pads)
  + '(model "${KIPRJMOD}/models/d36v50fx-step-down-voltage-regulator.step" (offset (xyz 0 0 8.5)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0))))'
 )
-# TI RPW0010A land pattern for TPS25970A; power leads have stepped lands.
+# TI drawing 4225183/A, pages 2–3: copper and paste are distinct.
 efuse_fp = 'TI_RPW0010A_VQFN_HR'
-efuse_lands = []
-for i, y in enumerate((-.7125,-.2375,.2375,.7125)):
- for n,x in ((i+1,-.9),(10-i,.9)):
-  efuse_lands.append((n,x,y,.6,.25))
-for n,sign in ((5,-1),(6,1)):
- efuse_lands.extend(((n,sign*.25,.325,.30 if n == 5 else .25,1.75),
-                     (n,sign*.35,-.225,.25,.65),
-                     (n,sign*.375,-.7,.2,.3)))
-efuse_pads = ''.join(
- f'(pad "{n}" smd roundrect (at {x} {y}) (size {w} {h}) '
- '(layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15))'
- for n,x,y,w,h in efuse_lands
-)
+efuse_pads = []
+def efuse_land(number, x, y, width, height, layers):
+ radius_ratio = .05 / min(width, height)
+ efuse_pads.append(
+  f'(pad "{number}" smd roundrect (at {x:.4f} {y:.4f}) '
+  f'(size {width} {height}) (layers {layers}) (roundrect_rratio {radius_ratio:.8f}))'
+ )
+copper_mask = '"F.Cu" "F.Mask"'
+paste = '"F.Paste"'
+for sign, pins in ((-1, (1, 2, 3, 4)), (1, (10, 9, 8, 7))):
+ for direction, corner, side in ((-1, pins[0], pins[1]), (1, pins[3], pins[2])):
+  efuse_land(side, sign*.9, direction*.225, .6, .25, '"F.Cu" "F.Mask" "F.Paste"')
+  efuse_land(corner, sign*.9, direction*.7, .6, .30, copper_mask)
+  efuse_land(corner, sign*.725, direction*.875, .25, .65, copper_mask)
+  efuse_land('', sign*.9, direction*.6875, .6, .275, paste)
+  efuse_land('', sign*.7125, direction*.875, .225, .65, paste)
+for number, x in ((5, -.25), (6, .25)):
+ efuse_land(number, x, 0, .30, 2.4, copper_mask)
+ for y in (-.63, .63):
+  efuse_land('', x, y, .28, 1.06, paste)
 (custom/(efuse_fp+'.kicad_mod')).write_text(
  f'(footprint "{efuse_fp}" (version 20241229) (generator "pcbnew") (layer "F.Cu") (attr smd) '
- '(duplicate_pad_numbers_are_jumpers yes) (clearance .12) '
+ '(duplicate_pad_numbers_are_jumpers yes) '
  '(fp_rect (start -1 -1) (end 1 1) (stroke (width .12) (type solid)) (fill none) (layer "F.Fab")) '
- '(fp_rect (start -1.45 -1.45) (end 1.45 1.45) (stroke (width .05) (type solid)) (fill none) (layer "F.CrtYd")) '
+ '(fp_rect (start -1.50 -1.50) (end 1.50 1.50) (stroke (width .05) (type solid)) (fill none) (layer "F.CrtYd")) '
  '(fp_circle (center -1.45 -.72) (end -1.38 -.72) (stroke (width .12) (type solid)) (fill none) (layer "F.SilkS")) '
- + efuse_pads + ')'
+ + ''.join(efuse_pads) + ')'
 )
 Path('fp-lib-table').write_text('(fp_lib_table (version 7) (lib (name "HeadUnit")(type "KiCad")(uri "${KIPRJMOD}/HeadUnit.pretty")(options "")(descr "Local XT, Pololu and eFuse footprints")))')
 
