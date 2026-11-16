@@ -14,7 +14,7 @@ Open `led-head-rev1.kicad_pro` in KiCad 10. The project contains the schematic, 
 | J12 | NeoTrellis JST-PH. Pins 1–4 on this board are GND, 3.3 V, SDA, SCL. Map the harness wire by wire to the actual keypad; a generic straight-through JST-PH cable is provisional. Check the keypad power budget. |
 | J21–J23 | XT30PW-F outputs. Pad 1 ground, pad 2 fused and sensed +5 V. |
 | J31–J33 | JST-XH data outputs. Pad 1 DIN, pad 2 signal reference. Pair each data lead with its ground and connect to the matching string. |
-| TP1–TP3 | Standard 2.54 mm 1×2 headers for Logic Pro probes. Pin 1 (square) is signal and pin 2 is ground. TP1 = GP1 (string 1 mirror), TP2 = INA3221 bus SDA, TP3 = INA3221 bus SCL. |
+| TP1–TP5 | Standard 2.54 mm 1×2 headers for Logic Pro probes. Pin 1 (square) is signal and pin 2 is ground. TP1 = GP1 (string 1 mirror), TP2 = INA3221 bus SDA, TP3 = INA3221 bus SCL, TP4 = Trellis bus SDA, TP5 = Trellis bus SCL. |
 
 The NKK S333 pole 1 selects the Pololu output or the protected 5 V bypass with OFF between. Label the switch BAT / OFF / 5 V. The second pole grounds buck EN in 5 V mode and grounds the source ID input on the battery setting. Verify switch terminal numbering and lever positions with continuity before marking the enclosure. The switch mounts to the enclosure and connects using a harness. Keep the switch power loop short, use suitably rated wire and strain relief, and ventilate the carrier-mounted Pololu module. The unit and all outputs share DC ground.
 
