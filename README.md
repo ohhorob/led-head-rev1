@@ -83,3 +83,9 @@ The red LED uses an input-side 3.3 V LDO independent of Pico power. D2 and D3 is
 With a current-limited bench source and the strings disconnected, test each switch mode, verify the overvoltage cutoff with battery-level input in 5 V mode, and scope the switched rail during hot-plug and source changes. Verify the fault LED with PG low while the Pico supply is absent. Follow with the loaded thermal and enclosure tests.
 
 [TI TPS2597 datasheet](https://www.ti.com/lit/ds/symlink/tps2597.pdf) · [TI SN74LVC1G57 datasheet](https://www.ti.com/lit/ds/symlink/sn74lvc1g57.pdf)
+
+## Pre-fabrication board review
+
+Use Panasonic EEU-FR1C102 for C2 (1,000 µF, 16 V, 10 mm body and 5 mm lead pitch). The suffixed EEU-FR1C102L uses 3.5 mm lead pitch. The U4 INA3221 and R11–R13 shunt land patterns are in the project footprint library and follow the TI and Vishay reference dimensions. The SMT placement file was exported from the manually routed board. The native KiCad PCB is the source for subsequent edits.
+
+The current layout passed KiCad ERC, DRC and schematic parity. The documented design-rule exclusions remain in the reports. Review the silkscreen and regenerate all final fabrication outputs from the resulting PCB. Verify assembly sourcing and rotation against the vendor preview before ordering.

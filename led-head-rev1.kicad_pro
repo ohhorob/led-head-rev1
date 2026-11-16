@@ -243,7 +243,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "1 - REVIEW"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -658,11 +658,38 @@
     "reuse_designators": true,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
-    "top_level_sheets": [],
-    "used_designators": "",
+    "top_level_sheets": [
+      {
+        "filename": "led-head-rev1.kicad_sch",
+        "name": "led-head-rev1",
+        "uuid": "1f93b397-51d9-49e3-a55b-046655a8bdfa"
+      }
+    ],
+    "used_designators": "TP2-5,TP_SCL1,TP_SDA1",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "1f93b397-51d9-49e3-a55b-046655a8bdfa",
+      "led-head-rev1"
+    ],
+    [
+      "bf3ab514-30af-4a30-8339-88e148f312c8",
+      "Battery and power"
+    ],
+    [
+      "b57100a0-df71-4478-a3f1-97069b28d1e2",
+      "Inlet protection and status"
+    ],
+    [
+      "391cb5b8-fa27-4328-ac60-cf5ed8d9da6f",
+      "Controller"
+    ],
+    [
+      "58e2e4fd-09ab-42e7-ad57-f1108707458b",
+      "LED outputs and sensing"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {

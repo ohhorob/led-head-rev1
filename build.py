@@ -180,7 +180,7 @@ place(power,'MOS','Q2','2N7002 N-channel',(255,135),{1:V,2:G,3:'ADC_GATE'},sot23
 r(power,'R4','100k gate pull-up',(350,135),['VRP','ADC_GATE'],(77,31))
 r(power,'R5','10k PG pull-up',(160,175),[V,'PICO_PG'],(65,38))
 r(power,'R6','10k select pull-up',(255,175),[V,'PICO_BATT_SEL_N'],(69,39))
-c(power,'C2','1000uF 16V',(160,220),[RAIL,G],(65,47),'EEU-FR1C102L',fp('Capacitor_THT','CP_Radial_D10.0mm_P5.00mm'),0,'CP')
+c(power,'C2','1000uF 16V',(160,220),[RAIL,G],(65,47),'EEU-FR1C102',fp('Capacitor_THT','CP_Radial_D10.0mm_P5.00mm'),0,'CP')
 for i,(x,n) in enumerate([(142,G),(220,RAIL),(272,'PICO_VSYS')],1):
  power.comp('PWR_FLAG',f'#FLG0{i}','',x,248,{'1':n})
 control.note(15,12,'PICO 2 W / SOCKETED',2)
@@ -211,7 +211,7 @@ for i,x in enumerate([23,43,63],1):
  io.comp('PWR_FLAG',f'#FLG{4+i:02}','',sx+28,60,{'1':load})
  io.note(sx-40,12,f'STRING {i}',1.8)
  place(io,'Fuse',f'F{i}','3A 125V NANO2',(sx,27),[RAIL,sense],fp('Fuse','Fuse_Littelfuse-NANO2-451_453'),(bx,22.5+dy),'0451003.MRL',90)
- r(io,f'R{10+i}','50m 1W 1%',(sx,42),[sense,load],(bx,14+dy),'WSL2512R0500FEA',fp('Resistor_SMD','R_2512_6332Metric'),90)
+ r(io,f'R{10+i}','50m 1W 1%',(sx,42),[sense,load],(bx,14+dy),'WSL2512R0500FEA',fp('HeadUnit','Vishay_WSL2512_50mR'),90)
  place(io,'StringOut',f'J{20+i}','JST-XH STRING OUTPUT',(sx,139),[G,load,data],
        fp('HeadUnit',xh_name),(bx+2.5,7),'S3B-XH-A(LF)(SN)',180)
  place(io,'TXU0101',f'U{i}','TXU0101DBVR',(sx,94),[V,G,f'GP{i+3}',buf,V,load],fp('Package_TO_SOT_SMD','SOT-23-6'),(bx+12,24+dy),'TXU0101DBVR')
@@ -220,7 +220,7 @@ for i,x in enumerate([23,43,63],1):
  c(io,f'C{20+i}','100n VCCB',(sx,172),[load,G],(bx+5.7,13+dy))
  c(io,f'C{30+i}','10u 16V X7R',(sx,187),[load,G],(bx+5.4,18.6+dy),'',fp('Capacitor_SMD','C_1206_3216Metric'),90)
 inets={1:'S3_5V',2:'S3_SHUNT_HI',3:G,4:V,5:G,6:'I2C_SCL',7:'I2C_SDA',11:'S1_5V',12:'S1_SHUNT_HI',14:'S2_5V',15:'S2_SHUNT_HI',16:V,17:G}
-place(io,'INA3221','U4','INA3221AIRGVR / I2C 0x40',(105,245),inets,fp('Package_DFN_QFN','Texas_RGV0016A_VQFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm'),(46,33.3),'INA3221AIRGVR')
+place(io,'INA3221','U4','INA3221AIRGVR / I2C 0x40',(105,245),inets,fp('HeadUnit','TI_RGV0016A_Reference'),(46,33.3),'INA3221AIRGVR')
 c(io,'C40','100n INA supply',(260,230),[V,G],(51.6,34.4))
 io.note(230,248,'Kelvin pairs from each shunt pad.\nThe translators are powered by their own fused outputs.\nTXU0101 isolates outputs when either supply is off.\nAll string power returns and data grounds share GND.',1.3)
 # The selector remains manual. Hardware UV/OV thresholds guard the 5 V throw.
