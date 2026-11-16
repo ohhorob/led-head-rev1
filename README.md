@@ -57,7 +57,7 @@ The shared J1 XT60 inlet exits the right edge. The three JST-XH string outlets e
 
 ## Pololu mounting
 
-The Pololu STEP model is attached to MOD1. The preview places the module PCB underside nominally 8.5 mm above the carrier surface. Choose header length and printed support together, and check the actual underside clearance before soldering. The three module mounting-hole centers are indicated on the KiCad Drawings layer for support design. The carrier has no corresponding support holes.
+The Pololu STEP model is attached to MOD1. The preview places the module PCB underside nominally 8.5 mm above the carrier surface. Choose header length and printed support together, and check the actual underside clearance before soldering. The three module mounting-hole centers are indicated on the KiCad Drawings layer for support design. H5 is a 2.2 mm non-plated M2 clearance hole centered at (76.159, 30.759) mm, aligned with the upper-left MOD1 hole in PCB top view. Use a nylon standoff and set its height from the assembled header stack.
 
 Viewed from the carrier top with the connector row toward the lower edge of the module, pads 1–6 are on the outer row and pads 7–12 on the inner row. Both rows run left to right.
 
