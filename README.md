@@ -12,8 +12,7 @@ Open `led-head-rev1.kicad_pro` in KiCad 10. The project contains the schematic, 
 | MOD1 | Direct-mount Pololu D36V50F5 (4091). Solder two 1×6 straight headers on 2.54 mm centers. Use every VIN, VOUT and GND pad. See the mounting details below. |
 | J10/J11 | Female 1×20 sockets, on the standard 17.78 mm row spacing. J10 pin 1 is Pico pin 1. J11 pin 1 is Pico pin 21. |
 | J12 | NeoTrellis JST-PH. Pins 1–4 on this board are GND, 3.3 V, SDA, SCL. Map the harness wire by wire to the actual keypad; a generic straight-through JST-PH cable is provisional. Check the keypad power budget. |
-| J21–J23 | XT30PW-F outputs. Pad 1 ground, pad 2 fused and sensed +5 V. |
-| J31–J33 | JST-XH data outputs. Pad 1 DIN, pad 2 signal reference. Pair each data lead with its ground and connect to the matching string. |
+| J21–J23 | Right-angle JST-XH S3B-XH-A(LF)(SN) string outputs. Pin 1 = GND, pin 2 = fused and sensed +5 V, pin 3 = DATA. Use an XHP-3 housing with SXH-001T-P0.6 contacts and 22 AWG leads to the matching string-side JST-SM connector. Verify the string pin order before crimping. |
 | TP1–TP5 | Standard 2.54 mm 1×2 headers for Logic Pro probes. Pin 1 (square) is signal and pin 2 is ground. TP1 = GP1 (string 1 mirror), TP2 = INA3221 bus SDA, TP3 = INA3221 bus SCL, TP4 = Trellis bus SDA, TP5 = Trellis bus SCL. |
 
 The NKK S333 pole 1 selects the Pololu output or the protected 5 V bypass with OFF between. Label the switch BAT / OFF / 5 V. The second pole grounds buck EN in 5 V mode and grounds the source ID input on the battery setting. Verify switch terminal numbering and lever positions with continuity before marking the enclosure. The switch mounts to the enclosure and connects using a harness. Keep the switch power loop short, use suitably rated wire and strain relief, and ventilate the carrier-mounted Pololu module. The unit and all outputs share DC ground.
@@ -32,7 +31,7 @@ IPC-2221 external-trace screening at nominal 35 µm copper gives approximately 3
 
 ## SMT quote
 
-Request top-side SMT only. Load the supplied BOM and centroid files as quote drafts and review the pin-one and diode orientation on the vendor placement preview. The Pico sockets, screw terminals, XT30s, XT60 and XH headers, NeoTrellis PH header and bulk electrolytic are through-hole and installed separately. Install the Pololu module and its two headers by hand. The panel switch and mating battery harness are off-board. If using JLCPCB, match the exact manufacturer parts to its catalog before placing the order. In particular, confirm sourcing for the TPS25970ARPWR, the three TXU0101DBVRs, the INA3221, 3 A fuse and shunts. Verify the RPW0010A land pattern, stencil openings, and pin 1 against the assembly preview. PCBWay can quote these by manufacturer part number. Release Gerbers and the placement files together from the same verified PCB revision.
+Request top-side SMT only. Load the supplied BOM and centroid files as quote drafts and review the pin-one and diode orientation on the vendor placement preview. The Pico sockets, screw terminals, XT60 and XH headers, NeoTrellis PH header and bulk electrolytic are through-hole and installed separately. Install the Pololu module and its two headers by hand. The panel switch and mating battery harness are off-board. If using JLCPCB, match the exact manufacturer parts to its catalog before placing the order. In particular, confirm sourcing for the TPS25970ARPWR, the three TXU0101DBVRs, the INA3221, 3 A fuse and shunts. Verify the RPW0010A land pattern, stencil openings, and pin 1 against the assembly preview. PCBWay can quote these by manufacturer part number. Release Gerbers and the placement files together from the same verified PCB revision.
 
 ## Review status
 
@@ -50,11 +49,11 @@ F4 was removed. The switched LED_5V rail now feeds D1 directly via a 0.65 mm bra
 
 ## Connector silkscreen
 
-J12 NEOTRELLIS marks the rotated four-pin JST-PH on the left. The matching string data headers are marked DATA 1–3. J5 identifies the switch logic harness. MOD1 identifies the direct-mount regulator. The shared XT60 input has + and − markings.
+J12 NEOTRELLIS marks the rotated four-pin JST-PH on the left. The combined string outlets are marked STR 1–3. The D, + and − markings identify data, fused +5 V and ground. J5 identifies the switch logic harness. MOD1 identifies the direct-mount regulator. The shared XT60 input has + and − markings.
 
 ## Connector access
 
-The shared J1 XT60 inlet exits the right edge. The J1 mating face projects approximately 5.4 mm beyond the PCB edge. The installed KiCad library has no STEP model for XT60PW-M; use the footprint fabrication outline to review the projection. Verify enclosure openings and wire bend radius with the actual harnesses.
+The shared J1 XT60 inlet exits the right edge. The three JST-XH string outlets exit the top edge and overhang it for plug access. The J1 mating face projects approximately 5.4 mm beyond the PCB edge. The installed KiCad library has no STEP model for XT60PW-M; use the footprint fabrication outline to review the projection. Verify enclosure openings and wire bend radius with the actual harnesses.
 
 ## Pololu mounting
 
