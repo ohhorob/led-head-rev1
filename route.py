@@ -222,15 +222,15 @@ def route_board(b, k, loaded, parts, nets, track, via):
     already = {
         '3V3': [{('U4','4'),('U4','16')}],
         'BAT_RAW': [{('J1','2'),('MOD1','6'),('MOD1','12'),('U5','5')}],
-        'BUCK_5V': [{('J3','1'),('MOD1','3'),('MOD1','4'),('MOD1','9'),('MOD1','10')}],
+        'BUCK_5V': [{('J3','3'),('MOD1','3'),('MOD1','4'),('MOD1','9'),('MOD1','10')}],
         'BUCK_FAULT': [{('U7','4'),('R48','1')}],
-        'EXT_5V': [{('U5','6'),('J3','3')}],
+        'EXT_5V': [{('U5','6'),('J3','1')}],
         'PICO_VSYS': [{('D1','1'),('J11','19')}],
         'LED_5V': [{('D1','2'),('J3','2'),('C2','1'),*((f'F{i}','1') for i in range(1,4))}],
     }
     for i in range(1,4):
         already[f'S{i}_SHUNT_HI']=[{(f'F{i}','2'),(f'R{10+i}','1')}]
-        already[f'S{i}_5V']=[{(f'R{10+i}','2'),(f'J{20+i}','2')}]
+        already[f'S{i}_5V']=[{(f'R{10+i}','2'),(f'J{20+i}','3')}]
     # Sense lines land at the shunt itself, not elsewhere in the power tree.
     for i in (2,1,3):
         for net,pin in [(f'S{i}_5V','2'),(f'S{i}_SHUNT_HI','1')]:

@@ -7,13 +7,15 @@ Open `led-head-rev1.kicad_pro` in KiCad 10. The project contains the schematic, 
 | Ref | Connection |
 | --- | --- |
 | J1 | Shared board-mounted XT60PW-M. Pin 1 is ground and pin 2 is positive. Connect a regulated 5 V supply, a fused 3S LiPo, or a fused 12 V LiFePO₄ camper circuit with BMS protection. Keep the 5 A fuse in the battery harness and size the 5 V source-side fuse for its wiring and load. |
-| J3 | High-current panel toggle connections. Board pin 1 to S333 lug 1, pin 2 to lug 2, pin 3 to lug 3. |
+| J3 | High-current panel toggle connections. Board pin 1 (EXT_5V) to S333 lug 3, pin 2 (LED_5V) to lug 2, pin 3 (BUCK_5V) to lug 1. |
 | J5 | Toggle auxiliary pole. Board pin 1 to S333 lug 6, pin 2 to lug 5, pin 3 to lug 4. |
-| MOD1 | Direct-mount Pololu D36V50F5 (4091). Solder two 1×6 straight headers on 2.54 mm centers. Use every VIN, VOUT and GND pad. See the mounting details below. |
+| MOD1 | Plug-in Pololu D36V50F5 (4091). Solder two 1×6 female sockets to the carrier and two matching male strips to the module. The pin pitch is 2.54 mm. Use every VIN, VOUT and GND pad. See the mounting details below. |
 | J10/J11 | Female 1×20 sockets, on the standard 17.78 mm row spacing. J10 pin 1 is Pico pin 1. J11 pin 1 is Pico pin 21. |
 | J12 | NeoTrellis JST-PH. Pins 1–4 on this board are GND, 3.3 V, SDA, SCL. Map the harness wire by wire to the actual keypad; a generic straight-through JST-PH cable is provisional. Check the keypad power budget. |
-| J21–J23 | Right-angle JST-XH S3B-XH-A(LF)(SN) string outputs. Pin 1 = GND, pin 2 = fused and sensed +5 V, pin 3 = DATA. Use an XHP-3 housing with SXH-001T-P0.6 contacts and 22 AWG leads to the matching string-side JST-SM connector. Verify the string pin order before crimping. |
-| TP1–TP5 | Standard 2.54 mm 1×2 headers for Logic Pro probes. Pin 1 (square) is signal and pin 2 is ground. TP1 = GP1 (string 1 mirror), TP2 = INA3221 bus SDA, TP3 = INA3221 bus SCL, TP4 = Trellis bus SDA, TP5 = Trellis bus SCL. |
+| J21–J23 | Right-angle JST-XH S3B-XH-A(LF)(SN) string outputs. Pin 1 = GND, pin 2 = DATA, pin 3 = fused and sensed +5 V. Use an XHP-3 housing with SXH-001T-P0.6 contacts and 22 AWG leads to the matching string-side JST-SM connector. Verify the string pin order before crimping. |
+| J16 | UART0 for Adafruit 4331. Pin 1 (square, black cable wire) = GND, pin 4 = Pico RX (GP1), pin 5 = Pico TX (GP0). Pins 2, 3 and 6 are unconnected. |
+| J17 | SPI0, six-pin JST-PH. Pins 1–6 are GND, switched LED_5V, MISO/GP16, CSn/GP17, SCK/GP18, MOSI/GP19. SPI signals use 3.3 V logic. |
+| TP2–TP5 | Standard 2.54 mm 1×2 headers for Logic Pro probes. Pin 1 (square) is signal and pin 2 is ground. TP2 = INA3221 bus SDA, TP3 = INA3221 bus SCL, TP4 = Trellis bus SDA, TP5 = Trellis bus SCL. |
 
 The NKK S333 pole 1 selects the Pololu output or the protected 5 V bypass with OFF between. Label the switch BAT / OFF / 5 V. The second pole grounds buck EN in 5 V mode and grounds the source ID input on the battery setting. Verify switch terminal numbering and lever positions with continuity before marking the enclosure. The switch mounts to the enclosure and connects using a harness. Keep the switch power loop short, use suitably rated wire and strain relief, and ventilate the carrier-mounted Pololu module. The unit and all outputs share DC ground.
 
@@ -57,7 +59,7 @@ The shared J1 XT60 inlet exits the right edge. The three JST-XH string outlets e
 
 ## Pololu mounting
 
-The Pololu STEP model is attached to MOD1. The preview places the module PCB underside nominally 8.5 mm above the carrier surface. Choose header length and printed support together, and check the actual underside clearance before soldering. The three module mounting-hole centers are indicated on the KiCad Drawings layer for support design. H5 is a 2.2 mm non-plated M2 clearance hole centered at (76.159, 30.759) mm, aligned with the upper-left MOD1 hole in PCB top view. Use a nylon standoff and set its height from the assembled header stack.
+MOD1 uses the Pololu STEP model and generic KiCad models for two 1×6 female sockets and two downward-facing male strips. The modeled stack puts the module PCB underside 11.04 mm above the carrier surface (8.50 mm socket height plus a 2.54 mm male-header spacer). Measure the fully seated hardware before sizing the nylon standoff. The three module mounting-hole centers are indicated on the KiCad Drawings layer for support design. H5 is a 2.2 mm non-plated M2 clearance hole centered at (76.159, 30.759) mm, aligned with the upper-left MOD1 hole in PCB top view.
 
 Viewed from the carrier top with the connector row toward the lower edge of the module, pads 1–6 are on the outer row and pads 7–12 on the inner row. Both rows run left to right.
 

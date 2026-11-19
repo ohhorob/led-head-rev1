@@ -80,12 +80,18 @@ support_marks = ''.join(
  f'(fp_circle (center {x} {y}) (end {x+1.0922} {y}) (stroke (width 0.15) (type solid)) (fill none) (layer "Dwgs.User"))'
  for x,y in buck_supports
 )
+# 8.50 mm carrier socket plus the 2.54 mm spacer on the module pin strip.
+buck_models = '(model "${KIPRJMOD}/models/d36v50fx-step-down-voltage-regulator.step" (offset (xyz 0 0 11.04)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))'
+for y in buck_rows:
+ for kind, z, ry in [('Socket', 0, 0), ('Header', 11.04, 180)]:
+  name = f'Connector_Pin{kind}_2.54mm.3dshapes/Pin{kind}_1x06_P2.54mm_Vertical.step'
+  buck_models += f' (model "${{KICAD10_3DMODEL_DIR}}/{name}" (offset (xyz {buck_x[0]} {-y} {z})) (scale (xyz 1 1 1)) (rotate (xyz 0 {ry} -90)))'
 (custom/(buck_footprint+'.kicad_mod')).write_text(
  f'(footprint "{buck_footprint}" (version 20241229) (generator "pcbnew") (layer "F.Cu") (attr through_hole) '
  '(fp_rect (start 0 0) (end 25.4 -25.4) (stroke (width 0.15) (type solid)) (fill none) (layer "F.Fab")) '
  '(fp_rect (start 5.05 0) (end 20.35 -5.11) (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd")) '
  + support_marks + ''.join(buck_pads)
- + '(model "${KIPRJMOD}/models/d36v50fx-step-down-voltage-regulator.step" (offset (xyz 0 0 8.5)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0))))'
+ + buck_models + ')\n'
 )
 # TI drawing 4225183/A, pages 2–3: copper and paste are distinct.
 efuse_fp = 'TI_RPW0010A_VQFN_HR'
@@ -135,7 +141,7 @@ con('Power2',['+','GND'])
 block('InletEFuse',[(1,'EN','passive'),(2,'OVLO','passive'),(5,'IN','passive'),(8,'GND','passive')],[(6,'OUT','passive'),(7,'DVDT','passive'),(9,'ILM','passive'),(10,'ITIMER','passive'),(4,'FLT','passive'),(3,'DNC','passive')])
 block('StatusLDO',[(2,'IN','passive'),(1,'GND','passive')],[(3,'OUT','passive'),(4,'NC','passive'),(5,'NC','passive')],14)
 block('FaultGate',[(6,'PG','passive'),(3,'DELAY','passive'),(1,'IN1','passive'),(2,'GND','passive')],[(4,'OUT','passive'),(5,'VCC','passive')],14)
-con('StringOut',['GND','5V','DATA'])
+con('StringOut',['GND','DATA','5V'])
 con('Switch',['BUCK 5V','RAIL RETURN','EXT 5V'])
 con('SwitchLogic',['BUCK EN','SW GND','BATT SELECT'])
 block('PololuBuck',[(1,'VRP','passive'),(2,'EN','passive'),(3,'VOUT','passive'),(4,'VOUT','passive'),(5,'GND','passive'),(6,'VIN','passive')],[(7,'VRP','passive'),(8,'PG','passive'),(9,'VOUT','passive'),(10,'VOUT','passive'),(11,'GND','passive'),(12,'VIN','passive')],19)
@@ -166,7 +172,7 @@ G='GND'; V='3V3'; RAIL='LED_5V'
 power.note(15,14,'PANEL WIRING AND PROTECTED INPUTS',2)
 power.note(15,24,'Board-mounted XT60PW-M. Keep the 5 A battery-side fuse in the harness. Use fused, protected camper distribution.\nJ3: match NKK solder lug numbering per wiring table. Keep high-current wiring short.',1.3)
 place(power,'Power2','J1','XT60PW-M SHARED DC INPUT',(55,55),[G,'BAT_RAW'],fp('HeadUnit',xt60_name),(89,16.5),'XT60PW-M',270)
-place(power,'Switch','J3','NKK S333 PANEL HARNESS',(55,135),['BUCK_5V',RAIL,'EXT_5V'],terminal(3),(66,65.5),'1715734',180)
+place(power,'Switch','J3','NKK S333 PANEL HARNESS',(55,135),['EXT_5V',RAIL,'BUCK_5V'],terminal(3),(55.84,65.5),'1715734')
 place(power,'SwitchLogic','J5','PANEL LOGIC',(160,195),['BUCK_EN',G,'BATT_SEL_N'],fp('Connector_JST','JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical'),(79,65),'B3B-XH-A(LF)(SN)')
 place(power,'PololuBuck','MOD1','POLOLU D36V50F5 DIRECT MOUNT',(70,219),
       ['VRP','BUCK_EN','BUCK_5V','BUCK_5V',G,'BAT_RAW','VRP','PG','BUCK_5V','BUCK_5V',G,'BAT_RAW'],
@@ -185,8 +191,27 @@ for i,(x,n) in enumerate([(142,G),(220,RAIL),(272,'PICO_VSYS')],1):
  power.comp('PWR_FLAG',f'#FLG0{i}','',x,248,{'1':n})
 control.note(15,12,'PICO 2 W / SOCKETED',2)
 socket=fp('Connector_PinSocket_2.54mm','PinSocket_1x20_P2.54mm_Vertical')
-place(control,'PicoL','J10','Pico socket 1-20',(60,95),{2:'DEBUG_COPY',3:G,6:'GP4',7:'GP5',8:G,9:'GP6',10:'PICO_BATT_SEL_N',11:'I2C_SDA',12:'I2C_SCL',13:G,14:'PICO_PG',16:'TRELLIS_SCL',17:'TRELLIS_SDA',18:G},socket,(56,40),'',270)
-place(control,'PicoR','J11','Pico socket 21-40',(160,95),{3:G,8:G,11:'BAT_ADC',13:G,16:V,18:G,19:'PICO_VSYS'},socket,(7.74,57.78),'',90)
+place(control,'PicoL','J10','Pico socket 1-20',(60,95),{1:'UART0_TX',2:'UART0_RX',3:G,6:'GP4',7:'GP5',8:G,9:'GP6',10:'PICO_BATT_SEL_N',11:'I2C_SDA',12:'I2C_SCL',13:G,14:'PICO_PG',18:G,19:'TRELLIS_SDA',20:'TRELLIS_SCL'},socket,(56,40),'',270)
+place(control,'PicoR','J11','Pico socket 21-40',(160,95),{1:'SPI0_MISO',2:'SPI0_CSn',3:G,4:'SPI0_SCK',5:'SPI0_MOSI',6:'STATUS_RGB_GPIO',8:G,10:'PICO_RUN',11:'BAT_ADC',12:'PICO_ADC1',13:G,14:'PICO_ADC2',15:'ADC_VREF',16:V,18:G,19:'PICO_VSYS'},socket,(7.74,57.78),'',90)
+block('JLinkCortexM', [(1,'VTref','passive'),(3,'GND','passive'),(5,'GND','passive'),(7,'NC','passive'),(9,'NC','passive')],
+      [(2,'SWDIO','passive'),(4,'SWCLK','passive'),(6,'SWO','passive'),(8,'TDI','passive'),(10,'nRESET','passive')],13)
+place(control,'JLinkCortexM','J13','J-Link Cortex-M reset',(245,82),{1:V,2:'PICO_SWDIO',3:G,4:'PICO_SWCLK',5:G,10:'PICO_RUN'},
+      fp('HeadUnit','Samtec_FTSH-105-01-L-DV_2x05_P1.27mm_SMT'),(38,62.5),'FTSH-105-01-L-DV-TR',270)
+block('PicoSWDLead', [],[(1,'SWDIO','passive'),(2,'SWCLK','passive'),(3,'GND','passive')],10)
+place(control,'PicoSWDLead','J14','Pico SWD cable',(335,106),['PICO_SWDIO','PICO_SWCLK',G],
+      fp('Connector_PinHeader_2.54mm','PinHeader_1x03_P2.54mm_Vertical'),(26.54,71.25),'',270)
+block('PicoADCBreakout', [(1,'VREF','passive'),(3,'VREF','passive'),(5,'VREF','passive'),(7,'VREF','passive')],
+      [(2,'ADC0','passive'),(4,'ADC1','passive'),(6,'ADC2','passive'),(8,'AGND','passive')],10)
+place(control,'PicoADCBreakout','J15','Pico ADC breakout',(285,273),['ADC_VREF', 'BAT_ADC', 'ADC_VREF', 'PICO_ADC1', 'ADC_VREF', 'PICO_ADC2', 'ADC_VREF']+[G],
+      fp('Connector_PinHeader_2.54mm','PinHeader_2x04_P2.54mm_Vertical'),(39.5,64.79),'',90)
+block('PicoSPI0', [],[(1,'GND','passive'),(2,'+5V','passive'),(3,'MISO','passive'),
+      (4,'CSn','passive'),(5,'SCK','passive'),(6,'MOSI','passive')],10)
+place(control,'PicoSPI0','J17','SPI0 / switched 5V',(155,255),[G,RAIL]+['SPI0_MISO', 'SPI0_CSn', 'SPI0_SCK', 'SPI0_MOSI'],
+      fp('Connector_JST','JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical'),(12,68),'B6B-PH-K-S(LF)(SN)')
+block('SPI0Probe', [(1,'MISO','passive'),(3,'CSn','passive'),(5,'SCK','passive'),(7,'MOSI','passive')],
+      [(2,'GND','passive'),(4,'GND','passive'),(6,'GND','passive'),(8,'GND','passive')],10)
+place(control,'SPI0Probe','J18','SPI0 logic probe',(350,218),['SPI0_MISO', 'GND', 'SPI0_CSn', 'GND', 'SPI0_SCK', 'GND', 'SPI0_MOSI', 'GND'],
+      fp('Connector_PinHeader_2.54mm','PinHeader_2x04_P2.54mm_Vertical'),(9.3,63.94),'',90)
 # The Pico's onboard 3.3 V regulator drives the socket output.
 control.comp('PWR_FLAG','#FLG04','',258,42,{'1':V})
 place(control,'Schottky','D1','SS14',(340,75),{2:RAIL,1:'PICO_VSYS'},fp('Diode_SMD','D_SMA'),(51,52.5),'SS14-E3/61T',180)
@@ -195,12 +220,15 @@ r(control,'R7','4.7k I2C SDA pull-up',(245,155),[V,'I2C_SDA'],(24.5,35),rot=270)
 r(control,'R8','4.7k I2C SCL pull-up',(345,155),[V,'I2C_SCL'],(26,31.5),rot=270)
 con('Probe',['SIGNAL','GND'])
 probe_header=fp('Connector_PinHeader_2.54mm','PinHeader_1x02_P2.54mm_Vertical')
-place(control,'Probe','TP1','GP1 SCOPE COPY',(255,190),['DEBUG_COPY',G],probe_header,(56,32),rot=90)
+block('UART0Cable', [],[(1,'GND','passive'),(2,'Cable CTS','passive'),(3,'Cable 3V3','passive'),
+      (4,'Pico RX','passive'),(5,'Pico TX','passive'),(6,'Cable RTS','passive')],13)
+place(control,'UART0Cable','J16','UART0 / Adafruit 4331',(130,199),{1:G,4:'UART0_RX',5:'UART0_TX'},
+      fp('Connector_PinHeader_2.54mm','PinHeader_1x06_P2.54mm_Vertical'),(8,62),'',90)
 place(control,'Probe','TP2','I2C0 SDA TEST',(245,177),['I2C_SDA',G],probe_header,(17,35.8),rot=90)
 place(control,'Probe','TP3','I2C0 SCL TEST',(345,177),['I2C_SCL',G],probe_header,(17,31.5),rot=90)
 place(control,'Probe','TP4','TRELLIS SDA TEST',(245,236),['TRELLIS_SDA',G],probe_header,(4,28))
 place(control,'Probe','TP5','TRELLIS SCL TEST',(345,236),['TRELLIS_SCL',G],probe_header,(4,35))
-control.note(220,207,'GP8/9 = I2C0; GP7 = battery select; GP10 = buck PG.\nGP26 = ADC0. Existing pixel outputs GP4/5/6.\nVerify NeoTrellis cable pin order at both mating faces.\nNeoTrellis uses software I2C: GP13 SDA (pin 17), GP12 SCL (pin 16).\nNeoTrellis uses keypad pull-ups. R7/R8 bias hardware I2C0 only.\nUSB-only: VSYS diode blocks rail backfeed.',1.3)
+control.note(220,207,'GP8/9 = I2C0; GP7 = battery select; GP10 = buck PG.\nGP26 = ADC0. Existing pixel outputs GP4/5/6.\nVerify NeoTrellis cable pin order at both mating faces.\nNeoTrellis uses hardware I2C1: GP14 SDA (pin 19), GP15 SCL (pin 20).\nNeoTrellis uses keypad pull-ups. R7/R8 bias hardware I2C0 only.\nUSB-only: VSYS diode blocks rail backfeed.',1.3)
 # Three physically identical power lanes, arranged at the connector edge.
 from math import *
 for i,x in enumerate([23,43,63],1):
@@ -212,7 +240,7 @@ for i,x in enumerate([23,43,63],1):
  io.note(sx-40,12,f'STRING {i}',1.8)
  place(io,'Fuse',f'F{i}','3A 125V NANO2',(sx,27),[RAIL,sense],fp('Fuse','Fuse_Littelfuse-NANO2-451_453'),(bx,22.5+dy),'0451003.MRL',90)
  r(io,f'R{10+i}','50m 1W 1%',(sx,42),[sense,load],(bx,14+dy),'WSL2512R0500FEA',fp('HeadUnit','Vishay_WSL2512_50mR'),90)
- place(io,'StringOut',f'J{20+i}','JST-XH STRING OUTPUT',(sx,139),[G,load,data],
+ place(io,'StringOut',f'J{20+i}','JST-XH STRING OUTPUT',(sx,139),[G,data,load],
        fp('HeadUnit',xh_name),(bx+2.5,7),'S3B-XH-A(LF)(SN)',180)
  place(io,'TXU0101',f'U{i}','TXU0101DBVR',(sx,94),[V,G,f'GP{i+3}',buf,V,load],fp('Package_TO_SOT_SMD','SOT-23-6'),(bx+12,24+dy),'TXU0101DBVR')
  r(io,f'R{20+i}','220R DATA',(sx,118),[buf,data],(bx+11,19.5+dy))
@@ -260,7 +288,38 @@ r(P,'R49','1k green',(339,244),[RAIL,'GREEN_A'],(92.5,62),'RC0805FR-071KL')
 led0805 = fp('LED_SMD','LED_0805_2012Metric')
 status_diode('D5','RED BUCK FAULT',(382,199),G,'RED_A',(88.7,61.5),led0805,'LTST-C170KRKT')
 status_diode('D6','GREEN LED POWER',(382,244),G,'GREEN_A',(96,61.5),led0805,'LTST-C170KGKT')
-for sheet in (root,power,control,io,protection): sheet.save()
+# Capacitor placement notes sit below their schematic symbols.
+power.note(327,100,'Place by J11.11 (Pico GP26 / ADC0).',1.2)
+power.note(140,225,'Bulk LED_5V at the string supply fan-out.',1.2)
+for i, x in enumerate((70,200,330),1):
+ io.note(x-20,161,f'Place by U{i}.1 (VCCA).',1.2)
+ io.note(x-20,176,f'Place by U{i}.6 (VCCB).',1.2)
+ io.note(x-20,191,f'5 V bulk cap by J{20+i}.3 (string output).',1.2)
+io.note(240,234,'Place by U4.4 (VS).',1.2)
+P.note(180,89,'Input bypass for U5.5 (IN).',1.2)
+P.note(280,64,'Place by U5.7 (DVDT).',1.2)
+P.note(150,136,'Place by U6.2 (IN).',1.2)
+P.note(240,136,'Place by U6.3 (OUT).',1.2)
+P.note(162,231,'Delay network at R47 and U7.3 (DELAY).',1.2)
+P.note(330,149,'Place by U7.5 (VCC).',1.2)
+status = Sheet("string-status", "String status indicators")
+root.items.append(f'(sheet (at 150 158) (size 102 25) (stroke (width 0.254) (type default)) (fill (color 0 0 0 0)) (uuid "{status.id}") (property "Sheetname" "String status indicators" (at 150 157 0) (effects (font (size 1.27 1.27)) (justify left bottom))) (property "Sheetfile" "string-status.kicad_sch" (at 150 184 0) (effects (font (size 1 1)) (justify left top))))')
+block('SK6812B', [(2,'DIN','input'),(1,'GND','power_in')],
+      [(4,'DOUT','output'),(3,'VDD','power_in')],12)
+status.note(25,22,'GP20 drives three status pixels in string order. The controller sets the colors.',1.3)
+status.note(25,181,'Place C53–C55 beside the corresponding LED VDD/GND pads.',1.3)
+status.note(175,227,'Place C58 where 5 V enters the status LED chain.',1.3)
+place(status,'TXU0101','U8','TXU0101DBVR',(100, 58),['3V3', 'GND', 'STATUS_RGB_GPIO', 'STATUS_RGB_1', '3V3', 'LED_5V'],'Package_TO_SOT_SMD:SOT-23-6',(112, 14),'TXU0101DBVR')
+place(status,'SK6812B','D7','SK6812-B / String 1',(90, 127),['GND', 'STATUS_RGB_1', 'LED_5V', 'STATUS_RGB_2'],'LED_SMD:LED_OPSCO_SK6812_PLCC4_5.0x5.0mm_P3.1mm',(108, 34),'SK6812-B')
+place(status,'C','C53','100n / LED bypass',(90, 162),['LED_5V', 'GND'],'Capacitor_SMD:C_0805_2012Metric',(116, 34),'')
+place(status,'SK6812B','D8','SK6812-B / String 2',(216, 127),['GND', 'STATUS_RGB_2', 'LED_5V', 'STATUS_RGB_3'],'LED_SMD:LED_OPSCO_SK6812_PLCC4_5.0x5.0mm_P3.1mm',(108, 45),'SK6812-B')
+place(status,'C','C54','100n / LED bypass',(216, 162),['LED_5V', 'GND'],'Capacitor_SMD:C_0805_2012Metric',(116, 45),'')
+place(status,'SK6812B','D9','SK6812-B / String 3',(342, 127),['GND', 'STATUS_RGB_3', 'LED_5V', None],'LED_SMD:LED_OPSCO_SK6812_PLCC4_5.0x5.0mm_P3.1mm',(108, 56),'SK6812-B')
+place(status,'C','C55','100n / LED bypass',(342, 162),['LED_5V', 'GND'],'Capacitor_SMD:C_0805_2012Metric',(116, 56),'')
+place(status,'C','C56','100n / U8 VCCA',(220, 49),['3V3', 'GND'],'Capacitor_SMD:C_0805_2012Metric',(118, 10),'')
+place(status,'C','C57','100n / U8 VCCB',(310, 49),['LED_5V', 'GND'],'Capacitor_SMD:C_0805_2012Metric',(118, 15),'')
+place(status,'C','C58','10u / status rail bulk',(220, 210),['LED_5V', 'GND'],'Capacitor_SMD:C_1206_3216Metric',(118, 20),'')
+for sheet in (root,power,control,io,protection,status): sheet.save()
 (O/'HeadUnit.kicad_sym').write_text('(kicad_symbol_lib (version 20241209) (generator "kicad_symbol_editor") '+''.join(v[1].replace('"Review:', '"',1) for v in D.values())+')')
 (O/'sym-lib-table').write_text('(sym_lib_table (version 7) (lib (name "Review")(type "KiCad")(uri "${KIPRJMOD}/HeadUnit.kicad_sym")(options "")(descr "Head unit symbols")))')
 b=k.BOARD()
@@ -277,6 +336,8 @@ for ref,(value,footprint,pos,rot,pins,mpn) in parts.items():
  lib,name=footprint.split(':')
  f=k.FootprintLoad(str(custom.resolve() if lib=='HeadUnit' else F/(lib+'.pretty')),name)
  if f is None: raise ValueError(footprint)
+ if footprint == 'Fuse:Fuse_Littelfuse-NANO2-451_453':
+  f.Models()[0].m_Filename = '${KIPRJMOD}/models/Fuse_Littelfuse-NANO2-451_453.step'
  f.SetFPIDAsString(footprint)
  f.SetReference(ref); f.SetValue(value); f.Value().SetText(value)
  if ref.startswith('TP'): f.SetAttributes(f.GetAttributes() & ~k.FP_EXCLUDE_FROM_BOM)
@@ -303,7 +364,7 @@ def label(txt,xy,sz=1):
  t=k.PCB_TEXT(b);t.SetText(txt);t.SetPosition(point(*xy));t.SetLayer(k.F_SilkS);t.SetTextSize(point(sz,sz));t.SetTextThickness(k.FromMM(.15));b.Add(t)
 for i,x in enumerate([19.5,43,63],1):
  label(f'STR {i}',(x-7.8,7),.85)
- label('D  +  -',(x,8.85),.8)
+ label('+  D  -',(x,8.85),.8)
 label('LED HEAD UNIT / REV 1',(19,64),1.25)
 label('RF',(13,44.5),.8)
 label('USB',(60,44.5))
@@ -316,7 +377,6 @@ label('I0 SDA',(12.2,36.6),.8)
 label('TR SDA',(4.2,25.5),.8)
 label('I0 SCL',(14.2,29),.8)
 label('TR SCL',(4.2,33),.8)
-label('GP1',(56,34.5),.8)
 label('J5 SW LOGIC',(82,60.2),0.85)
 label('MOD1 POLOLU',(87,55.7),.85)
 label('FAULT',(88.7,64),.8)
@@ -339,7 +399,7 @@ for i,x in enumerate([19.5,43,63],1):
  for dx in [-.66,.66]:
   for y in [25.4,26.7]: via(RAIL,x+dx,y,.80,.4)
  track(f'S{i}_SHUNT_HI',k.F_Cu,1.9,z,pxy(f'R{10+i}',1))
- track(f'S{i}_5V',k.F_Cu,1.9,pxy(f'R{10+i}',2),pxy(f'J{20+i}',2))
+ track(f'S{i}_5V',k.F_Cu,1.9,pxy(f'R{10+i}',2),pxy(f'J{20+i}',3))
 track(RAIL,k.B_Cu,4.8,(19.5,25.8),(63,25.8),(64,56),(60.92,60),pxy('J3',2))
 # RPW power pads fan out on top copper. The bypass output changes layers through six vias.
 track('BAT_RAW',k.F_Cu,.3,(85.75,8.45),(85.75,9.15),(84.6,10.3))
@@ -351,13 +411,13 @@ for x in (86.95,87.85):
  for y in (10.6,11.5,12.4):
   via('EXT_5V',x,y,.76,.4)
 track('EXT_5V',k.B_Cu,1.9,(87.4,10.6),(87.4,12.4),(84.55,15.25))
-track('EXT_5V',k.B_Cu,4.2,(84.55,15.25),(81,21.4),(81,24),(76.8,28.2),(76.8,53.2),(75,55),(75,70.35),(55.84,70.35),pxy('J3',3))
+track('EXT_5V',k.B_Cu,4.2,(84.55,15.25),(81,21.4),(81,24),(76.8,28.2),(76.8,53.2),(75,55),(75,70.35),(55.84,70.35),pxy('J3',1))
 # Each regulator output contact contributes to the common 4 mm trunk.
 for upper, lower in [(9,3),(10,4)]:
  track('BUCK_5V',k.F_Cu,1.9,pxy('MOD1',upper),pxy('MOD1',lower))
 track('BUCK_5V',k.F_Cu,1.9,pxy('MOD1',3),(85.43,55),(86.7,56.27))
 track('BUCK_5V',k.F_Cu,1.9,pxy('MOD1',4),(87.97,55),(86.7,56.27))
-track('BUCK_5V',k.F_Cu,4.0,(86.7,56.27),(79.5,56.27),(74.77,61),(69,61),pxy('J3',1))
+track('BUCK_5V',k.F_Cu,4.0,(86.7,56.27),(79.5,56.27),(74.77,61),(69,61),pxy('J3',3))
 track('BAT_RAW',k.F_Cu,2.4,pxy('J1',2),(89,29),(96,36),(96,47.24),pxy('MOD1',12))
 track('BAT_RAW',k.F_Cu,1.9,pxy('MOD1',12),pxy('MOD1',6))
 # Carry the fault output between the regulator header columns on In2.Cu.
