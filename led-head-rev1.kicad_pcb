@@ -153,6 +153,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/2b87c76b-6772-453a-bf86-09da065df480")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -214,6 +223,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pintype "passive")
 			(uuid "214e4a6e-cc3c-4b31-a0ec-6e57895c71ab")
 		)
 		(pad "2" smd roundrect
@@ -222,6 +232,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "d9e6e132-b83d-4817-a1e6-9d58d9a919a0")
 		)
 		(embedded_fonts no)
@@ -289,6 +300,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/91a75ea8-5797-4f0f-8be1-27d7e84efd15/a715a151-7b61-430a-83e6-3d53759cc180")
+		(sheetname "/String status indicators/")
+		(sheetfile "string-status.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "4" "3")
 			)
 		)
 		(attr smd)
@@ -493,6 +513,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "power_in")
 			(uuid "6a262482-1109-494a-8f12-190b333db3db")
 		)
 		(pad "2" smd roundrect
@@ -501,6 +523,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "STATUS_RGB_1")
+			(pinfunction "DIN_2")
+			(pintype "input")
 			(uuid "dcdbf143-b346-46fa-88f9-8cd097c4e817")
 		)
 		(pad "3" smd roundrect
@@ -509,6 +533,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "LED_5V")
+			(pinfunction "VDD_3")
+			(pintype "power_in")
 			(uuid "6b20358a-54ed-4fdb-b65c-4e10e6440a0a")
 		)
 		(pad "4" smd roundrect
@@ -517,6 +543,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "STATUS_RGB_2")
+			(pinfunction "DOUT_4")
+			(pintype "output")
 			(uuid "4d06b4ed-4fca-4dec-8486-08128e32a131")
 		)
 		(embedded_fonts no)
@@ -596,6 +624,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/f99a51d8-8703-412c-aa86-6c4384ed6723")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -657,6 +694,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S2_5V")
+			(pintype "passive")
 			(uuid "cec266ed-021b-4174-83e8-7d0132bb7d4d")
 		)
 		(pad "2" smd roundrect
@@ -665,6 +703,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "719ef6ca-f1e0-46b2-89ca-1917edad4bc4")
 		)
 		(embedded_fonts no)
@@ -742,6 +781,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/50d835c1-e933-4232-bc41-8bbe5168e3b5")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "6" "5" "4")
 			)
 		)
 		(attr smd)
@@ -967,6 +1015,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "VCCA_1")
+			(pintype "power_in")
 			(uuid "8c140ac2-f738-460c-b6c3-5c01d389e241")
 		)
 		(pad "2" smd roundrect
@@ -975,6 +1025,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "power_in")
 			(uuid "b4b50b56-a718-426b-846c-7f61408d3150")
 		)
 		(pad "3" smd roundrect
@@ -983,6 +1035,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GP6")
+			(pinfunction "A_3")
+			(pintype "input")
 			(uuid "f9db30fe-5ac7-41ab-9f69-141967151645")
 		)
 		(pad "4" smd roundrect
@@ -991,6 +1045,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S3_BUF")
+			(pinfunction "Y_4")
+			(pintype "output")
 			(uuid "2b86d864-3b1c-4515-8143-d2e0e569c967")
 		)
 		(pad "5" smd roundrect
@@ -999,6 +1055,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "OE_5")
+			(pintype "input")
 			(uuid "e8f8d9bd-240f-4161-ac4d-0d8af308a123")
 		)
 		(pad "6" smd roundrect
@@ -1007,6 +1065,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S3_5V")
+			(pinfunction "VCCB_6")
+			(pintype "power_in")
 			(uuid "52cf6655-c381-44e3-b894-bafdbcbd52e4")
 		)
 		(embedded_fonts no)
@@ -1086,6 +1146,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/8246d0bb-4fed-4c8a-970b-89890bd82de1")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1147,6 +1216,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "S3_BUF")
+			(pintype "passive")
 			(uuid "0534315d-65e3-40ce-b5a4-57d390801861")
 		)
 		(pad "2" smd roundrect
@@ -1155,6 +1225,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "S3_DATA")
+			(pintype "passive")
 			(uuid "8a4a24a1-9dfe-4b87-9a31-3a1db1a2be9c")
 		)
 		(embedded_fonts no)
@@ -1234,6 +1305,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/1abfef19-73d8-4e05-8a45-5f3d05f809d8")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1295,6 +1375,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.204082)
 			(net "S1_SHUNT_HI")
+			(pintype "passive")
 			(uuid "9ac419f6-2dbd-4679-9601-377b711788ba")
 		)
 		(pad "2" smd roundrect
@@ -1303,6 +1384,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.204082)
 			(net "S1_5V")
+			(pintype "passive")
 			(uuid "8fcfd9d4-7593-48a5-80bb-0fd7701c2671")
 		)
 		(embedded_fonts no)
@@ -1380,6 +1462,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/55cf64e0-d8a3-4863-9cf1-b535b98be986")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "6" "5" "4")
 			)
 		)
 		(attr smd)
@@ -1605,6 +1696,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "VCCA_1")
+			(pintype "power_in")
 			(uuid "c239f365-2708-46cd-a8f9-5ed5c51bca11")
 		)
 		(pad "2" smd roundrect
@@ -1613,6 +1706,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "power_in")
 			(uuid "6c1442be-83ff-4cc7-b939-f5b09c3a6c73")
 		)
 		(pad "3" smd roundrect
@@ -1621,6 +1716,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GP5")
+			(pinfunction "A_3")
+			(pintype "input")
 			(uuid "93d815a6-3ca1-4c90-8fc5-5633b0aa74c0")
 		)
 		(pad "4" smd roundrect
@@ -1629,6 +1726,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S2_BUF")
+			(pinfunction "Y_4")
+			(pintype "output")
 			(uuid "15e0f750-2f45-4b00-9bc8-301fec779522")
 		)
 		(pad "5" smd roundrect
@@ -1637,6 +1736,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "OE_5")
+			(pintype "input")
 			(uuid "3ab639a6-34d1-44f3-beca-bb0dd7478d9e")
 		)
 		(pad "6" smd roundrect
@@ -1645,6 +1746,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S2_5V")
+			(pinfunction "VCCB_6")
+			(pintype "power_in")
 			(uuid "10fce8cd-aeda-45c6-8b23-f080f983d585")
 		)
 		(embedded_fonts no)
@@ -1724,6 +1827,15 @@
 				)
 			)
 		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/95812572-0c14-436e-a6dd-e1a9e8dece6f")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1785,6 +1897,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BAT_SENSE_SW")
+			(pintype "passive")
 			(uuid "a90a4a04-10bc-40fd-8bf9-e84048ef7a15")
 		)
 		(pad "2" smd roundrect
@@ -1793,6 +1906,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BAT_ADC")
+			(pintype "passive")
 			(uuid "eb7f8633-b9e7-4a86-a12b-9f42127b1865")
 		)
 		(embedded_fonts no)
@@ -1872,6 +1986,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/5e2bc105-52d6-4ea5-a4fd-e7f9bf2d7b22")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1933,6 +2056,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "STATUS_3V3")
+			(pintype "passive")
 			(uuid "84ec8dfe-58ca-4a3a-85e5-e12ff84e2bec")
 		)
 		(pad "2" smd roundrect
@@ -1941,6 +2065,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BATT_SEL_N")
+			(pintype "passive")
 			(uuid "931f050f-58e1-4e38-8c23-940a54e694da")
 		)
 		(embedded_fonts no)
@@ -2018,6 +2143,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/5f3e1c24-f36c-4717-a7c9-e85185703793")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
 			)
 		)
 		(attr through_hole)
@@ -2317,6 +2451,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.096154)
 			(net "EXT_5V")
+			(pinfunction "BUCK_5V_1")
+			(pintype "passive")
 			(uuid "bb1fe641-bfd5-4e78-8567-cd1c3abc44e0")
 		)
 		(pad "2" thru_hole circle
@@ -2326,6 +2462,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "LED_5V")
+			(pinfunction "RAIL_RETURN_2")
+			(pintype "passive")
 			(uuid "fc518d00-3fed-4d5d-9d78-a5ecd1201228")
 		)
 		(pad "3" thru_hole circle
@@ -2335,6 +2473,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BUCK_5V")
+			(pinfunction "EXT_5V_3")
+			(pintype "passive")
 			(uuid "6733201b-659e-44a8-851d-42061ed1e68d")
 		)
 		(embedded_fonts no)
@@ -2412,6 +2552,15 @@
 				)
 			)
 		)
+		(path "/91a75ea8-5797-4f0f-8be1-27d7e84efd15/887462d1-fb5c-497b-acb9-8a052ec537e3")
+		(sheetname "/String status indicators/")
+		(sheetfile "string-status.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2473,6 +2622,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "LED_5V")
+			(pintype "passive")
 			(uuid "9c90dbaf-ea99-451c-960f-865ea8a92571")
 		)
 		(pad "2" smd roundrect
@@ -2481,6 +2631,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "80f0c779-6181-4419-8331-8e6a05ae088f")
 		)
 		(embedded_fonts no)
@@ -2560,6 +2711,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/2833aa7b-aacb-4054-b7d5-4eaa96b39f30")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2621,6 +2781,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "S2_BUF")
+			(pintype "passive")
 			(uuid "d60fc5c5-7f93-4922-8e4c-704cecfcd815")
 		)
 		(pad "2" smd roundrect
@@ -2629,6 +2790,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "S2_DATA")
+			(pintype "passive")
 			(uuid "c4b6f0d3-9515-40b1-ad79-a96e0f70d785")
 		)
 		(embedded_fonts no)
@@ -2706,6 +2868,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/b09f3d27-8375-4289-a3b3-2de9320a1cdb")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "6" "5" "4")
 			)
 		)
 		(attr smd)
@@ -2931,6 +3102,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "VCCA_1")
+			(pintype "power_in")
 			(uuid "f5ae6598-4945-4eaa-ab08-d51d0227f6fe")
 		)
 		(pad "2" smd roundrect
@@ -2939,6 +3112,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "power_in")
 			(uuid "6384bf57-6546-434b-bf69-263a7b35d4f4")
 		)
 		(pad "3" smd roundrect
@@ -2947,6 +3122,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GP4")
+			(pinfunction "A_3")
+			(pintype "input")
 			(uuid "cc2d13cd-a4dc-46fe-a67f-965b1bf29fc1")
 		)
 		(pad "4" smd roundrect
@@ -2955,6 +3132,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S1_BUF")
+			(pinfunction "Y_4")
+			(pintype "output")
 			(uuid "c8a509f1-4d45-4795-8d16-216d79bafc37")
 		)
 		(pad "5" smd roundrect
@@ -2963,6 +3142,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "OE_5")
+			(pintype "input")
 			(uuid "d9810e58-47e0-4e63-b795-be42b7bc98b6")
 		)
 		(pad "6" smd roundrect
@@ -2971,6 +3152,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S1_5V")
+			(pinfunction "VCCB_6")
+			(pintype "power_in")
 			(uuid "a3cf6fe5-aa21-4349-b016-cc8e4ec8789d")
 		)
 		(embedded_fonts no)
@@ -3048,6 +3231,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/f5c53e37-9636-4b24-afa2-49eb4bfdac5e")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
 			)
 		)
 		(attr smd)
@@ -3323,6 +3515,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "G_1")
+			(pintype "input")
 			(uuid "cf618c69-9728-4729-a8c6-7d074f8ad248")
 		)
 		(pad "2" smd roundrect
@@ -3331,6 +3525,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "S_2")
+			(pintype "passive")
 			(uuid "a816b247-e7b3-47f4-ace6-7926ff915cfc")
 		)
 		(pad "3" smd roundrect
@@ -3339,6 +3535,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "ADC_GATE")
+			(pinfunction "D_3")
+			(pintype "passive")
 			(uuid "ac510801-37b6-41d3-91f2-ad656b14f697")
 		)
 		(embedded_fonts no)
@@ -3416,6 +3614,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/c5abe2fd-7d01-4bf7-9945-14986cd5be08")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -3559,6 +3766,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "I2C_SCL")
+			(pinfunction "SIGNAL_1")
+			(pintype "passive")
 			(uuid "a09bf4ac-ef03-4d00-9380-9ef99190c91f")
 		)
 		(pad "2" thru_hole circle
@@ -3568,6 +3777,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "2c17fa61-ade9-4e45-88b1-3afeba53394f")
 		)
 		(embedded_fonts no)
@@ -3746,6 +3957,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/207fdbc6-6de2-411a-bc8d-abb80c7fce7a")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1")
 			)
 		)
 		(attr smd)
@@ -3937,6 +4157,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BATT_SEL_N")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "d78fc8e5-e40c-4fd7-94a0-dc435746f498")
 		)
 		(pad "2" smd roundrect
@@ -3945,6 +4167,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "PICO_BATT_SEL_N")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "14eda2b6-0ec3-4b88-8d70-a94376eafdbf")
 		)
 		(embedded_fonts no)
@@ -4021,6 +4245,17 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/104d9829-d0c7-4fa0-a16c-4e55c2288027")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15"
+					"16" "17" "18" "19" "20"
 				)
 			)
 		)
@@ -4194,6 +4429,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "UART0_TX")
+			(pinfunction "GP0_1")
+			(pintype "passive")
 			(uuid "d22c1295-c558-424a-99d7-7b95940c6810")
 		)
 		(pad "2" thru_hole circle
@@ -4203,6 +4440,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "UART0_RX")
+			(pinfunction "GP1_2")
+			(pintype "passive")
 			(uuid "8e06c83b-85ea-4d4c-90e2-bc71176be22c")
 		)
 		(pad "3" thru_hole circle
@@ -4212,6 +4451,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_3")
+			(pintype "passive")
 			(uuid "10e7fc3a-7632-4a4d-b5ac-aaa7a12d3214")
 		)
 		(pad "4" thru_hole circle
@@ -4221,6 +4462,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J10-GP2-Pad4)")
+			(pinfunction "GP2_4")
+			(pintype "passive+no_connect")
 			(uuid "f4fa2104-5fd7-4a20-bb14-fdfa21843ef3")
 		)
 		(pad "5" thru_hole circle
@@ -4230,6 +4473,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J10-GP3-Pad5)")
+			(pinfunction "GP3_5")
+			(pintype "passive+no_connect")
 			(uuid "f029556b-8a2a-42c7-bf9c-26be8d8f560c")
 		)
 		(pad "6" thru_hole circle
@@ -4239,6 +4484,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GP4")
+			(pinfunction "GP4_6")
+			(pintype "passive")
 			(uuid "51e3c4fd-0b7d-425d-96dd-4cf849010561")
 		)
 		(pad "7" thru_hole circle
@@ -4248,6 +4495,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GP5")
+			(pinfunction "GP5_7")
+			(pintype "passive")
 			(uuid "029303fa-b9a7-465d-adae-740f1eb08bfd")
 		)
 		(pad "8" thru_hole circle
@@ -4257,6 +4506,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_8")
+			(pintype "passive")
 			(uuid "2474c2ed-2db7-4d52-885d-ae7bf7858996")
 		)
 		(pad "9" thru_hole circle
@@ -4266,6 +4517,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GP6")
+			(pinfunction "GP6_9")
+			(pintype "passive")
 			(uuid "b931c4bc-1e1b-4fe7-8147-cf760c4dc389")
 		)
 		(pad "10" thru_hole circle
@@ -4275,6 +4528,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PICO_BATT_SEL_N")
+			(pinfunction "GP7_10")
+			(pintype "passive")
 			(uuid "c0defa5b-fec5-41cc-b03c-aeefa657b000")
 		)
 		(pad "11" thru_hole circle
@@ -4284,6 +4539,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "I2C_SDA")
+			(pinfunction "GP8_11")
+			(pintype "passive")
 			(uuid "40e033fd-bb25-4422-b644-0bfc6a6b52f8")
 		)
 		(pad "12" thru_hole circle
@@ -4293,6 +4550,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "I2C_SCL")
+			(pinfunction "GP9_12")
+			(pintype "passive")
 			(uuid "aebf2eb7-5fc8-4b62-b73c-72d9e322d3b9")
 		)
 		(pad "13" thru_hole circle
@@ -4302,6 +4561,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_13")
+			(pintype "passive")
 			(uuid "e0815c25-47d6-422c-b6d8-7ab09bd0c060")
 		)
 		(pad "14" thru_hole circle
@@ -4311,6 +4572,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PICO_PG")
+			(pinfunction "GP10_14")
+			(pintype "passive")
 			(uuid "e74ef3be-290f-4089-9b13-885ec1e37ad8")
 		)
 		(pad "15" thru_hole circle
@@ -4320,6 +4583,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J10-GP11-Pad15)")
+			(pinfunction "GP11_15")
+			(pintype "passive+no_connect")
 			(uuid "e82bf598-804a-42f5-8489-d0a827378b62")
 		)
 		(pad "16" thru_hole circle
@@ -4328,7 +4593,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "TRELLIS_SCL")
+			(net "unconnected-(J10-GP12-Pad16)")
+			(pinfunction "GP12_16")
+			(pintype "passive+no_connect")
 			(uuid "b36b10dd-c0e6-4018-8ffe-a987592a7710")
 		)
 		(pad "17" thru_hole circle
@@ -4337,7 +4604,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "TRELLIS_SDA")
+			(net "unconnected-(J10-GP13-Pad17)")
+			(pinfunction "GP13_17")
+			(pintype "passive+no_connect")
 			(uuid "f397689b-7c40-48b9-87b4-80ab2fbebaac")
 		)
 		(pad "18" thru_hole circle
@@ -4347,6 +4616,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_18")
+			(pintype "passive")
 			(uuid "5d15d201-aa42-4b4a-a8bc-c570ebe4d1d7")
 		)
 		(pad "19" thru_hole circle
@@ -4355,7 +4626,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(J10-GP14-Pad19)")
+			(net "TRELLIS_SDA")
+			(pinfunction "GP14_19")
+			(pintype "passive")
 			(uuid "b2f3fbd4-3da2-4742-abcd-f3d61c26b2c7")
 		)
 		(pad "20" thru_hole circle
@@ -4364,7 +4637,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(J10-GP15-Pad20)")
+			(net "TRELLIS_SCL")
+			(pinfunction "GP15_20")
+			(pintype "passive")
 			(uuid "5d342725-402a-45e3-8a1b-80f449f75443")
 		)
 		(embedded_fonts no)
@@ -4453,6 +4728,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/b270611e-5e17-477f-ae95-0fd781ae1240")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
 			)
 		)
 		(attr smd)
@@ -4728,6 +5012,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "ADC_GATE")
+			(pinfunction "G_1")
+			(pintype "input")
 			(uuid "df5d59d1-9450-45aa-aa69-3aa8d4ea6a8a")
 		)
 		(pad "2" smd roundrect
@@ -4736,6 +5022,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "VRP")
+			(pinfunction "S_2")
+			(pintype "passive")
 			(uuid "ad44c680-5538-4e26-a561-eefbd7e12af2")
 		)
 		(pad "3" smd roundrect
@@ -4744,6 +5032,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BAT_SENSE_SW")
+			(pinfunction "D_3")
+			(pintype "passive")
 			(uuid "734c3a9d-a93c-4ff5-8c91-d73e042ccb9f")
 		)
 		(embedded_fonts no)
@@ -4821,6 +5111,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/dff0963d-70d5-45b5-87c8-105cae9db35c")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -4964,6 +5263,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "I2C_SDA")
+			(pinfunction "SIGNAL_1")
+			(pintype "passive")
 			(uuid "7c35b611-0d5a-44bd-8a7f-b99d3b84600d")
 		)
 		(pad "2" thru_hole circle
@@ -4973,6 +5274,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "be8a9bc6-dcc4-452d-95b6-2642e81ec41e")
 		)
 		(embedded_fonts no)
@@ -5042,6 +5345,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/96188d6c-4e82-43ad-b59c-4bdce9f79e93")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1")
 			)
 		)
 		(attr smd)
@@ -5233,6 +5545,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1388888889)
 			(net "PICO_VSYS")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "2672369d-15f2-4ab4-a8b2-7cfdf23d9084")
 		)
 		(pad "2" smd roundrect
@@ -5241,6 +5555,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1388888889)
 			(net "LED_5V")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "bc715b60-63ef-4f1d-b431-24500042dec8")
 		)
 		(embedded_fonts no)
@@ -5318,6 +5634,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/3ce45741-b563-4075-a732-a2328c105bb4")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4")
 			)
 		)
 		(attr through_hole)
@@ -5684,6 +6009,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.208333)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "passive")
 			(uuid "f6508c4d-8b60-4be7-af98-c5c80be09e42")
 		)
 		(pad "2" thru_hole oval
@@ -5693,6 +6020,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "3V3")
+			(pinfunction "3V3_2")
+			(pintype "passive")
 			(uuid "89c82cc6-efe5-45da-9e08-dee867e6ad0e")
 		)
 		(pad "3" thru_hole oval
@@ -5702,6 +6031,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "TRELLIS_SDA")
+			(pinfunction "SDA_3")
+			(pintype "passive")
 			(uuid "e7092b9b-82f0-4a33-8707-1da45b54267c")
 		)
 		(pad "4" thru_hole oval
@@ -5711,6 +6042,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "TRELLIS_SCL")
+			(pinfunction "SCL_4")
+			(pintype "passive")
 			(uuid "dff4d41b-7e72-46d9-a1ec-655e56b53758")
 		)
 		(embedded_fonts no)
@@ -5898,6 +6231,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/948d4bab-0544-415d-81ed-5a24e0e51653")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5959,6 +6301,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "S1_BUF")
+			(pintype "passive")
 			(uuid "88385d4e-6c24-4ccc-8979-15fc95b0dfd9")
 		)
 		(pad "2" smd roundrect
@@ -5967,6 +6310,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "S1_DATA")
+			(pintype "passive")
 			(uuid "8bc17ebf-0b69-4b51-a495-1f8540fb3622")
 		)
 		(embedded_fonts no)
@@ -6044,6 +6388,15 @@
 				)
 			)
 		)
+		(path "/91a75ea8-5797-4f0f-8be1-27d7e84efd15/9fc1f6be-e025-4325-89fe-0732e5d7f4bf")
+		(sheetname "/String status indicators/")
+		(sheetfile "string-status.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6105,6 +6458,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pintype "passive")
 			(uuid "930a6a23-2325-4733-809d-462425ae158b")
 		)
 		(pad "2" smd roundrect
@@ -6113,6 +6467,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "3e652407-59de-488a-bd3b-e2afbdb356ad")
 		)
 		(embedded_fonts no)
@@ -6192,6 +6547,15 @@
 				)
 			)
 		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/3580080a-bdce-470b-9ae0-49830f6c0ba0")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6253,6 +6617,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BAT_ADC")
+			(pintype "passive")
 			(uuid "98f9009f-c9b8-4bcf-b23f-3b0eecef941f")
 		)
 		(pad "2" smd roundrect
@@ -6261,6 +6626,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "GND")
+			(pintype "passive")
 			(uuid "c425c817-2c1c-4987-bf7e-ae4c5228a2b1")
 		)
 		(embedded_fonts no)
@@ -6340,6 +6706,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/7269d79a-3588-4073-9fb2-02b85d0ddcf9")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6401,6 +6776,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net "S3_5V")
+			(pintype "passive")
 			(uuid "8593be4a-96af-4796-9eef-f3d7170479f4")
 		)
 		(pad "2" smd roundrect
@@ -6409,6 +6785,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net "GND")
+			(pintype "passive")
 			(uuid "6e0a723e-d68b-48f6-b6b6-1bdad189a010")
 		)
 		(embedded_fonts no)
@@ -6488,6 +6865,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/ca5c1240-d7cd-4df4-8eca-7fe19af66af2")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6549,6 +6935,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S3_5V")
+			(pintype "passive")
 			(uuid "22c16efc-3187-46df-9878-caaca93959fc")
 		)
 		(pad "2" smd roundrect
@@ -6557,6 +6944,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "cdda3c9b-d361-411b-8f82-8bd08025b6a7")
 		)
 		(embedded_fonts no)
@@ -6634,6 +7022,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/806a49e7-2b28-4767-b840-9e152be79af0")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -6777,6 +7174,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "TRELLIS_SCL")
+			(pinfunction "SIGNAL_1")
+			(pintype "passive")
 			(uuid "447af162-18b6-4c5c-805c-4ccd4b56c4ce")
 		)
 		(pad "2" thru_hole circle
@@ -6786,6 +7185,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "c91ae47b-b9f8-4b46-84ed-6c192e58b014")
 		)
 		(embedded_fonts no)
@@ -6969,6 +7370,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/8aa694d9-dae2-4079-8d62-6e24e0a9276b")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6")
 			)
 		)
 		(attr through_hole)
@@ -7415,6 +7825,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.208333)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "passive")
 			(uuid "058c9f91-94a6-4fee-9ccd-d99511f865b8")
 		)
 		(pad "2" thru_hole oval
@@ -7424,6 +7836,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "LED_5V")
+			(pinfunction "+5V_2")
+			(pintype "passive")
 			(uuid "b1af1e9b-ae37-4f78-b08c-a2fe0fd4a65d")
 		)
 		(pad "3" thru_hole oval
@@ -7433,6 +7847,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_MISO")
+			(pinfunction "MISO_3")
+			(pintype "passive")
 			(uuid "bea911f8-d622-479b-b485-f562b7eda5ec")
 		)
 		(pad "4" thru_hole oval
@@ -7442,6 +7858,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_CSn")
+			(pinfunction "CSn_4")
+			(pintype "passive")
 			(uuid "33bea20e-34e4-45c9-91d6-a8860508476f")
 		)
 		(pad "5" thru_hole oval
@@ -7451,6 +7869,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_SCK")
+			(pinfunction "SCK_5")
+			(pintype "passive")
 			(uuid "fc2632ea-115d-4bc2-be04-01591eb9a797")
 		)
 		(pad "6" thru_hole oval
@@ -7460,6 +7880,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_MOSI")
+			(pinfunction "MOSI_6")
+			(pintype "passive")
 			(uuid "38c99a33-cc39-41d3-a771-4236d36b22bc")
 		)
 		(embedded_fonts no)
@@ -7537,6 +7959,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/b2701e63-d8ce-4c9f-a472-6b342cafab1c")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3" "4" "5")
 			)
 		)
 		(attr smd)
@@ -7812,6 +8243,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "passive")
 			(uuid "9cd61995-bb8b-4702-89a5-f4d4e41aa800")
 		)
 		(pad "2" smd roundrect
@@ -7820,6 +8253,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BAT_RAW")
+			(pinfunction "IN_2")
+			(pintype "passive")
 			(uuid "1d7dbb2b-63ba-4803-8e6d-fdce95391bda")
 		)
 		(pad "3" smd roundrect
@@ -7828,6 +8263,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "STATUS_3V3")
+			(pinfunction "OUT_3")
+			(pintype "passive")
 			(uuid "93b7956c-7197-44f5-b5f6-63f759219a34")
 		)
 		(pad "4" smd roundrect
@@ -7836,6 +8273,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "NC_4")
+			(pintype "passive")
 			(uuid "5b99ceeb-29c0-45a5-b6bf-597609d468e7")
 		)
 		(pad "5" smd roundrect
@@ -7844,6 +8283,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "NC_5")
+			(pintype "passive")
 			(uuid "9696465a-f85e-4784-9fb7-dd102da9ad50")
 		)
 		(embedded_fonts no)
@@ -7923,6 +8364,15 @@
 				)
 			)
 		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/0e230e4c-96bf-443e-8486-c349f6ae28df")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7984,6 +8434,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "3V3")
+			(pintype "passive")
 			(uuid "6e6b8b96-dab9-4a6d-a5d5-d22877af733f")
 		)
 		(pad "2" smd roundrect
@@ -7992,6 +8443,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "PICO_PG")
+			(pintype "passive")
 			(uuid "7353d25d-6c3b-4f4d-b985-1c0cd39c4dbb")
 		)
 		(embedded_fonts no)
@@ -8071,6 +8523,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/4c2700a5-726e-46fb-aa2d-93265f10f69e")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8132,6 +8593,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BYPASS_DVDT")
+			(pintype "passive")
 			(uuid "7e6b3cef-42e0-45a4-a46b-74e3343b0771")
 		)
 		(pad "2" smd roundrect
@@ -8140,6 +8602,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "841ebb57-d033-4b12-8ce1-c1ef0b0fe877")
 		)
 		(embedded_fonts no)
@@ -8219,6 +8682,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/36f3c639-340c-4cf0-b6a2-f0349bd0c866")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8280,6 +8752,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BAT_RAW")
+			(pintype "passive")
 			(uuid "4ac425f0-884c-4ec4-befb-cc990cbfc084")
 		)
 		(pad "2" smd roundrect
@@ -8288,6 +8761,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BYPASS_OV")
+			(pintype "passive")
 			(uuid "2fc23c55-3f1e-4c52-b7cd-006a7af155db")
 		)
 		(embedded_fonts no)
@@ -8367,6 +8841,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/8bffa462-9a89-4fed-a4fc-2e2b6a5d05b3")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8428,6 +8911,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pintype "passive")
 			(uuid "0234816b-c4fc-4422-bf96-1b1ba1f34aca")
 		)
 		(pad "2" smd roundrect
@@ -8436,6 +8920,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "72d2a8a2-aea0-4c32-b09c-0eb7415873c5")
 		)
 		(embedded_fonts no)
@@ -8515,6 +9000,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/e786f467-bc5d-4c04-889b-ac2e6d71cefb")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8576,6 +9070,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BYPASS_EN")
+			(pintype "passive")
 			(uuid "2cedd3d6-abb8-4db8-a58a-870dfac2970b")
 		)
 		(pad "2" smd roundrect
@@ -8584,6 +9079,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "GND")
+			(pintype "passive")
 			(uuid "ad23c897-ebea-4d8a-a0f4-046a12581c2c")
 		)
 		(embedded_fonts no)
@@ -8660,6 +9156,17 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/df49b6db-790d-468f-b02c-99a7211a4239")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15"
+					"16" "17" "18" "19" "20"
 				)
 			)
 		)
@@ -8833,6 +9340,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_MISO")
+			(pinfunction "GP16_1")
+			(pintype "passive")
 			(uuid "b66a4991-73ef-4f35-9948-59b28f61b48c")
 		)
 		(pad "2" thru_hole circle
@@ -8842,6 +9351,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_CSn")
+			(pinfunction "GP17_2")
+			(pintype "passive")
 			(uuid "11c26d4e-e163-436a-9d3d-62d079e7644e")
 		)
 		(pad "3" thru_hole circle
@@ -8851,6 +9362,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_3")
+			(pintype "passive")
 			(uuid "47da8cfa-f916-47bc-bf98-5b9af2bc1631")
 		)
 		(pad "4" thru_hole circle
@@ -8860,6 +9373,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_SCK")
+			(pinfunction "GP18_4")
+			(pintype "passive")
 			(uuid "a7565680-1385-407b-b36e-5fd69b72233a")
 		)
 		(pad "5" thru_hole circle
@@ -8869,6 +9384,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_MOSI")
+			(pinfunction "GP19_5")
+			(pintype "passive")
 			(uuid "641045f0-5aaf-4ce7-ad7a-996a3ac9f7c1")
 		)
 		(pad "6" thru_hole circle
@@ -8878,6 +9395,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "STATUS_RGB_GPIO")
+			(pinfunction "GP20_6")
+			(pintype "passive")
 			(uuid "f5c2109e-24a7-470c-9a67-3190ce0db648")
 		)
 		(pad "7" thru_hole circle
@@ -8887,6 +9406,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J11-GP21-Pad7)")
+			(pinfunction "GP21_7")
+			(pintype "passive+no_connect")
 			(uuid "9bd59ce4-5af6-4b66-82e0-d79655ffc427")
 		)
 		(pad "8" thru_hole circle
@@ -8896,6 +9417,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_8")
+			(pintype "passive")
 			(uuid "f65f5bb5-9a25-45e7-a4cc-47bd4206664f")
 		)
 		(pad "9" thru_hole circle
@@ -8905,6 +9428,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J11-GP22-Pad9)")
+			(pinfunction "GP22_9")
+			(pintype "passive+no_connect")
 			(uuid "fda60cf8-2d6d-4e8f-af5a-aa13f45feea0")
 		)
 		(pad "10" thru_hole circle
@@ -8914,6 +9439,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PICO_RUN")
+			(pinfunction "RUN_10")
+			(pintype "passive")
 			(uuid "4cfa6887-ea96-4442-93ce-a565531aad25")
 		)
 		(pad "11" thru_hole circle
@@ -8923,6 +9450,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BAT_ADC")
+			(pinfunction "GP26_11")
+			(pintype "passive")
 			(uuid "90d3bd19-6a36-43ed-a456-006abfc98e5a")
 		)
 		(pad "12" thru_hole circle
@@ -8932,6 +9461,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PICO_ADC1")
+			(pinfunction "GP27_12")
+			(pintype "passive")
 			(uuid "4927fdb6-ca31-4887-87e9-110d024d2819")
 		)
 		(pad "13" thru_hole circle
@@ -8941,6 +9472,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "AGND_13")
+			(pintype "passive")
 			(uuid "668d5a3a-615e-414b-867d-6b4b693a058f")
 		)
 		(pad "14" thru_hole circle
@@ -8950,6 +9483,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PICO_ADC2")
+			(pinfunction "GP28_14")
+			(pintype "passive")
 			(uuid "6920bc16-d39d-4739-a8f3-ea71933ba8a3")
 		)
 		(pad "15" thru_hole circle
@@ -8959,6 +9494,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "ADC_VREF")
+			(pinfunction "ADC_VREF_15")
+			(pintype "passive")
 			(uuid "9a16e0af-eae1-449e-ba1c-3936ada5d983")
 		)
 		(pad "16" thru_hole circle
@@ -8968,6 +9505,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "3V3")
+			(pinfunction "3V3_OUT_16")
+			(pintype "passive")
 			(uuid "5ac6d5f1-1c17-499a-8c57-b472b821885f")
 		)
 		(pad "17" thru_hole circle
@@ -8977,6 +9516,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J11-3V3_EN-Pad17)")
+			(pinfunction "3V3_EN_17")
+			(pintype "passive+no_connect")
 			(uuid "6d1b6e20-cd9d-41e5-8e01-0d80b2d1473f")
 		)
 		(pad "18" thru_hole circle
@@ -8986,6 +9527,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_18")
+			(pintype "passive")
 			(uuid "b2dd9aee-954c-4a89-9893-e938285ea54a")
 		)
 		(pad "19" thru_hole circle
@@ -8995,6 +9538,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PICO_VSYS")
+			(pinfunction "VSYS_19")
+			(pintype "passive")
 			(uuid "afc20b31-e7c9-4c74-b8a4-fe0960c18f79")
 		)
 		(pad "20" thru_hole circle
@@ -9004,6 +9549,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J11-VBUS-Pad20)")
+			(pinfunction "VBUS_20")
+			(pintype "passive+no_connect")
 			(uuid "9fb5061e-d7de-41ba-b2ec-f0d762b1bb1f")
 		)
 		(embedded_fonts no)
@@ -9083,6 +9630,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/46ce6f60-572a-4483-81a6-7a664ba592c6")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9144,6 +9700,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "STATUS_3V3")
+			(pintype "passive")
 			(uuid "a82fa5ae-7452-4504-a4d7-be2c3720da64")
 		)
 		(pad "2" smd roundrect
@@ -9152,6 +9709,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "fdb8cb30-2128-4c41-89bf-be9be333e024")
 		)
 		(embedded_fonts no)
@@ -9339,6 +9897,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/284b40cb-c7c8-4a7d-9dd1-058fedbd1d95")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9400,6 +9967,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net "S1_5V")
+			(pintype "passive")
 			(uuid "07e9f2cb-2ece-4499-917b-e805360ab8af")
 		)
 		(pad "2" smd roundrect
@@ -9408,6 +9976,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net "GND")
+			(pintype "passive")
 			(uuid "6e52ba7c-bd8a-41bf-a9b9-cb03ef73a48b")
 		)
 		(embedded_fonts no)
@@ -9485,6 +10054,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/724977a5-1253-40e1-b62c-f62a8f7f4ae4")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "6" "3" "1" "2" "4" "5")
 			)
 		)
 		(attr smd)
@@ -9710,6 +10288,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "IN1_1")
+			(pintype "passive")
 			(uuid "6f03133b-0872-49cc-9149-85663b4195bf")
 		)
 		(pad "2" smd roundrect
@@ -9718,6 +10298,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "2646391c-0337-44bb-890d-415e55b315ab")
 		)
 		(pad "3" smd roundrect
@@ -9726,6 +10308,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BAT_DELAY_N")
+			(pinfunction "DELAY_3")
+			(pintype "passive")
 			(uuid "6dc8273a-14c5-479d-87dd-cb57e22e6ee8")
 		)
 		(pad "4" smd roundrect
@@ -9734,6 +10318,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BUCK_FAULT")
+			(pinfunction "OUT_4")
+			(pintype "passive")
 			(uuid "4df90bb6-8efe-4072-a285-4b3465c595c7")
 		)
 		(pad "5" smd roundrect
@@ -9742,6 +10328,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "STATUS_3V3")
+			(pinfunction "VCC_5")
+			(pintype "passive")
 			(uuid "7391c03f-adae-4766-931e-bf1eaf7f95bc")
 		)
 		(pad "6" smd roundrect
@@ -9750,6 +10338,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "PG")
+			(pinfunction "PG_6")
+			(pintype "passive")
 			(uuid "94412013-0da6-4426-96cf-5efbcb9002ee")
 		)
 		(embedded_fonts no)
@@ -9829,6 +10419,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/a0f72cf4-3d8f-48eb-9325-2292e8207348")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9890,6 +10489,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.204082)
 			(net "S3_SHUNT_HI")
+			(pintype "passive")
 			(uuid "f317796e-3975-4b39-9d18-aa2edf66b6e4")
 		)
 		(pad "2" smd roundrect
@@ -9898,6 +10498,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.204082)
 			(net "S3_5V")
+			(pintype "passive")
 			(uuid "99e5b416-a429-44ed-bd5b-f374420f2d5f")
 		)
 		(embedded_fonts no)
@@ -9977,6 +10578,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/8a25f326-3a3d-4847-8280-08a5b662ef69")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10038,6 +10648,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net "S2_5V")
+			(pintype "passive")
 			(uuid "85a038c9-db2a-4113-bd9a-8ffbe961b327")
 		)
 		(pad "2" smd roundrect
@@ -10046,6 +10657,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net "GND")
+			(pintype "passive")
 			(uuid "d452a629-cd1d-4dd6-a8b7-256aaa514400")
 		)
 		(embedded_fonts no)
@@ -10123,6 +10735,15 @@
 				)
 			)
 		)
+		(path "/91a75ea8-5797-4f0f-8be1-27d7e84efd15/783ab0c3-0c2b-4993-8252-281f1ca95b61")
+		(sheetname "/String status indicators/")
+		(sheetfile "string-status.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10184,6 +10805,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "LED_5V")
+			(pintype "passive")
 			(uuid "5ca61683-4ac8-40ba-987c-55d82d500213")
 		)
 		(pad "2" smd roundrect
@@ -10192,6 +10814,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "96992303-ed74-4044-9b4f-10d112384f53")
 		)
 		(embedded_fonts no)
@@ -10271,6 +10894,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/383b098c-a630-481f-a74e-3bff9442a3f0")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10332,6 +10964,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BYPASS_OV")
+			(pintype "passive")
 			(uuid "ba15de7d-cc1a-4678-a878-676b5c7b6976")
 		)
 		(pad "2" smd roundrect
@@ -10340,6 +10973,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "GND")
+			(pintype "passive")
 			(uuid "cbebbb0f-fa12-4d33-8d5e-c7ed5c9874b5")
 		)
 		(embedded_fonts no)
@@ -10419,6 +11053,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/5f4c0841-5f44-489e-bc71-4e04cdf22df7")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10480,6 +11123,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BAT_DELAY_N")
+			(pintype "passive")
 			(uuid "707d928d-0aaa-44af-80b0-3103590cd67c")
 		)
 		(pad "2" smd roundrect
@@ -10488,6 +11132,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "STATUS_3V3")
+			(pintype "passive")
 			(uuid "8893dc5e-964d-4d05-b9cc-6dc2ba70a683")
 		)
 		(embedded_fonts no)
@@ -10785,6 +11430,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/9fb263bd-d2dc-4f76-9e33-4557dcb2759f")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10846,6 +11500,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S1_5V")
+			(pintype "passive")
 			(uuid "5d24a920-e985-4b3e-8fc1-7ed4dcfdda7a")
 		)
 		(pad "2" smd roundrect
@@ -10854,6 +11509,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "1252477b-922b-47c3-b198-aa8eb4be0d95")
 		)
 		(embedded_fonts no)
@@ -10921,6 +11577,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/91a75ea8-5797-4f0f-8be1-27d7e84efd15/09c98f62-3d08-40b0-a716-2d90f1ea56a7")
+		(sheetname "/String status indicators/")
+		(sheetfile "string-status.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "4" "3")
 			)
 		)
 		(attr smd)
@@ -11125,6 +11790,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "power_in")
 			(uuid "11f4c51f-2b64-4b3f-9d88-58166358741e")
 		)
 		(pad "2" smd roundrect
@@ -11133,6 +11800,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "STATUS_RGB_2")
+			(pinfunction "DIN_2")
+			(pintype "input")
 			(uuid "8e675a0c-02a9-42f3-8e5e-12656e798e39")
 		)
 		(pad "3" smd roundrect
@@ -11141,6 +11810,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "LED_5V")
+			(pinfunction "VDD_3")
+			(pintype "power_in")
 			(uuid "646da3d9-e7b4-4b19-95f2-861aaca376b1")
 		)
 		(pad "4" smd roundrect
@@ -11149,6 +11820,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "STATUS_RGB_3")
+			(pinfunction "DOUT_4")
+			(pintype "output")
 			(uuid "a7683762-25de-4c96-be2c-d0bf68724864")
 		)
 		(embedded_fonts no)
@@ -11210,6 +11883,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/b85dfadf-edc5-4b1f-a5a6-a4402c9c984f")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12")
 			)
 		)
 		(attr through_hole)
@@ -11276,6 +11958,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VRP")
+			(pinfunction "VRP_1")
+			(pintype "passive")
 			(uuid "b1720e68-fe3f-4999-8718-b34d388876fc")
 		)
 		(pad "2" thru_hole circle
@@ -11285,6 +11969,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BUCK_EN")
+			(pinfunction "EN_2")
+			(pintype "passive")
 			(uuid "291b448e-d991-4d93-aac7-8f7a7a55b006")
 		)
 		(pad "3" thru_hole circle
@@ -11294,6 +11980,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BUCK_5V")
+			(pinfunction "VOUT_3")
+			(pintype "passive")
 			(uuid "804daea1-accc-4e7f-a1f0-78e832d266b3")
 		)
 		(pad "4" thru_hole circle
@@ -11303,6 +11991,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BUCK_5V")
+			(pinfunction "VOUT_4")
+			(pintype "passive")
 			(uuid "7ac57462-551a-453f-b87c-aef57264b623")
 		)
 		(pad "5" thru_hole circle
@@ -11312,6 +12002,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_5")
+			(pintype "passive")
 			(uuid "3379835c-f049-4fdd-8557-caabd17d6faa")
 		)
 		(pad "6" thru_hole circle
@@ -11321,6 +12013,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BAT_RAW")
+			(pinfunction "VIN_6")
+			(pintype "passive")
 			(uuid "c6fc0138-5990-4a01-bce4-cf17f94c7d08")
 		)
 		(pad "7" thru_hole circle
@@ -11330,6 +12024,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VRP")
+			(pinfunction "VRP_7")
+			(pintype "passive")
 			(uuid "8caf9b84-9592-4222-9cce-400768b20348")
 		)
 		(pad "8" thru_hole circle
@@ -11339,6 +12035,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PG")
+			(pinfunction "PG_8")
+			(pintype "passive")
 			(uuid "b8502c48-8cb1-4f50-977a-e4700f5112aa")
 		)
 		(pad "9" thru_hole circle
@@ -11348,6 +12046,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BUCK_5V")
+			(pinfunction "VOUT_9")
+			(pintype "passive")
 			(uuid "8176f9f6-f0e6-4471-8c53-1922abb58797")
 		)
 		(pad "10" thru_hole circle
@@ -11357,6 +12057,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BUCK_5V")
+			(pinfunction "VOUT_10")
+			(pintype "passive")
 			(uuid "c2fb98bf-1b4e-4153-84e0-8526859523ba")
 		)
 		(pad "11" thru_hole circle
@@ -11366,6 +12068,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_11")
+			(pintype "passive")
 			(uuid "11b23eb1-1a2f-4fed-9b11-adf20547183c")
 		)
 		(pad "12" thru_hole circle
@@ -11375,6 +12079,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BAT_RAW")
+			(pinfunction "VIN_12")
+			(pintype "passive")
 			(uuid "189c014e-1b99-43a5-94f7-87245fbfd6ae")
 		)
 		(embedded_fonts no)
@@ -11496,6 +12202,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/ded7108c-5e7d-4eb2-9406-3e2ce7b7a87a")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
 			)
 		)
 		(attr through_hole)
@@ -11813,6 +12528,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.147059)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "passive")
 			(uuid "a6ea9e00-78b5-469c-8433-d9d34f547f81")
 		)
 		(pad "2" thru_hole oval
@@ -11822,6 +12539,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "S1_DATA")
+			(pinfunction "DATA_2")
+			(pintype "passive")
 			(uuid "9f9f91c6-b1c3-4cd4-87af-5ec84f20ee49")
 		)
 		(pad "3" thru_hole oval
@@ -11831,6 +12550,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "S1_5V")
+			(pinfunction "5V_3")
+			(pintype "passive")
 			(uuid "2bc07568-8f85-4839-9085-8a0ae7739acd")
 		)
 		(embedded_fonts no)
@@ -11910,6 +12631,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/10335d97-bc0a-4c64-b2fc-6dac9fe61b41")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11971,6 +12701,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pintype "passive")
 			(uuid "82d27379-a9ce-498f-9934-dfd8d12ff0c4")
 		)
 		(pad "2" smd roundrect
@@ -11979,6 +12710,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "1d533205-5e94-4a8f-b4d3-700b4f652a50")
 		)
 		(embedded_fonts no)
@@ -12054,6 +12786,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/91a75ea8-5797-4f0f-8be1-27d7e84efd15/46f5e2ed-2616-4ade-9270-04a32e64b170")
+		(sheetname "/String status indicators/")
+		(sheetfile "string-status.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "6" "5" "4")
 			)
 		)
 		(attr smd)
@@ -12279,6 +13020,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "VCCA_1")
+			(pintype "power_in")
 			(uuid "7b37a500-9a28-461f-bdf9-c235db39cc41")
 		)
 		(pad "2" smd roundrect
@@ -12287,6 +13030,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "power_in")
 			(uuid "d02a1ea3-8b49-48a8-b244-87741fe5b3bc")
 		)
 		(pad "3" smd roundrect
@@ -12295,6 +13040,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "STATUS_RGB_GPIO")
+			(pinfunction "A_3")
+			(pintype "input")
 			(uuid "cae2817b-51f4-400f-86cf-712eec4435c8")
 		)
 		(pad "4" smd roundrect
@@ -12303,6 +13050,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "STATUS_RGB_1")
+			(pinfunction "Y_4")
+			(pintype "output")
 			(uuid "ded3a8a0-3eb6-4c9d-804d-0e7b36ad7497")
 		)
 		(pad "5" smd roundrect
@@ -12311,6 +13060,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "OE_5")
+			(pintype "input")
 			(uuid "6cea2db5-c892-4509-9e4a-ae1a2da4b6b6")
 		)
 		(pad "6" smd roundrect
@@ -12319,6 +13070,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "LED_5V")
+			(pinfunction "VCCB_6")
+			(pintype "power_in")
 			(uuid "394f2176-5a9b-4c1b-bc72-88b4eeec22b6")
 		)
 		(embedded_fonts no)
@@ -12396,6 +13149,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/cf2701a0-dea0-40ae-bf18-df4e536f4f7b")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1")
 			)
 		)
 		(attr smd)
@@ -12508,6 +13270,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "cb2d7b6f-8d43-40c0-83c7-149afdcd0318")
 		)
 		(pad "2" smd roundrect
@@ -12516,6 +13280,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "RED_A")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "df111590-a947-4259-ac6f-28c72e65d675")
 		)
 		(embedded_fonts no)
@@ -12585,6 +13351,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/02a44de8-a3a8-4c6c-a03c-d4121c184c53")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1")
 			)
 		)
 		(attr smd)
@@ -12776,6 +13551,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BAT_DELAY_N")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "e63d2bef-201c-46f8-82c4-57bcafb29022")
 		)
 		(pad "2" smd roundrect
@@ -12784,6 +13561,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BATT_SEL_N")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "5935724f-1bf3-4e7f-add5-50f04cb53ecb")
 		)
 		(embedded_fonts no)
@@ -12859,6 +13638,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/2e508e30-bb21-45d3-9fd8-7e30f02db58a")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "7" "2" "4" "6" "8")
 			)
 		)
 		(attr through_hole)
@@ -13022,6 +13810,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "ADC_VREF")
+			(pinfunction "VREF_1")
+			(pintype "passive")
 			(uuid "80f66465-58eb-467d-bbad-bb4cc9e888f1")
 		)
 		(pad "2" thru_hole circle
@@ -13031,6 +13821,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BAT_ADC")
+			(pinfunction "ADC0_2")
+			(pintype "passive")
 			(uuid "e6221d7e-7961-4db9-a9c2-5933b7851c9c")
 		)
 		(pad "3" thru_hole circle
@@ -13040,6 +13832,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "ADC_VREF")
+			(pinfunction "VREF_3")
+			(pintype "passive")
 			(uuid "51ef3b2e-8dec-46fe-9634-af194b7e9382")
 		)
 		(pad "4" thru_hole circle
@@ -13049,6 +13843,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PICO_ADC1")
+			(pinfunction "ADC1_4")
+			(pintype "passive")
 			(uuid "975a8f52-c116-42ac-86a0-9ff456a6846f")
 		)
 		(pad "5" thru_hole circle
@@ -13058,6 +13854,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "ADC_VREF")
+			(pinfunction "VREF_5")
+			(pintype "passive")
 			(uuid "f4b540ea-9991-4bd0-ba1a-e7e0057d112e")
 		)
 		(pad "6" thru_hole circle
@@ -13067,6 +13865,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PICO_ADC2")
+			(pinfunction "ADC2_6")
+			(pintype "passive")
 			(uuid "2d9cfa72-1811-492d-bbd9-a369b85f6297")
 		)
 		(pad "7" thru_hole circle
@@ -13076,6 +13876,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "ADC_VREF")
+			(pinfunction "VREF_7")
+			(pintype "passive")
 			(uuid "1eafd54d-0764-4f90-b3b7-4aa6f6d1c960")
 		)
 		(pad "8" thru_hole circle
@@ -13085,6 +13887,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "AGND_8")
+			(pintype "passive")
 			(uuid "242b7bdc-5b36-40d8-9a6a-302aec516205")
 		)
 		(embedded_fonts no)
@@ -13164,6 +13968,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/299bdd10-fcfa-464f-a441-c336b2b3f120")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13225,6 +14038,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "LED_5V")
+			(pintype "passive")
 			(uuid "03aaff35-84da-460d-9dd4-f875c419b9b0")
 		)
 		(pad "2" smd roundrect
@@ -13233,6 +14047,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "GREEN_A")
+			(pintype "passive")
 			(uuid "8399a337-1c50-4171-b39a-710d7ccb50ef")
 		)
 		(embedded_fonts no)
@@ -13309,6 +14124,17 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/ad5daf37-b9c4-4620-99e7-84b6af92ffde")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "12" "11" "15" "14" "2" "1" "4" "16" "5" "7" "6" "3" "17" "8" "9"
+					"10" "13"
 				)
 			)
 		)
@@ -13663,6 +14489,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S3_5V")
+			(pinfunction "IN3-_1")
+			(pintype "input")
 			(uuid "ba5367f3-ebd7-4719-a872-b772c0249359")
 		)
 		(pad "2" smd roundrect
@@ -13671,6 +14499,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S3_SHUNT_HI")
+			(pinfunction "IN3+_2")
+			(pintype "input")
 			(uuid "c06d8065-daed-4a76-b59c-e3c79198c932")
 		)
 		(pad "3" smd roundrect
@@ -13679,6 +14509,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_3")
+			(pintype "power_in")
 			(uuid "b5ecc1ad-9eb7-44b1-b5af-c8fc11fb7605")
 		)
 		(pad "4" smd roundrect
@@ -13687,6 +14519,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "VS_4")
+			(pintype "power_in")
 			(uuid "755fc353-dde7-480b-a881-1e4ca12002b8")
 		)
 		(pad "5" smd roundrect
@@ -13695,6 +14529,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "A0_5")
+			(pintype "input")
 			(uuid "dc4a4486-da0e-432c-bfaa-c29d90c49988")
 		)
 		(pad "6" smd roundrect
@@ -13703,6 +14539,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "I2C_SCL")
+			(pinfunction "SCL_6")
+			(pintype "input")
 			(uuid "eb5f5a5a-9ac3-4ac2-b978-b618d2d1a8a8")
 		)
 		(pad "7" smd roundrect
@@ -13711,6 +14549,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "I2C_SDA")
+			(pinfunction "SDA_7")
+			(pintype "bidirectional")
 			(uuid "f768bac8-b280-431d-a145-1cdfb9095fb8")
 		)
 		(pad "8" smd roundrect
@@ -13719,6 +14559,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U4-WARN-Pad8)")
+			(pinfunction "WARN_8")
+			(pintype "open_collector+no_connect")
 			(uuid "82929e3d-89a3-4b97-b858-b710eca3ca40")
 		)
 		(pad "9" smd roundrect
@@ -13727,6 +14569,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U4-CRIT-Pad9)")
+			(pinfunction "CRIT_9")
+			(pintype "open_collector+no_connect")
 			(uuid "865ad1ea-7534-473f-b22a-e81bd9ba64f7")
 		)
 		(pad "10" smd roundrect
@@ -13735,6 +14579,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U4-PV-Pad10)")
+			(pinfunction "PV_10")
+			(pintype "open_collector+no_connect")
 			(uuid "5d526a52-6196-4132-b22c-ec2da9da62ec")
 		)
 		(pad "11" smd roundrect
@@ -13743,6 +14589,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S1_5V")
+			(pinfunction "IN1-_11")
+			(pintype "input")
 			(uuid "ecbb8aa5-ac74-4a59-8832-b8868aa81991")
 		)
 		(pad "12" smd roundrect
@@ -13751,6 +14599,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S1_SHUNT_HI")
+			(pinfunction "IN1+_12")
+			(pintype "input")
 			(uuid "684579fa-909d-4654-b635-ed5b871fbc40")
 		)
 		(pad "13" smd roundrect
@@ -13759,6 +14609,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U4-TC-Pad13)")
+			(pinfunction "TC_13")
+			(pintype "open_collector+no_connect")
 			(uuid "b6c6cf7d-b497-4510-8934-737ad599cae9")
 		)
 		(pad "14" smd roundrect
@@ -13767,6 +14619,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S2_5V")
+			(pinfunction "IN2-_14")
+			(pintype "input")
 			(uuid "f608b551-666e-44eb-996d-9e227b4c3b68")
 		)
 		(pad "15" smd roundrect
@@ -13775,6 +14629,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "S2_SHUNT_HI")
+			(pinfunction "IN2+_15")
+			(pintype "input")
 			(uuid "2217e9d9-bb99-4b46-9f82-b1aacd0d54c3")
 		)
 		(pad "16" smd roundrect
@@ -13783,6 +14639,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pinfunction "VPU_16")
+			(pintype "input")
 			(uuid "a32483c3-b78b-4dc4-bc52-ac135a5d6113")
 		)
 		(pad "17" smd rect
@@ -13791,6 +14649,8 @@
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask")
 			(net "GND")
+			(pinfunction "EP_17")
+			(pintype "passive")
 			(zone_connect 2)
 			(uuid "af3b84ec-249b-4e7b-8aed-c56be07502a2")
 		)
@@ -13869,6 +14729,15 @@
 				)
 			)
 		)
+		(path "/91a75ea8-5797-4f0f-8be1-27d7e84efd15/705b9ca8-2a35-41cc-a313-dfda701c8ff3")
+		(sheetname "/String status indicators/")
+		(sheetfile "string-status.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13930,6 +14799,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "LED_5V")
+			(pintype "passive")
 			(uuid "a4e9088c-705e-4b0e-9b00-a2ea55bf948b")
 		)
 		(pad "2" smd roundrect
@@ -13938,6 +14808,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "ecfdf581-7f21-46af-8a50-b87952f99e76")
 		)
 		(embedded_fonts no)
@@ -14109,6 +14980,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/02b80a13-5efb-4d49-a29b-b9e00b7812f4")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "5" "8" "6" "7" "9" "10" "4" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_circle
@@ -14234,6 +15114,8 @@
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.16666667)
 			(net "BYPASS_EN")
+			(pinfunction "EN_1")
+			(pintype "passive")
 			(uuid "eade70f7-d8a7-4f46-8113-b66d850e6d04")
 		)
 		(pad "1" smd roundrect
@@ -14242,6 +15124,8 @@
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.2)
 			(net "BYPASS_EN")
+			(pinfunction "EN_1")
+			(pintype "passive")
 			(uuid "8ee0747d-4707-4927-b1a3-a1e9aa46d07b")
 		)
 		(pad "2" smd roundrect
@@ -14250,6 +15134,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
 			(net "BYPASS_OV")
+			(pinfunction "OVLO_2")
+			(pintype "passive")
 			(uuid "b4150963-60a1-484f-8a6e-19fdfd84ecc5")
 		)
 		(pad "3" smd roundrect
@@ -14258,6 +15144,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
 			(net "unconnected-(U5-DNC-Pad3)")
+			(pinfunction "DNC_3")
+			(pintype "passive+no_connect")
 			(uuid "0c480155-8896-40f4-a1b1-da36de8e5887")
 		)
 		(pad "4" smd roundrect
@@ -14265,7 +15153,9 @@
 			(size 0.6 0.3)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.16666667)
-			(net "unconnected-(U5-FLT-Pad4)")
+			(net "unconnected-(U5-FLT-Pad4)_1")
+			(pinfunction "FLT_4")
+			(pintype "passive+no_connect")
 			(uuid "6090f038-0dfb-4ce5-bd87-ee22088737e8")
 		)
 		(pad "4" smd roundrect
@@ -14274,6 +15164,8 @@
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.2)
 			(net "unconnected-(U5-FLT-Pad4)")
+			(pinfunction "FLT_4")
+			(pintype "passive+no_connect")
 			(uuid "14d2554f-b1ea-421f-a02f-7ba542f8e390")
 		)
 		(pad "5" smd roundrect
@@ -14282,6 +15174,8 @@
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.16666667)
 			(net "BAT_RAW")
+			(pinfunction "IN_5")
+			(pintype "passive")
 			(uuid "07337631-1afd-46bd-ab20-321a86c92747")
 		)
 		(pad "6" smd roundrect
@@ -14290,6 +15184,8 @@
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.16666667)
 			(net "EXT_5V")
+			(pinfunction "OUT_6")
+			(pintype "passive")
 			(uuid "1f0e626a-43f3-4c83-8d55-b47086476b5c")
 		)
 		(pad "7" smd roundrect
@@ -14298,6 +15194,8 @@
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.2)
 			(net "BYPASS_DVDT")
+			(pinfunction "DVDT_7")
+			(pintype "passive")
 			(uuid "46753e4a-2c5a-419e-a634-38f36fe1c542")
 		)
 		(pad "7" smd roundrect
@@ -14306,6 +15204,8 @@
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.16666667)
 			(net "BYPASS_DVDT")
+			(pinfunction "DVDT_7")
+			(pintype "passive")
 			(uuid "a7cee79d-5064-4970-9cec-8a2095bf82ed")
 		)
 		(pad "8" smd roundrect
@@ -14314,6 +15214,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
 			(net "GND")
+			(pinfunction "GND_8")
+			(pintype "passive")
 			(uuid "078bab9a-025c-4758-95ba-94dfe475ae5b")
 		)
 		(pad "9" smd roundrect
@@ -14322,6 +15224,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
 			(net "BYPASS_ILM")
+			(pinfunction "ILM_9")
+			(pintype "passive")
 			(uuid "420e770b-2309-4c5c-aa8d-172c412c03cd")
 		)
 		(pad "10" smd roundrect
@@ -14329,7 +15233,9 @@
 			(size 0.25 0.65)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.2)
-			(net "unconnected-(U5-ITIMER-Pad10)")
+			(net "unconnected-(U5-ITIMER-Pad10)_1")
+			(pinfunction "ITIMER_10")
+			(pintype "passive+no_connect")
 			(uuid "642256e9-274a-4074-be0f-6d53059ee382")
 		)
 		(pad "10" smd roundrect
@@ -14338,6 +15244,8 @@
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.16666667)
 			(net "unconnected-(U5-ITIMER-Pad10)")
+			(pinfunction "ITIMER_10")
+			(pintype "passive+no_connect")
 			(uuid "0b460148-f89a-428f-a373-fbb5d53c5ea0")
 		)
 		(embedded_fonts no)
@@ -14406,6 +15314,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/f0fae5c1-b0fa-43be-ae72-d9d1382c301e")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14467,6 +15384,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.204082)
 			(net "S2_SHUNT_HI")
+			(pintype "passive")
 			(uuid "81c4117e-be42-49c0-af95-65eff7a225dd")
 		)
 		(pad "2" smd roundrect
@@ -14475,6 +15393,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.204082)
 			(net "S2_5V")
+			(pintype "passive")
 			(uuid "923184ac-2f59-4e1f-b37e-b619cf70be1d")
 		)
 		(embedded_fonts no)
@@ -14542,6 +15461,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/91a75ea8-5797-4f0f-8be1-27d7e84efd15/59fd653e-d7d9-4ef5-9c32-0624df20a670")
+		(sheetname "/String status indicators/")
+		(sheetfile "string-status.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "4" "3")
 			)
 		)
 		(attr smd)
@@ -14746,6 +15674,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "power_in")
 			(uuid "066392df-7865-4304-8d44-6c9afe926b3c")
 		)
 		(pad "2" smd roundrect
@@ -14754,6 +15684,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "STATUS_RGB_3")
+			(pinfunction "DIN_2")
+			(pintype "input")
 			(uuid "2bbca8e5-9439-46cc-b333-aba3aaa3a9e9")
 		)
 		(pad "3" smd roundrect
@@ -14762,6 +15694,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "LED_5V")
+			(pinfunction "VDD_3")
+			(pintype "power_in")
 			(uuid "fbc00cfb-bf3a-44f2-8437-7f9ea8841a4a")
 		)
 		(pad "4" smd roundrect
@@ -14770,6 +15704,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1)
 			(net "unconnected-(D9-DOUT-Pad4)")
+			(pinfunction "DOUT_4")
+			(pintype "output+no_connect")
 			(uuid "e96909d4-3d91-4ba4-a3bc-8293b11d562d")
 		)
 		(embedded_fonts no)
@@ -14849,6 +15785,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/17117bba-dd84-4fdc-bd27-34e451a19a01")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14910,6 +15855,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BAT_RAW")
+			(pintype "passive")
 			(uuid "e89b6ceb-3682-4a71-a07b-6e3d17595a2a")
 		)
 		(pad "2" smd roundrect
@@ -14918,6 +15864,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "3ca57c08-e827-42a1-b098-8ab37b8ef5b3")
 		)
 		(embedded_fonts no)
@@ -14997,6 +15944,15 @@
 				)
 			)
 		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/b8010115-86f3-4caa-ae57-ed95c7c14614")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15058,6 +16014,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "3V3")
+			(pintype "passive")
 			(uuid "991d6b13-24cf-4ab4-bf49-0e20d710996d")
 		)
 		(pad "2" smd roundrect
@@ -15066,6 +16023,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "d2491974-2962-4aac-9630-2a94a59b1494")
 		)
 		(embedded_fonts no)
@@ -15143,6 +16101,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/437e854d-ea91-4692-825e-6ee0bf43541c")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -15286,6 +16253,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "TRELLIS_SDA")
+			(pinfunction "SIGNAL_1")
+			(pintype "passive")
 			(uuid "87027dc6-9c2f-44e6-a973-63606b6d1ea4")
 		)
 		(pad "2" thru_hole circle
@@ -15295,6 +16264,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "6dcf8e84-8c33-4f0c-82c6-dbeb4e78b0a8")
 		)
 		(embedded_fonts no)
@@ -15374,6 +16345,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/a2b294ab-1693-4171-885a-416bdd487802")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15435,6 +16415,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "STATUS_3V3")
+			(pintype "passive")
 			(uuid "6b47245a-2146-40ca-abf0-9ec2ccef98c8")
 		)
 		(pad "2" smd roundrect
@@ -15443,6 +16424,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "PG")
+			(pintype "passive")
 			(uuid "323cb71f-8a4a-4b52-bc56-3526c4a0f2bd")
 		)
 		(embedded_fonts no)
@@ -15518,6 +16500,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/83928ae3-1ec9-40f9-ad7d-6bbfea814927")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "9" "7" "2" "4" "6" "8" "10")
 			)
 		)
 		(attr smd)
@@ -15969,6 +16960,8 @@
 			(size 2.79 0.74)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "3V3")
+			(pinfunction "VTref_1")
+			(pintype "passive")
 			(uuid "98d017af-77c7-4ab4-bffb-1adee1465af4")
 		)
 		(pad "2" smd rect
@@ -15976,6 +16969,8 @@
 			(size 2.79 0.74)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "PICO_SWDIO")
+			(pinfunction "SWDIO_2")
+			(pintype "passive")
 			(uuid "0ca84375-8b09-4bee-90d5-a47bf62b0540")
 		)
 		(pad "3" smd rect
@@ -15983,6 +16978,8 @@
 			(size 2.79 0.74)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_3")
+			(pintype "passive")
 			(uuid "360915a4-20d4-4bf5-900b-bba3afb7964d")
 		)
 		(pad "4" smd rect
@@ -15990,6 +16987,8 @@
 			(size 2.79 0.74)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "PICO_SWCLK")
+			(pinfunction "SWCLK_4")
+			(pintype "passive")
 			(uuid "b8d34a04-47a9-413a-8ed0-306de2e40a51")
 		)
 		(pad "5" smd rect
@@ -15997,6 +16996,8 @@
 			(size 2.79 0.74)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_5")
+			(pintype "passive")
 			(uuid "652b30ff-e825-4a03-88a8-8862453e65bb")
 		)
 		(pad "6" smd rect
@@ -16004,6 +17005,8 @@
 			(size 2.79 0.74)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(J13-SWO-Pad6)")
+			(pinfunction "SWO_6")
+			(pintype "passive+no_connect")
 			(uuid "e01ac3ce-9b88-46be-a4c2-a9a1cbb24265")
 		)
 		(pad "7" smd rect
@@ -16011,6 +17014,8 @@
 			(size 2.79 0.74)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(J13-NC-Pad7)")
+			(pinfunction "NC_7")
+			(pintype "passive+no_connect")
 			(uuid "938c45d8-cea4-4bbb-bf90-9b2ae4d0d3d6")
 		)
 		(pad "8" smd rect
@@ -16018,6 +17023,8 @@
 			(size 2.79 0.74)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(J13-TDI-Pad8)")
+			(pinfunction "TDI_8")
+			(pintype "passive+no_connect")
 			(uuid "894847bd-7666-4215-ba63-df704156ce6a")
 		)
 		(pad "9" smd rect
@@ -16025,6 +17032,8 @@
 			(size 2.79 0.74)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(J13-NC-Pad9)")
+			(pinfunction "NC_9")
+			(pintype "passive+no_connect")
 			(uuid "b1445467-4c94-4e8f-af44-8f2b93dcb5c9")
 		)
 		(pad "10" smd rect
@@ -16032,6 +17041,8 @@
 			(size 2.79 0.74)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "PICO_RUN")
+			(pinfunction "nRESET_10")
+			(pintype "passive")
 			(uuid "1440f38c-7776-4bbc-9bc5-81db62d96541")
 		)
 		(embedded_fonts no)
@@ -16111,6 +17122,15 @@
 				)
 			)
 		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/4312ba68-5905-4272-8ace-710f06b76564")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16172,6 +17192,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BUCK_EN")
+			(pintype "passive")
 			(uuid "562ffd6d-34c4-4be2-9e22-ffca878cc04e")
 		)
 		(pad "2" smd roundrect
@@ -16180,6 +17201,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "GND")
+			(pintype "passive")
 			(uuid "b8a5fe3e-626c-4270-9a27-8902ad869bbd")
 		)
 		(embedded_fonts no)
@@ -16259,6 +17281,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/3c9b5014-1cff-44a6-ba30-7181a193abd3")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16320,6 +17351,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BATT_SEL_N")
+			(pintype "passive")
 			(uuid "3242b589-60da-43ac-a0c7-3a8be5f54481")
 		)
 		(pad "2" smd roundrect
@@ -16328,6 +17360,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BAT_DELAY_N")
+			(pintype "passive")
 			(uuid "e1bdee4d-da7c-4cb2-87ba-e48c280ee77c")
 		)
 		(embedded_fonts no)
@@ -16407,6 +17440,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/5f466dff-3e56-4584-befa-6152ac00b26a")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16468,6 +17510,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BYPASS_ILM")
+			(pintype "passive")
 			(uuid "5807ae81-94b2-4ed9-9048-760968e36f30")
 		)
 		(pad "2" smd roundrect
@@ -16476,6 +17519,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "GND")
+			(pintype "passive")
 			(uuid "e6aadc81-e5ef-490d-8f0a-0c585daded0b")
 		)
 		(embedded_fonts no)
@@ -16555,6 +17599,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/2336d583-5fc5-4f16-8061-69bf29c3cb90")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16616,6 +17669,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BAT_RAW")
+			(pintype "passive")
 			(uuid "8293ab46-9b1a-40cf-9b3a-6b8081319000")
 		)
 		(pad "2" smd roundrect
@@ -16624,6 +17678,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "972f83f0-4987-448d-8773-6ac1ad42701f")
 		)
 		(embedded_fonts no)
@@ -16701,6 +17756,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/9c97237f-6f98-4720-a029-eda893b72670")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1")
 			)
 		)
 		(attr smd)
@@ -16813,6 +17877,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "e32538e0-437b-425a-959a-00ce403e9976")
 		)
 		(pad "2" smd roundrect
@@ -16821,6 +17887,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GREEN_A")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "ca442aa2-a0d4-4e14-be42-b9d555bc8031")
 		)
 		(embedded_fonts no)
@@ -16890,6 +17958,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/f0eeecfd-dc67-4dab-ae1b-a143096ecd74")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -17115,6 +18192,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "+_1")
+			(pintype "passive")
 			(uuid "55720c18-2382-4af4-ad0d-3ba27a02fbd2")
 		)
 		(pad "2" thru_hole circle
@@ -17124,6 +18203,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BAT_RAW")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "a1d43754-e4b4-47a0-b69e-b49f8f5307bb")
 		)
 		(embedded_fonts no)
@@ -17199,6 +18280,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/eefb7f9a-fc4a-4102-a98e-45fc8b04b8b5")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
 			)
 		)
 		(attr through_hole)
@@ -17342,6 +18432,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PICO_SWDIO")
+			(pinfunction "SWDIO_1")
+			(pintype "passive")
 			(uuid "ab820848-bffc-4771-9a8a-6fdda8775b2f")
 		)
 		(pad "2" thru_hole circle
@@ -17351,6 +18443,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PICO_SWCLK")
+			(pinfunction "SWCLK_2")
+			(pintype "passive")
 			(uuid "ed576d74-e2e9-4abd-bd2b-99e51fc503b4")
 		)
 		(pad "3" thru_hole circle
@@ -17360,6 +18454,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_3")
+			(pintype "passive")
 			(uuid "327dd347-136d-41d9-8cd4-209691698264")
 		)
 		(embedded_fonts no)
@@ -17437,6 +18533,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/8722929c-4808-4e6b-a7be-f19659ec151f")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
 			)
 		)
 		(attr through_hole)
@@ -17754,6 +18859,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.147059)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "passive")
 			(uuid "6b7c615a-e3cd-4f82-8f37-d7ebce477c1e")
 		)
 		(pad "2" thru_hole oval
@@ -17763,6 +18870,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "S2_DATA")
+			(pinfunction "DATA_2")
+			(pintype "passive")
 			(uuid "9284d262-05ac-4ebb-9f1d-6bfdd928906c")
 		)
 		(pad "3" thru_hole oval
@@ -17772,6 +18881,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "S2_5V")
+			(pinfunction "5V_3")
+			(pintype "passive")
 			(uuid "69449c9d-55d7-41cb-9cdd-4f766c409cf4")
 		)
 		(embedded_fonts no)
@@ -17851,6 +18962,15 @@
 				)
 			)
 		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/59fd3399-04a8-4288-a95f-87182761d3a9")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17912,6 +19032,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "3V3")
+			(pintype "passive")
 			(uuid "951df6e5-0fed-45f5-80e4-bbcd1ce63ec3")
 		)
 		(pad "2" smd roundrect
@@ -17920,6 +19041,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "I2C_SCL")
+			(pintype "passive")
 			(uuid "db4efa37-59ea-4124-82a4-fcf2dc61d16d")
 		)
 		(embedded_fonts no)
@@ -17995,6 +19117,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/a2e28bc5-bdef-44e4-8933-bf7bccb3cafd")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6")
 			)
 		)
 		(attr through_hole)
@@ -18138,6 +19269,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "passive")
 			(uuid "e337a820-a3f5-407a-a633-a987c5bc101c")
 		)
 		(pad "2" thru_hole circle
@@ -18147,6 +19280,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J16-Cable_CTS-Pad2)")
+			(pinfunction "Cable_CTS_2")
+			(pintype "passive+no_connect")
 			(uuid "e71d2a33-96e3-49ef-8dfa-0a18a1408af2")
 		)
 		(pad "3" thru_hole circle
@@ -18156,6 +19291,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J16-Cable_3V3-Pad3)")
+			(pinfunction "Cable_3V3_3")
+			(pintype "passive+no_connect")
 			(uuid "6de90c4e-a86e-4ea8-9a74-b54bd849e349")
 		)
 		(pad "4" thru_hole circle
@@ -18165,6 +19302,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "UART0_RX")
+			(pinfunction "Pico_RX_4")
+			(pintype "passive")
 			(uuid "1d94282f-f17e-465a-a402-e4ce672cd367")
 		)
 		(pad "5" thru_hole circle
@@ -18174,6 +19313,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "UART0_TX")
+			(pinfunction "Pico_TX_5")
+			(pintype "passive")
 			(uuid "ccdb9add-310c-4ca0-9218-825c9ccee598")
 		)
 		(pad "6" thru_hole circle
@@ -18183,6 +19324,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J16-Cable_RTS-Pad6)")
+			(pinfunction "Cable_RTS_6")
+			(pintype "passive+no_connect")
 			(uuid "b0aae948-e6ed-4a4e-94ff-73fe46440048")
 		)
 		(embedded_fonts no)
@@ -18258,6 +19401,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/a4c2f488-7040-4391-a7e8-8d3443fd541d")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "7" "2" "4" "6" "8")
 			)
 		)
 		(attr through_hole)
@@ -18421,6 +19573,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_MISO")
+			(pinfunction "MISO_1")
+			(pintype "passive")
 			(uuid "a030edaa-78c2-405d-9759-1b15ed9991c3")
 		)
 		(pad "2" thru_hole circle
@@ -18430,6 +19584,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "2b9692a1-a12f-4f28-b37b-1c733953c802")
 		)
 		(pad "3" thru_hole circle
@@ -18439,6 +19595,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_CSn")
+			(pinfunction "CSn_3")
+			(pintype "passive")
 			(uuid "08b16ed7-940b-4d3f-891e-240cd21b0d52")
 		)
 		(pad "4" thru_hole circle
@@ -18448,6 +19606,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_4")
+			(pintype "passive")
 			(uuid "873c116f-f997-4c7f-9fb0-0366fdf6570e")
 		)
 		(pad "5" thru_hole circle
@@ -18457,6 +19617,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_SCK")
+			(pinfunction "SCK_5")
+			(pintype "passive")
 			(uuid "9b5dd057-83ff-4b61-8183-c267552ac01a")
 		)
 		(pad "6" thru_hole circle
@@ -18466,6 +19628,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_6")
+			(pintype "passive")
 			(uuid "ec6d5826-799f-4207-8923-2553f914c23d")
 		)
 		(pad "7" thru_hole circle
@@ -18475,6 +19639,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SPI0_MOSI")
+			(pinfunction "MOSI_7")
+			(pintype "passive")
 			(uuid "3c7893d2-9e38-4f7d-a947-bfd7d63ebfca")
 		)
 		(pad "8" thru_hole circle
@@ -18484,6 +19650,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_8")
+			(pintype "passive")
 			(uuid "4c076f99-3f9e-4914-8d1f-a92231c3a4e8")
 		)
 		(embedded_fonts no)
@@ -18555,6 +19723,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/954bca97-2602-480a-8243-aa962eb60479")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr smd)
@@ -18675,6 +19852,7 @@
 			(size 1.96 3.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "LED_5V")
+			(pintype "passive")
 			(uuid "3eae3025-9d57-4d57-8361-37b6a970dc56")
 		)
 		(pad "2" smd rect
@@ -18682,6 +19860,7 @@
 			(size 1.96 3.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "S2_SHUNT_HI")
+			(pintype "passive")
 			(uuid "59019afb-d5f6-43bf-adc0-3d6e67a98dc2")
 		)
 		(embedded_fonts no)
@@ -18759,6 +19938,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/5bcb72e1-d02f-492a-89bb-6c684ae46230")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -20755,6 +21943,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.125)
 			(net "LED_5V")
+			(pinfunction "+_1")
+			(pintype "passive")
 			(uuid "e0a2235a-906b-4588-bd59-b4acda5a7d8d")
 		)
 		(pad "2" thru_hole circle
@@ -20764,6 +21954,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "-_2")
+			(pintype "passive")
 			(uuid "2c1f076c-6f45-484b-87fa-d8b8d4bf254e")
 		)
 		(embedded_fonts no)
@@ -20843,6 +22035,15 @@
 				)
 			)
 		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/cdd5fa96-ad8f-466c-b447-89ecad232b4e")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20904,6 +22105,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "VRP")
+			(pintype "passive")
 			(uuid "41786989-449a-4651-8ef8-af99f7c170b1")
 		)
 		(pad "2" smd roundrect
@@ -20912,6 +22114,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "ADC_GATE")
+			(pintype "passive")
 			(uuid "0bc8283d-2c97-4aca-a711-fa5c8faea4dd")
 		)
 		(embedded_fonts no)
@@ -20991,6 +22194,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/8c932a8a-5970-4be6-bff7-0c77d5369575")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21052,6 +22264,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "STATUS_3V3")
+			(pintype "passive")
 			(uuid "ef0a39d2-118f-45ae-9240-e6a46778a372")
 		)
 		(pad "2" smd roundrect
@@ -21060,6 +22273,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "7d6f6ad2-fc56-4fb9-a8cb-6839b9791a12")
 		)
 		(embedded_fonts no)
@@ -21139,6 +22353,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/f6f34a6b-7b32-4f96-afec-7aa487a0f665")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21200,6 +22423,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BAT_RAW")
+			(pintype "passive")
 			(uuid "d189bf68-5646-4a1d-a1b9-ed019605318c")
 		)
 		(pad "2" smd roundrect
@@ -21208,6 +22432,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BYPASS_EN")
+			(pintype "passive")
 			(uuid "b6fbaee4-6f16-45e0-89f2-bff6a31f9a96")
 		)
 		(embedded_fonts no)
@@ -21279,6 +22504,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/fd520520-2320-4b6a-bf52-3898d1f386a8")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr smd)
@@ -21399,6 +22633,7 @@
 			(size 1.96 3.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "LED_5V")
+			(pintype "passive")
 			(uuid "d8263967-724f-4e9b-85af-7456a74813a7")
 		)
 		(pad "2" smd rect
@@ -21406,6 +22641,7 @@
 			(size 1.96 3.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "S3_SHUNT_HI")
+			(pintype "passive")
 			(uuid "c8109348-b514-443f-ac9b-018edd3977d6")
 		)
 		(embedded_fonts no)
@@ -21703,6 +22939,15 @@
 				)
 			)
 		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/a85b5c5c-1452-407d-8f4b-ae82c0cb8717")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21890,6 +23135,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.147059)
 			(net "BUCK_EN")
+			(pinfunction "BUCK_EN_1")
+			(pintype "passive")
 			(uuid "126e2017-c9e5-450e-8574-d6a7742f902d")
 		)
 		(pad "2" thru_hole oval
@@ -21899,6 +23146,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "SW_GND_2")
+			(pintype "passive")
 			(uuid "76ac92b0-e3db-401f-b517-3a2beadcf7f8")
 		)
 		(pad "3" thru_hole oval
@@ -21908,6 +23157,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "BATT_SEL_N")
+			(pinfunction "BATT_SELECT_3")
+			(pintype "passive")
 			(uuid "481e7fc8-eb64-44ff-822e-8e9eb6450c4e")
 		)
 		(embedded_fonts no)
@@ -21979,6 +23230,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/8cfeed0a-64a0-404b-ad54-016768835034")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr smd)
@@ -22099,6 +23359,7 @@
 			(size 1.96 3.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "LED_5V")
+			(pintype "passive")
 			(uuid "b3abdca8-c8aa-46e6-8c9b-d057cbebdf27")
 		)
 		(pad "2" smd rect
@@ -22106,6 +23367,7 @@
 			(size 1.96 3.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "S1_SHUNT_HI")
+			(pintype "passive")
 			(uuid "b66192d5-80b8-4016-9e25-2e54c4c61897")
 		)
 		(embedded_fonts no)
@@ -22175,6 +23437,15 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/ba10d125-78cc-441b-aa4b-92d4961c6a84")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1")
 			)
 		)
 		(attr smd)
@@ -22366,6 +23637,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "PG")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "13bb6a65-25ed-4087-a827-d95c7ba0fb9c")
 		)
 		(pad "2" smd roundrect
@@ -22374,6 +23647,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "PICO_PG")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "8de0d02e-4933-4346-a1fe-e3e83839afdb")
 		)
 		(embedded_fonts no)
@@ -22451,6 +23726,15 @@
 				)
 			)
 		)
+		(path "/91a75ea8-5797-4f0f-8be1-27d7e84efd15/14cb000a-357b-432b-a8ca-93dd4f984632")
+		(sheetname "/String status indicators/")
+		(sheetfile "string-status.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22512,6 +23796,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net "LED_5V")
+			(pintype "passive")
 			(uuid "14c13cc3-5cee-4e3c-b92a-edde46176127")
 		)
 		(pad "2" smd roundrect
@@ -22520,6 +23805,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net "GND")
+			(pintype "passive")
 			(uuid "0143484c-2549-47a8-880d-96d46d5fdd2b")
 		)
 		(embedded_fonts no)
@@ -22599,6 +23885,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/7170e39d-f734-4358-bdcd-84ac95825ef6")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22660,6 +23955,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "EXT_5V")
+			(pintype "passive")
 			(uuid "2c0570ee-39fe-40a3-9615-5c02d8f75373")
 		)
 		(pad "2" smd roundrect
@@ -22668,6 +23964,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "GND")
+			(pintype "passive")
 			(uuid "d2715136-5e20-44cf-bf93-ad6c4f9b79ed")
 		)
 		(embedded_fonts no)
@@ -22747,6 +24044,15 @@
 				)
 			)
 		)
+		(path "/e6ba463b-e7ba-4415-a080-8b7d57b18fe9/5b6d9fb8-0ca4-40d7-9ef5-615860c6a5c1")
+		(sheetname "/Inlet protection and status/")
+		(sheetfile "inlet.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22808,6 +24114,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "BUCK_FAULT")
+			(pintype "passive")
 			(uuid "0a022be1-2fdf-4ae9-8898-77f157fb1000")
 		)
 		(pad "2" smd roundrect
@@ -22816,6 +24123,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "RED_A")
+			(pintype "passive")
 			(uuid "48892b68-fb32-4ba8-844c-8cc56a23535f")
 		)
 		(embedded_fonts no)
@@ -22895,6 +24203,15 @@
 				)
 			)
 		)
+		(path "/a17ec337-2b84-4400-98b3-a147211c6415/ae49bb49-acef-4762-a73e-c48b78108db2")
+		(sheetname "/Controller/")
+		(sheetfile "control.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22956,6 +24273,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "3V3")
+			(pintype "passive")
 			(uuid "9fbf8277-eb86-4c2e-b161-c62822a2d81b")
 		)
 		(pad "2" smd roundrect
@@ -22964,6 +24282,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "I2C_SDA")
+			(pintype "passive")
 			(uuid "49d267c0-9b56-42de-8a52-83e05d736320")
 		)
 		(embedded_fonts no)
@@ -23043,6 +24362,15 @@
 				)
 			)
 		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/77b380c7-cba3-46ab-a1af-eb9eed672976")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23104,6 +24432,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "BAT_ADC")
+			(pintype "passive")
 			(uuid "42ccd7dc-a2f8-4eca-a5d9-290e36c52c09")
 		)
 		(pad "2" smd roundrect
@@ -23112,6 +24441,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "2b624203-fdf4-4110-88b0-4ae67bfa0f4f")
 		)
 		(embedded_fonts no)
@@ -23191,6 +24521,15 @@
 				)
 			)
 		)
+		(path "/02348dbf-fd55-4977-b250-d0e36bc19351/916694f6-5204-483c-b804-d34e6f8b7e49")
+		(sheetname "/Battery and power/")
+		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23252,6 +24591,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "3V3")
+			(pintype "passive")
 			(uuid "4d5aa3ef-a5c2-4197-88af-bd75aac1cc21")
 		)
 		(pad "2" smd roundrect
@@ -23260,6 +24600,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
 			(net "PICO_BATT_SEL_N")
+			(pintype "passive")
 			(uuid "7974022d-9c86-4e39-bb2b-eb4443e45f8e")
 		)
 		(embedded_fonts no)
@@ -23337,6 +24678,15 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(path "/4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a/5e2a39ae-b45a-46e6-aea0-e94d28c79b8d")
+		(sheetname "/LED outputs and sensing/")
+		(sheetfile "led-io.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
 			)
 		)
 		(attr through_hole)
@@ -23654,6 +25004,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.147059)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "passive")
 			(uuid "ec490444-873a-4153-835a-a9483d960235")
 		)
 		(pad "2" thru_hole oval
@@ -23663,6 +25015,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "S3_DATA")
+			(pinfunction "DATA_2")
+			(pintype "passive")
 			(uuid "5ed290ec-5162-4467-9ea5-80076eea7d86")
 		)
 		(pad "3" thru_hole oval
@@ -23672,6 +25026,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "S3_5V")
+			(pinfunction "5V_3")
+			(pintype "passive")
 			(uuid "f1d4a4e4-3086-4dcd-b9df-cf85e744bfed")
 		)
 		(embedded_fonts no)
@@ -23966,6 +25322,15 @@
 				)
 			)
 		)
+		(path "/91a75ea8-5797-4f0f-8be1-27d7e84efd15/3d17bdf2-6c3d-44b9-bd2d-67242f52930d")
+		(sheetname "/String status indicators/")
+		(sheetfile "string-status.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24027,6 +25392,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "LED_5V")
+			(pintype "passive")
 			(uuid "2ae349fd-b599-45e7-8155-c0c1f2f9f3b0")
 		)
 		(pad "2" smd roundrect
@@ -24035,6 +25401,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "81d29aae-82de-404d-b8e4-b166844b6909")
 		)
 		(embedded_fonts no)

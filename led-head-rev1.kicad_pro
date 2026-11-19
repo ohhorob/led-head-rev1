@@ -674,19 +674,23 @@
       "led-head-rev1"
     ],
     [
-      "bf3ab514-30af-4a30-8339-88e148f312c8",
+      "02348dbf-fd55-4977-b250-d0e36bc19351",
       "Battery and power"
     ],
     [
-      "b57100a0-df71-4478-a3f1-97069b28d1e2",
+      "e6ba463b-e7ba-4415-a080-8b7d57b18fe9",
       "Inlet protection and status"
     ],
     [
-      "391cb5b8-fa27-4328-ac60-cf5ed8d9da6f",
+      "a17ec337-2b84-4400-98b3-a147211c6415",
       "Controller"
     ],
     [
-      "58e2e4fd-09ab-42e7-ad57-f1108707458b",
+      "91a75ea8-5797-4f0f-8be1-27d7e84efd15",
+      "String status indicators"
+    ],
+    [
+      "4dd5b633-22d5-4b91-bdc2-9fbcd22ab44a",
       "LED outputs and sensing"
     ]
   ],
