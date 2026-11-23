@@ -1,0 +1,4 @@
+power-manager/power-manager/J5: 10 pins checked
+pico-carrier/pico-carrier/J19: 10 pins checked
+pico-carrier/pico-carrier/J20: 5 pins checked
+PASS: registered power and reserved telemetry pinouts agree between schematics, PCBs and the shared contract.

@@ -1,5 +1,16 @@
 # LED Head Unit · Rev 1
 
+## Modular redesign — 2026-11-20
+
+The new modular design lives in separate projects in this same repository:
+
+- [Pico carrier](pico-carrier/README.md): populated control/monitoring schematic and unrouted PCB draft.
+- [Power manager](power-manager/README.md): empty KiCad starter project.
+- [String daughtercard](string-daughterboard/README.md): existing routed card, preserved.
+- [Shared interfaces](shared/README.md): connector pinout, mechanical contract and verification tool.
+
+Open the relevant `.kicad_pro`, rather than opening its PCB on its own. The combined board described below is retained as the earlier design; its control/monitoring circuits have started migrating into the carrier; the power manager remains a starter project.
+
 Open `led-head-rev1.kicad_pro` in KiCad 10. The project contains the schematic, PCB and draft SMT assembly data. The nominal outline is 100 × 73 mm with a notch under the socketed Pico 2 W antenna. The enclosure must leave the antenna end clear of wiring, battery and metal hardware. Check USB and SWD reach, socket height and harness opening clearance against the physical parts.
 
 ## Board and harness

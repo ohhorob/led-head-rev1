@@ -1,0 +1,8 @@
+Reference,Quantity_per_board,MPN,DigiKey_Part_Number,DigiKey_Direct_Stock,DigiKey_Unit_USD,Preferred_Supplier,Alternate_Order_Number,Supplier_URL,Notes,Footprints
+D1,1,WS2812B-V6,,,,TME international,WS2812B-V6,https://www.tme.com/us/en-us/details/ws2812b-v6/smd-colour-leds/worldsemi/,"Exact V6 5050 part; current retrieved TME page lists only 8 units, international offer. No verified DigiKey/Mouser/Amazon source. Shipping/availability not confirmed at checkout. Do not replace with unspecified WS2812B.",LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm
+J2,1,S3B-XH-A,455-S3B-XH-A-ND,0,0.18,Newark,74M4770,https://www.newark.com/jst-japan-solderless-terminals/s3b-xh-a-lf-sn/header-right-angle-3way/dp/74M4770,"Exact S3B-XH-A(LF)(SN), Newark listing shows 10511 stock; UK stock delivery quoted 4-6 business days in indexed listing. DigiKey direct expected 14-Dec-2026; Mouser out of stock. No substitute selected.",StringCard:JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal
+C1 C2,2,C0805C104K5RACTU,399-C0805C104K5RACTUCT-ND,10023435,0.18,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+U1,1,TXU0101DBVR,296-TXU0101DBVRCT-ND,33800,0.77,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Package_TO_SOT_SMD:SOT-23-6_Handsoldering
+F1,1,0451003.MRL,F2583CT-ND,14062,2.47,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Fuse:Fuse_Littelfuse-NANO2-451_453
+R1,1,WSL2512R0250FEA,WSLG-.025CT-ND,34725,1.07,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,StringCard:Vishay_WSL2512
+R2,1,RC0805FR-07220RL,311-220CRCT-ND,222442,0.11,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder

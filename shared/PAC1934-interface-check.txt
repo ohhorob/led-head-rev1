@@ -1,0 +1,13 @@
+Checked string-daughterboard/string-daughterboard: J1, 12 contacts
+Checked pico-carrier/pico-carrier: J21, 12 contacts
+Checked pico-carrier/pico-carrier: J22, 12 contacts
+Checked pico-carrier/pico-carrier: J23, 12 contacts
+Checked pico-carrier/pico-carrier: J24, 12 contacts
+Checked pico-carrier/pico-carrier: J25, 12 contacts
+Checked pico-carrier/pico-carrier: J26, 12 contacts
+Checked pico-carrier/pico-carrier: J27, 12 contacts
+Checked pico-carrier/pico-carrier: J28, 12 contacts
+Checked pico-carrier/pico-carrier: U4, 17 contacts
+Checked pico-carrier/pico-carrier: U5, 17 contacts
+Checked string-daughterboard/string-daughterboard: R1, 2 contacts
+PASS: registered interfaces match schematic, PCB and mechanical contract.

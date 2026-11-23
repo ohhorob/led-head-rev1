@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source": "WEBENCH design 2 Altium ASCII schematic; pin endpoints and wires reconstructed independently",
+  "U1_pin_comparisons": 17,
+  "passive_networks_compared": 6,
+  "linked_footprints": 14,
+  "tracks": 0,
+  "vias": 0,
+  "zones": 0,
+  "ERC_violations": 0,
+  "schematic_parity_issues": 0,
+  "remaining_layout_DRC": [
+    "No outline",
+    "42 unrouted connections"
+  ],
+  "export_corrections": [
+    "TPS62091RGTR selected from package reference/title, not stale TPS62090 MPN field",
+    "Wurth 74439346010 real land pattern replaces generic inductor pattern"
+  ],
+  "package_changes": "Cin/Cout 1206; Ccp/Css/Rpg 0805; original nominal values preserved"
+}

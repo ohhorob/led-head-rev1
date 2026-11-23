@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "PowerManager") (type "KiCad") (uri "${KIPRJMOD}/PowerManager.kicad_sym") (options "") (descr "Power-manager devices; verified pinouts")))

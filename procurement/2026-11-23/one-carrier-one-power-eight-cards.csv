@@ -1,0 +1,31 @@
+MPN,Quantity,DigiKey_Part_Number,Preferred_Supplier,Supplier_URL,Notes
+XT60PW-M,1,,Jameco,https://www.jameco.com/z/XT60PW-M-Amass-XT60-Socket-Male-Terminals-45A-500V-2-Pin-Right-Angle-PCB-Mount_2844439.html,"Exact Amass right-angle part listed at $0.79, 301 stock in retrieved listing. No exact DigiKey match; no verified Mouser/Amazon offer found. Confirm supplied suffix against drawing."
+0039281103,2,WM3804-ND,Mouser,https://www.mouser.com/en/ProductDetail/Molex/39-28-1103?qs=KHty%2FoMxDPmmZSKus1aviw%3D%3D,Exact part. Mouser page retrieved today: 6634 in stock; $1.68 each. DigiKey direct expected 18-Dec-2026.
+TPS62091RGTR,1,296-46388-1-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+CL31A226KAHNNNE,2,1276-3047-1-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+74439346010,1,732-74439346010CT-ND,Mouser,https://www.mouser.com/en/ProductDetail/Wurth-Elektronik/74439346010?qs=rQFj71Wb1eVjgfvHnpR1NQ%3D%3D,"Exact part. Mouser indexed listing: 681 stock, crawled last week; verify checkout stock. DigiKey direct expected 25-Nov-2026."
+C0805C392J5GACTU,1,399-C0805C392J5GACTUCT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+C0805C103K5RACTU,1,399-C0805C103K5RACTUCT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+RC0805FR-07499KL,1,311-499KCRCT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+RC0805FR-071KL,1,311-1.00KCRCT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+LTST-C170KGKT,1,160-1414-1-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+TSW-102-07-G-S,7,612-TSW-102-07-G-S-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+WS2812B-V6,8,,TME international,https://www.tme.com/us/en-us/details/ws2812b-v6/smd-colour-leds/worldsemi/,"Exact V6 5050 part; current retrieved TME page lists only 8 units, international offer. No verified DigiKey/Mouser/Amazon source. Shipping/availability not confirmed at checkout. Do not replace with unspecified WS2812B."
+S3B-XH-A,8,455-S3B-XH-A-ND,Newark,https://www.newark.com/jst-japan-solderless-terminals/s3b-xh-a-lf-sn/header-right-angle-3way/dp/74M4770,"Exact S3B-XH-A(LF)(SN), Newark listing shows 10511 stock; UK stock delivery quoted 4-6 business days in indexed listing. DigiKey direct expected 14-Dec-2026; Mouser out of stock. No substitute selected."
+C0805C104K5RACTU,20,399-C0805C104K5RACTUCT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+TXU0101DBVR,8,296-TXU0101DBVRCT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+0451003.MRL,8,F2583CT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+WSL2512R0250FEA,8,WSLG-.025CT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+RC0805FR-07220RL,8,311-220CRCT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+EBC06DCWN,8,S3293-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+PAC1934T-I/JQ,2,PAC1934T-I/JQCT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+RC0805FR-0710KL,4,311-10.0KCRCT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+RC0805FR-074K7L,2,311-4.70KCRCT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+PPPC201LFBN-RC,2,S7053-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+TSW-104-07-G-D,2,612-TSW-104-07-G-D-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+B4B-PH-K-S,1,455-1706-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+FTSH-105-01-L-DV,1,612-FTSH-105-01-L-DV-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+B6B-PH-K-S,1,455-1708-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+SS14,1,SS14CT-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+TSW-106-07-G-S,1,612-TSW-106-07-G-S-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.
+TSW-103-07-G-S,1,612-TSW-103-07-G-S-ND,DigiKey,,Direct stock verified in logged-in My Lists on 2026-11-23.

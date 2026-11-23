@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-20",
+  "selection": {
+    "monitor": "PAC1934T-I/JQ",
+    "monitor_count": 2,
+    "slots": 8,
+    "shunt": "WSL2512R0250FEA",
+    "shunt_ohms": 0.025,
+    "addresses": [
+      "0x10",
+      "0x1F"
+    ]
+  },
+  "checks": {
+    "pico-carrier": {
+      "erc": 0,
+      "schematic_parity": 0,
+      "drc_violations": 1,
+      "unconnected_items": 159
+    },
+    "string-daughterboard": {
+      "erc": 0,
+      "schematic_parity": 0,
+      "drc_violations": 0,
+      "unconnected_items": 0
+    }
+  },
+  "daughtercard_geometry": "Verified exact equality of all tracks, vias, zones, outline graphics, footprint positions/layers and pad definitions against pre-change checkpoint",
+  "interface_check": "PASS: eight sockets, two PAC1934 pin maps, shunt identity/value and mechanical contract",
+  "negative_control": "Intentional 50 mOhm configuration rejected",
+  "carrier_status": "Unrouted layout draft, outline and power interconnect not assigned",
+  "source_sha256": {
+    "pico-carrier/pico-carrier.kicad_pcb": "cd8fdc55f556dea6209315eb95c1a5bbe1f7a2768d7833c39031f843e98c9c26",
+    "pico-carrier/current-monitoring.kicad_sch": "daff63605361511be77599aebaca08fd73626fafe0b0643beea4a401e90a9428",
+    "string-daughterboard/string-daughterboard.kicad_pcb": "318fd54a4072bae01b01aef19eccec99df6e17633e883084afd25c11f74471b4",
+    "string-daughterboard/string-daughterboard.kicad_sch": "143e1d3a27a76eed2b328c81bf5e9f82740e36b956fde872f9ba9805ac8473de"
+  }
+}

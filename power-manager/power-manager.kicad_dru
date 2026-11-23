@@ -1,0 +1,8 @@
+(version 1)
+# PCBWay standard 2-layer / 1 oz / green mask profile, verified 2026-11-20.
+# Physical clearance deliberately applies even to same-net via/pad pairs.
+(rule "No via in or against pad - 0.10mm copper gap"
+  (condition "A.Type == 'Via' && B.Type == 'Pad'")
+  (constraint physical_clearance (min 0.10mm)))
+(rule "Two layer through-via process only"
+  (constraint disallow micro_via blind_via buried_via))

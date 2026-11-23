@@ -1,0 +1,497 @@
+[
+  {
+    "ref": "C1",
+    "footprint": "C_0805_Reflow",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -0.95,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.45,
+        "drill": 0.0,
+        "net": "PERIPH_3V3"
+      },
+      {
+        "pin": "2",
+        "x": 0.95,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.45,
+        "drill": 0.0,
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C2",
+    "footprint": "C_0805_Reflow",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -0.95,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.45,
+        "drill": 0.0,
+        "net": "STRING_5V"
+      },
+      {
+        "pin": "2",
+        "x": 0.95,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.45,
+        "drill": 0.0,
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C7",
+    "footprint": "C_1206_Reflow",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -1.475,
+        "y": 0.0,
+        "w": 1.15,
+        "h": 1.8,
+        "drill": 0.0,
+        "net": "PERIPH_3V3"
+      },
+      {
+        "pin": "2",
+        "x": 1.475,
+        "y": 0.0,
+        "w": 1.15,
+        "h": 1.8,
+        "drill": 0.0,
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C3",
+    "footprint": "C_1206_Reflow",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -1.475,
+        "y": 0.0,
+        "w": 1.15,
+        "h": 1.8,
+        "drill": 0.0,
+        "net": "STRING_5V"
+      },
+      {
+        "pin": "2",
+        "x": 1.475,
+        "y": 0.0,
+        "w": 1.15,
+        "h": 1.8,
+        "drill": 0.0,
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D1",
+    "footprint": "Worldsemi_WS2812B_V6_5050_Reflow",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -2.45,
+        "y": -1.65,
+        "w": 1.5,
+        "h": 1.0,
+        "drill": 0.0,
+        "net": "PERIPH_3V3"
+      },
+      {
+        "pin": "2",
+        "x": -2.45,
+        "y": 1.65,
+        "w": 1.5,
+        "h": 1.0,
+        "drill": 0.0,
+        "net": "STATUS_DATA_OUT"
+      },
+      {
+        "pin": "3",
+        "x": 2.45,
+        "y": 1.65,
+        "w": 1.5,
+        "h": 1.0,
+        "drill": 0.0,
+        "net": "GND"
+      },
+      {
+        "pin": "4",
+        "x": 2.45,
+        "y": -1.65,
+        "w": 1.5,
+        "h": 1.0,
+        "drill": 0.0,
+        "net": "STATUS_LED_IN"
+      }
+    ]
+  },
+  {
+    "ref": "R2",
+    "footprint": "R_0805_Reflow",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -0.9125,
+        "y": 0.0,
+        "w": 1.025,
+        "h": 1.4,
+        "drill": 0.0,
+        "net": "STRING_BUF"
+      },
+      {
+        "pin": "2",
+        "x": 0.9125,
+        "y": 0.0,
+        "w": 1.025,
+        "h": 1.4,
+        "drill": 0.0,
+        "net": "STRING_DATA"
+      }
+    ]
+  },
+  {
+    "ref": "F1",
+    "footprint": "Littelfuse_451_453_Reflow",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -2.455,
+        "y": 0.0,
+        "w": 1.96,
+        "h": 3.15,
+        "drill": 0.0,
+        "net": "IN_5V"
+      },
+      {
+        "pin": "2",
+        "x": 2.455,
+        "y": 0.0,
+        "w": 1.96,
+        "h": 3.15,
+        "drill": 0.0,
+        "net": "SHUNT_HI"
+      }
+    ]
+  },
+  {
+    "ref": "R3",
+    "footprint": "R_0805_Reflow",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -0.9125,
+        "y": 0.0,
+        "w": 1.025,
+        "h": 1.4,
+        "drill": 0.0,
+        "net": "STATUS_DATA_IN"
+      },
+      {
+        "pin": "2",
+        "x": 0.9125,
+        "y": 0.0,
+        "w": 1.025,
+        "h": 1.4,
+        "drill": 0.0,
+        "net": "STATUS_LED_IN"
+      }
+    ]
+  },
+  {
+    "ref": "U1",
+    "footprint": "TI_TXU0101_DBV0006A_Reflow",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -1.3,
+        "y": -0.95,
+        "w": 1.1,
+        "h": 0.6,
+        "drill": 0.0,
+        "net": "PERIPH_3V3"
+      },
+      {
+        "pin": "2",
+        "x": -1.3,
+        "y": 0.0,
+        "w": 1.1,
+        "h": 0.6,
+        "drill": 0.0,
+        "net": "GND"
+      },
+      {
+        "pin": "3",
+        "x": -1.3,
+        "y": 0.95,
+        "w": 1.1,
+        "h": 0.6,
+        "drill": 0.0,
+        "net": "STRING_DATA_IN"
+      },
+      {
+        "pin": "4",
+        "x": 1.3,
+        "y": 0.95,
+        "w": 1.1,
+        "h": 0.6,
+        "drill": 0.0,
+        "net": "STRING_BUF"
+      },
+      {
+        "pin": "5",
+        "x": 1.3,
+        "y": 0.0,
+        "w": 1.1,
+        "h": 0.6,
+        "drill": 0.0,
+        "net": "PERIPH_3V3"
+      },
+      {
+        "pin": "6",
+        "x": 1.3,
+        "y": -0.95,
+        "w": 1.1,
+        "h": 0.6,
+        "drill": 0.0,
+        "net": "STRING_5V"
+      }
+    ]
+  },
+  {
+    "ref": "C6",
+    "footprint": "C_0805_Reflow",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -0.95,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.45,
+        "drill": 0.0,
+        "net": "PERIPH_3V3"
+      },
+      {
+        "pin": "2",
+        "x": 0.95,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.45,
+        "drill": 0.0,
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "J1",
+    "footprint": "Sullins_EBC06DRAS_Mating_Card_2x06_P2.54mm",
+    "pads": [
+      {
+        "pin": "A1",
+        "x": -6.35,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "GND"
+      },
+      {
+        "pin": "A2",
+        "x": -3.81,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "IN_5V"
+      },
+      {
+        "pin": "A3",
+        "x": -1.27,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "PERIPH_3V3"
+      },
+      {
+        "pin": "A4",
+        "x": 1.27,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "SHUNT_HI"
+      },
+      {
+        "pin": "A5",
+        "x": 3.81,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "STATUS_DATA_IN"
+      },
+      {
+        "pin": "A6",
+        "x": 6.35,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "unconnected-(J1-RESERVED-PadA6)"
+      },
+      {
+        "pin": "B1",
+        "x": -6.35,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "GND"
+      },
+      {
+        "pin": "B2",
+        "x": -3.81,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "IN_5V"
+      },
+      {
+        "pin": "B3",
+        "x": -1.27,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "STRING_DATA_IN"
+      },
+      {
+        "pin": "B4",
+        "x": 1.27,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "STRING_5V"
+      },
+      {
+        "pin": "B5",
+        "x": 3.81,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "STATUS_DATA_OUT"
+      },
+      {
+        "pin": "B6",
+        "x": 6.35,
+        "y": -3.75,
+        "w": 1.6,
+        "h": 6.5,
+        "drill": 0.0,
+        "net": "unconnected-(J1-RESERVED-PadB6)"
+      }
+    ]
+  },
+  {
+    "ref": "H2",
+    "footprint": "MountingHole_2.7mm_M2.5",
+    "pads": [
+      {
+        "pin": "",
+        "x": 0.0,
+        "y": 0.0,
+        "w": 2.7,
+        "h": 2.7,
+        "drill": 2.7,
+        "net": ""
+      }
+    ]
+  },
+  {
+    "ref": "R1",
+    "footprint": "Vishay_WSL2512_50mR",
+    "pads": [
+      {
+        "pin": "1",
+        "x": -2.855,
+        "y": 0.0,
+        "w": 1.65,
+        "h": 3.68,
+        "drill": 0.0,
+        "net": "SHUNT_HI"
+      },
+      {
+        "pin": "2",
+        "x": 2.855,
+        "y": 0.0,
+        "w": 1.65,
+        "h": 3.68,
+        "drill": 0.0,
+        "net": "STRING_5V"
+      }
+    ]
+  },
+  {
+    "ref": "J2",
+    "footprint": "JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal",
+    "pads": [
+      {
+        "pin": "1",
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.7,
+        "h": 1.95,
+        "drill": 0.95,
+        "net": "GND"
+      },
+      {
+        "pin": "2",
+        "x": 2.5,
+        "y": 0.0,
+        "w": 1.7,
+        "h": 1.95,
+        "drill": 0.95,
+        "net": "STRING_DATA"
+      },
+      {
+        "pin": "3",
+        "x": 5.0,
+        "y": 0.0,
+        "w": 1.7,
+        "h": 1.95,
+        "drill": 0.95,
+        "net": "STRING_5V"
+      }
+    ]
+  },
+  {
+    "ref": "H1",
+    "footprint": "MountingHole_2.7mm_M2.5",
+    "pads": [
+      {
+        "pin": "",
+        "x": 0.0,
+        "y": 0.0,
+        "w": 2.7,
+        "h": 2.7,
+        "drill": 2.7,
+        "net": ""
+      }
+    ]
+  }
+]

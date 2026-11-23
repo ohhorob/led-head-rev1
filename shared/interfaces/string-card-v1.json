@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "status": "Eight carrier slots with two PAC1934 monitors; layout draft",
+  "daughter_project": "string-daughterboard/string-daughterboard",
+  "daughter_reference": "J1",
+  "connector": "Sullins EBC06DRAS",
+  "symbol": "Interfaces:StringCardInterface",
+  "contacts": {
+    "A1": "GND",
+    "B1": "GND",
+    "A2": "IN_5V",
+    "B2": "IN_5V",
+    "A3": "PERIPH_3V3",
+    "B3": "STRING_DATA_IN",
+    "A4": "SHUNT_HI",
+    "B4": "STRING_5V",
+    "A5": "STATUS_DATA_IN",
+    "B5": "STATUS_DATA_OUT",
+    "A6": null,
+    "B6": null
+  },
+  "orientation": "Daughtercard front view with contact tip at bottom: A is F.Cu, B is B.Cu; positions 1 through 6 run left to right. Do not infer socket solder-tail numbering from this view.",
+  "mechanical": {
+    "thickness_mm": 1.6,
+    "overall_size_mm": [
+      22.0,
+      26.5
+    ],
+    "tongue_width_mm": 17.4,
+    "tongue_length_mm": 8.0,
+    "contact_pitch_mm": 2.54,
+    "contact_size_mm": [
+      1.6,
+      6.5
+    ],
+    "contact_centres_x_mm": [
+      13.65,
+      16.19,
+      18.73,
+      21.27,
+      23.81,
+      26.35
+    ],
+    "contact_centre_y_mm": 22.25,
+    "outline_mm": [
+      [
+        9,
+        0
+      ],
+      [
+        31,
+        0
+      ],
+      [
+        31,
+        18.5
+      ],
+      [
+        28.7,
+        18.5
+      ],
+      [
+        28.7,
+        26.5
+      ],
+      [
+        11.3,
+        26.5
+      ],
+      [
+        11.3,
+        18.5
+      ],
+      [
+        9,
+        18.5
+      ]
+    ]
+  },
+  "carrier_instances": [
+    {
+      "project": "pico-carrier/pico-carrier",
+      "reference": "J21",
+      "contacts": {
+        "A1": "GND",
+        "B1": "GND",
+        "A2": "IN_5V",
+        "B2": "IN_5V",
+        "A3": "PERIPH_3V3",
+        "B3": "GP4",
+        "A4": "S1_SHUNT_HI",
+        "B4": "S1_5V",
+        "A5": "STATUS_RGB_GPIO",
+        "B5": "STATUS_LINK_1",
+        "A6": null,
+        "B6": null
+      }
+    },
+    {
+      "project": "pico-carrier/pico-carrier",
+      "reference": "J22",
+      "contacts": {
+        "A1": "GND",
+        "B1": "GND",
+        "A2": "IN_5V",
+        "B2": "IN_5V",
+        "A3": "PERIPH_3V3",
+        "B3": "GP5",
+        "A4": "S2_SHUNT_HI",
+        "B4": "S2_5V",
+        "A5": "STATUS_LINK_1",
+        "B5": "STATUS_LINK_2",
+        "A6": null,
+        "B6": null
+      }
+    },
+    {
+      "project": "pico-carrier/pico-carrier",
+      "reference": "J23",
+      "contacts": {
+        "A1": "GND",
+        "B1": "GND",
+        "A2": "IN_5V",
+        "B2": "IN_5V",
+        "A3": "PERIPH_3V3",
+        "B3": "GP6",
+        "A4": "S3_SHUNT_HI",
+        "B4": "S3_5V",
+        "A5": "STATUS_LINK_2",
+        "B5": "STATUS_LINK_3",
+        "A6": null,
+        "B6": null
+      }
+    },
+    {
+      "project": "pico-carrier/pico-carrier",
+      "reference": "J24",
+      "contacts": {
+        "A1": "GND",
+        "B1": "GND",
+        "A2": "IN_5V",
+        "B2": "IN_5V",
+        "A3": "PERIPH_3V3",
+        "B3": "GP2",
+        "A4": "S4_SHUNT_HI",
+        "B4": "S4_5V",
+        "A5": "STATUS_LINK_3",
+        "B5": "STATUS_LINK_4",
+        "A6": null,
+        "B6": null
+      }
+    },
+    {
+      "project": "pico-carrier/pico-carrier",
+      "reference": "J25",
+      "contacts": {
+        "A1": "GND",
+        "B1": "GND",
+        "A2": "IN_5V",
+        "B2": "IN_5V",
+        "A3": "PERIPH_3V3",
+        "B3": "GP3",
+        "A4": "S5_SHUNT_HI",
+        "B4": "S5_5V",
+        "A5": "STATUS_LINK_4",
+        "B5": "STATUS_LINK_5",
+        "A6": null,
+        "B6": null
+      }
+    },
+    {
+      "project": "pico-carrier/pico-carrier",
+      "reference": "J26",
+      "contacts": {
+        "A1": "GND",
+        "B1": "GND",
+        "A2": "IN_5V",
+        "B2": "IN_5V",
+        "A3": "PERIPH_3V3",
+        "B3": "GP11",
+        "A4": "S6_SHUNT_HI",
+        "B4": "S6_5V",
+        "A5": "STATUS_LINK_5",
+        "B5": "STATUS_LINK_6",
+        "A6": null,
+        "B6": null
+      }
+    },
+    {
+      "project": "pico-carrier/pico-carrier",
+      "reference": "J27",
+      "contacts": {
+        "A1": "GND",
+        "B1": "GND",
+        "A2": "IN_5V",
+        "B2": "IN_5V",
+        "A3": "PERIPH_3V3",
+        "B3": "GP12",
+        "A4": "S7_SHUNT_HI",
+        "B4": "S7_5V",
+        "A5": "STATUS_LINK_6",
+        "B5": "STATUS_LINK_7",
+        "A6": null,
+        "B6": null
+      }
+    },
+    {
+      "project": "pico-carrier/pico-carrier",
+      "reference": "J28",
+      "contacts": {
+        "A1": "GND",
+        "B1": "GND",
+        "A2": "IN_5V",
+        "B2": "IN_5V",
+        "A3": "PERIPH_3V3",
+        "B3": "GP13",
+        "A4": "S8_SHUNT_HI",
+        "B4": "S8_5V",
+        "A5": "STATUS_LINK_7",
+        "B5": null,
+        "A6": null,
+        "B6": null
+      }
+    }
+  ],
+  "power_interface": {
+    "status": "Carrier J19 assigned: 10-position Mini-Fit Jr, combined 5V/peripheral 3.3V/GND; power-manager mating circuit and control/status link pending"
+  },
+  "measurement": {
+    "part": "PAC1934T-I/JQ",
+    "shunt_ohms": 0.025,
+    "addresses": {
+      "U4": "0x10",
+      "U5": "0x1F"
+    },
+    "slot_monitors": {
+      "1": {
+        "reference": "U4",
+        "channel": 1
+      },
+      "2": {
+        "reference": "U4",
+        "channel": 2
+      },
+      "3": {
+        "reference": "U4",
+        "channel": 3
+      },
+      "4": {
+        "reference": "U4",
+        "channel": 4
+      },
+      "5": {
+        "reference": "U5",
+        "channel": 1
+      },
+      "6": {
+        "reference": "U5",
+        "channel": 2
+      },
+      "7": {
+        "reference": "U5",
+        "channel": 3
+      },
+      "8": {
+        "reference": "U5",
+        "channel": 4
+      }
+    },
+    "string_gpio": {
+      "1": 4,
+      "2": 5,
+      "3": 6,
+      "4": 2,
+      "5": 3,
+      "6": 11,
+      "7": 12,
+      "8": 13
+    }
+  },
+  "peripheral_power_input": {
+    "project": "pico-carrier/pico-carrier",
+    "reference": "J19",
+    "contacts": {
+      "1": "IN_5V",
+      "2": "IN_5V",
+      "3": "IN_5V",
+      "4": "IN_5V",
+      "5": "PERIPH_3V3",
+      "6": "GND",
+      "7": "GND",
+      "8": "GND",
+      "9": "GND",
+      "10": "GND"
+    },
+    "connector": "Molex Mini-Fit Jr 0039281103",
+    "housing": "0039012100",
+    "contact": "0039000039",
+    "note": "Combined regulated 5V, peripheral 3.3V and GND; parallel main-power conductors. Confirm complete harness derating before fabrication."
+  }
+}

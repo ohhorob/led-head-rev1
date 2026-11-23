@@ -1,0 +1,18 @@
+Reference,Quantity_per_board,MPN,DigiKey_Part_Number,DigiKey_Direct_Stock,DigiKey_Unit_USD,Preferred_Supplier,Alternate_Order_Number,Supplier_URL,Notes,Footprints
+J21 J22 J23 J24 J25 J26 J27 J28,8,EBC06DCWN,S3293-ND,1815,2.82,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Interfaces:Sullins_EBC06DCWN_Socket_2x06_P2.54mm_Vertical
+U4 U5,2,PAC1934T-I/JQ,PAC1934T-I/JQCT-ND,27034,1.94,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Package_DFN_QFN:UQFN-16-1EP_4x4mm_P0.65mm_EP2.7x2.7mm
+C40 C41 C42 C43,4,C0805C104K5RACTU,399-C0805C104K5RACTUCT-ND,10023435,0.18,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Capacitor_SMD:C_0805_2012Metric
+R5 R6 R30 R31,4,RC0805FR-0710KL,311-10.0KCRCT-ND,1167208,0.10,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Resistor_SMD:R_0805_2012Metric
+R7 R8,2,RC0805FR-074K7L,311-4.70KCRCT-ND,437979,0.10,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Resistor_SMD:R_0805_2012Metric
+J19,1,0039281103,WM3804-ND,0,1.64,Mouser,538-39-28-1103,https://www.mouser.com/en/ProductDetail/Molex/39-28-1103?qs=KHty%2FoMxDPmmZSKus1aviw%3D%3D,Exact part. Mouser page retrieved today: 6634 in stock; $1.68 each. DigiKey direct expected 18-Dec-2026.,Connector_Molex:Molex_Mini-Fit_Jr_5566-10A_2x05_P4.20mm_Vertical
+J20,1,B5B-XH-A,455-B5B-XH-A-ND,67683,0.20,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23. Reserved future battery telemetry; optional for dedicated 5V setup.,Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical
+J10 J11,2,PPPC201LFBN-RC,S7053-ND,11946,1.20,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical
+J15 J18,2,TSW-104-07-G-D,612-TSW-104-07-G-D-ND,3857,0.66,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical
+J12,1,B4B-PH-K-S,455-1706-ND,87290,0.20,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical
+TP2 TP3 TP4 TP5,4,TSW-102-07-G-S,612-TSW-102-07-G-S-ND,68923,0.19,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+J13,1,FTSH-105-01-L-DV,612-FTSH-105-01-L-DV-ND,21503,1.05,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,HeadUnit:Samtec_FTSH-105-01-L-DV_2x05_P1.27mm_SMT
+J17,1,B6B-PH-K-S,455-1708-ND,34268,0.28,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical
+D1,1,SS14,SS14CT-ND,96389,0.44,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Diode_SMD:D_SMA
+J16,1,TSW-106-07-G-S,612-TSW-106-07-G-S-ND,1725,0.56,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
+J14,1,TSW-103-07-G-S,612-TSW-103-07-G-S-ND,67805,0.27,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+MODULE,1,SC1634,2648-SC1634-ND,3500,8.00,DigiKey,,,"Direct stock verified in logged-in My Lists on 2026-11-23. Pico 2 WH already owned; included for completeness, not an additional purchase recommendation.",

@@ -1,0 +1,222 @@
+[
+  {
+    "uuid": "18f432e6-ae16-426c-b2f1-5da2a542da23",
+    "net": "GND",
+    "pads": [
+      [
+        "C40",
+        "2"
+      ]
+    ],
+    "old": [
+      32.0,
+      30.5
+    ],
+    "new": [
+      32.05,
+      30.525
+    ],
+    "distance_mm": 0.0559,
+    "attached_track_ends": 3
+  },
+  {
+    "uuid": "31678f24-5b3d-4734-87e5-ef162154dd16",
+    "net": "GND",
+    "pads": [
+      [
+        "C54",
+        "2"
+      ]
+    ],
+    "old": [
+      31.679482,
+      1.448111
+    ],
+    "new": [
+      31.604482,
+      0.898111
+    ],
+    "distance_mm": 0.5551,
+    "attached_track_ends": 1
+  },
+  {
+    "uuid": "686fe76d-56fb-4def-92e5-db50ba6650c5",
+    "net": "GND",
+    "pads": [
+      [
+        "R1",
+        "2"
+      ]
+    ],
+    "old": [
+      85.0,
+      29.0
+    ],
+    "new": [
+      85.0,
+      29.15
+    ],
+    "distance_mm": 0.15,
+    "attached_track_ends": 1
+  },
+  {
+    "uuid": "ccc96e5f-0db8-47d1-9384-9a0fdd48ce86",
+    "net": "GND",
+    "pads": [
+      [
+        "R44",
+        "2"
+      ]
+    ],
+    "old": [
+      80.0,
+      15.0
+    ],
+    "new": [
+      79.875,
+      15.0
+    ],
+    "distance_mm": 0.125,
+    "attached_track_ends": 1
+  },
+  {
+    "uuid": "db08ec54-5b9d-455e-8198-9d6513a6687f",
+    "net": "GND",
+    "pads": [
+      [
+        "U6",
+        "4"
+      ]
+    ],
+    "old": [
+      88.0,
+      36.5
+    ],
+    "new": [
+      88.025,
+      36.55
+    ],
+    "distance_mm": 0.0559,
+    "attached_track_ends": 1
+  },
+  {
+    "uuid": "a384bd1c-be86-4342-9ebb-da590679db4e",
+    "net": "LED_5V",
+    "pads": [
+      [
+        "F1",
+        "1"
+      ]
+    ],
+    "old": [
+      25.839934,
+      25.157183
+    ],
+    "new": [
+      25.964934,
+      25.157183
+    ],
+    "distance_mm": 0.125,
+    "attached_track_ends": 0
+  },
+  {
+    "uuid": "bdc146de-ec48-4f87-9982-56e7709a499d",
+    "net": "LED_5V",
+    "pads": [
+      [
+        "F3",
+        "1"
+      ]
+    ],
+    "old": [
+      59.876318,
+      26.429468
+    ],
+    "new": [
+      59.951318,
+      26.429468
+    ],
+    "distance_mm": 0.075,
+    "attached_track_ends": 0
+  },
+  {
+    "uuid": "e70d1175-de5b-4851-99ba-10d7e4a7120f",
+    "net": "LED_5V",
+    "pads": [
+      [
+        "F2",
+        "1"
+      ]
+    ],
+    "old": [
+      42.844654,
+      26.482644
+    ],
+    "new": [
+      42.969654,
+      26.482644
+    ],
+    "distance_mm": 0.125,
+    "attached_track_ends": 0
+  },
+  {
+    "uuid": "ed1f2337-b470-47e4-8ffb-3f388058d2c8",
+    "net": "LED_5V",
+    "pads": [
+      [
+        "F1",
+        "1"
+      ]
+    ],
+    "old": [
+      25.839934,
+      26.449787
+    ],
+    "new": [
+      25.964934,
+      26.449787
+    ],
+    "distance_mm": 0.125,
+    "attached_track_ends": 0
+  },
+  {
+    "uuid": "f430ff82-6c0b-4ed6-aa41-c3d1f426a268",
+    "net": "LED_5V",
+    "pads": [
+      [
+        "F3",
+        "1"
+      ]
+    ],
+    "old": [
+      59.884094,
+      25.130866
+    ],
+    "new": [
+      59.959094,
+      25.130866
+    ],
+    "distance_mm": 0.075,
+    "attached_track_ends": 0
+  },
+  {
+    "uuid": "fe6811e5-6da3-422c-8820-ffacb3519e3b",
+    "net": "LED_5V",
+    "pads": [
+      [
+        "F2",
+        "1"
+      ]
+    ],
+    "old": [
+      42.844654,
+      25.19004
+    ],
+    "new": [
+      42.969654,
+      25.19004
+    ],
+    "distance_mm": 0.125,
+    "attached_track_ends": 0
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-20",
+  "new_projects": "Carrier populated and unrouted; power manager remains an empty starter",
+  "checks": {
+    "daughtercard_contract": "PASS: daughtercard and all three registered carrier sockets",
+    "negative_control": "PASS: intentional B3 net mismatch rejected",
+    "pico_carrier": "ERC 0; schematic parity 0; 23 linked footprints; 95 unrouted connections; outline not defined",
+    "power_manager": "KiCad CLI schematic ERC: 0 violations; PCB SVG export succeeded"
+  },
+  "scope_limits": [
+    "Carrier outline and routing unfinished",
+    "Physical socket mating untested",
+    "Power-board interconnect not selected",
+    "No fabrication release generated"
+  ],
+  "daughtercard_source_sha256": {
+    "kicad_sch": "06e34406cc404fb0ef69fe7e360afb4c61f36e4a5d26b2e4a44b3823115e3098",
+    "kicad_pcb": "2b351d012d33c2d586b97be01c76118828dc8fab1ad01f33043534f88aa0a5b3",
+    "kicad_pro": "cab0b9220276fd96f4296b8a6f60806b7900d72b718d19f81d91e41642f2247a"
+  },
+  "superseded_by": "PAC1934-change-validation.json"
+}

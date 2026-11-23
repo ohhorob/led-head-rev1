@@ -1,0 +1,9 @@
+{
+  "change": "C7 removed; bypass capacitors wired directly to supply pins in schematic",
+  "erc_violations": 0,
+  "pin_net_parity": "all remaining expected nets match",
+  "routing_items_preserved": 52,
+  "pcb_drc_violations": 9,
+  "pcb_unconnected_items": 8,
+  "existing_footprint_library_mismatches": 8
+}

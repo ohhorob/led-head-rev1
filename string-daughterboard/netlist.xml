@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/rob/Projects/pico-playground/led-head-rev1/string-daughterboard/string-daughterboard.kicad_sch</source>
+    <date>2026-11-20T08:29:09</date>
+    <tool>Eeschema 10.0.7</tool>
+    <textvar name="FAB_PROFILE">PCBWay 2L FR4 1.6mm 1oz green ENIG</textvar>
+    <textvar name="FAB_STATUS">Design rules configured; final DFM still required</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>String daughterboard / Sullins EBC06DRAS</title>
+        <company/>
+        <rev>1 - REVIEW</rev>
+        <date>2026-11-19</date>
+        <source>string-daughterboard.kicad_sch</source>
+        <comment number="1" value="Single string card | PLACEMENT DRAFT"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>StringCard:C_0805_Reflow</footprint>
+      <fields>
+        <field name="Footprint">StringCard:C_0805_Reflow</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c574d8e0-80ad-4a09-a2ee-efdde500458c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>StringCard:C_0805_Reflow</footprint>
+      <fields>
+        <field name="Footprint">StringCard:C_0805_Reflow</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30a20165-58d2-4d1c-adf2-1ceb2c1ce821</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>10u / 16V</value>
+      <footprint>StringCard:C_1206_Reflow</footprint>
+      <fields>
+        <field name="Footprint">StringCard:C_1206_Reflow</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72afd4d7-cd80-47be-8036-9325920cd71d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>StringCard:C_0805_Reflow</footprint>
+      <fields>
+        <field name="Footprint">StringCard:C_0805_Reflow</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3256c815-8031-4613-8160-38d311a10816</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>WS2812B-V6 / 3.3 V status</value>
+      <footprint>StringCard:Worldsemi_WS2812B_V6_5050_Reflow</footprint>
+      <fields>
+        <field name="Footprint">StringCard:Worldsemi_WS2812B_V6_5050_Reflow</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="StatusRGB" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c023c0e-b41f-4cd2-adda-884fb0fa54f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>3A / 0451003.MRL</value>
+      <footprint>StringCard:Littelfuse_451_453_Reflow</footprint>
+      <fields>
+        <field name="Footprint">StringCard:Littelfuse_451_453_Reflow</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="Fuse" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be9a3a96-1750-4898-8796-74a2f201168e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>PCB fingers: mates EBC06DRAS</value>
+      <footprint>StringCard:Sullins_EBC06DRAS_Mating_Card_2x06_P2.54mm</footprint>
+      <fields>
+        <field name="Footprint">StringCard:Sullins_EBC06DRAS_Mating_Card_2x06_P2.54mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="EdgeCard" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e6bb679e-0282-432c-846e-bf77e604d848</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1"/>
+            <pin num="A2"/>
+            <pin num="A3"/>
+            <pin num="A4"/>
+            <pin num="A5"/>
+            <pin num="A6"/>
+            <pin num="B1"/>
+            <pin num="B2"/>
+            <pin num="B3"/>
+            <pin num="B4"/>
+            <pin num="B5"/>
+            <pin num="B6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>STRING: GND / DATA / 5V</value>
+      <footprint>StringCard:JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">StringCard:JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="StringOut" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>24c6b782-8010-4645-9d18-5f920dd04de6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>50m / 1W / WSL2512R0500FEA</value>
+      <footprint>StringCard:Vishay_WSL2512_50mR</footprint>
+      <fields>
+        <field name="Footprint">StringCard:Vishay_WSL2512_50mR</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c634d1a7-ee29-4a41-b511-69acff03d509</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>220R / string data</value>
+      <footprint>StringCard:R_0805_Reflow</footprint>
+      <fields>
+        <field name="Footprint">StringCard:R_0805_Reflow</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da67edf9-03cd-4cac-b876-32ebb7eb7090</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>TXU0101DBVR / string</value>
+      <footprint>StringCard:TI_TXU0101_DBV0006A_Reflow</footprint>
+      <fields>
+        <field name="Footprint">StringCard:TI_TXU0101_DBV0006A_Reflow</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="TXU0101" description=""/>
+      <property name="Sheetname" value="string-daughterboard"/>
+      <property name="Sheetfile" value="string-daughterboard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0cdd6ca-3149-4b86-b1f5-9819447bc978</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Review" part="C">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="EdgeCard">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">EdgeCard</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A2" name="5V" type="passive"/>
+        <pin num="A3" name="3V3" type="passive"/>
+        <pin num="A4" name="SENSE+" type="passive"/>
+        <pin num="A5" name="STATUS_IN" type="passive"/>
+        <pin num="A6" name="RESERVED" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B2" name="5V" type="passive"/>
+        <pin num="B3" name="DATA" type="passive"/>
+        <pin num="B4" name="SENSE-" type="passive"/>
+        <pin num="B5" name="STATUS_OUT" type="passive"/>
+        <pin num="B6" name="RESERVED" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="Fuse">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Fuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="R">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="StatusRGB">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">StatusRGB</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="DOUT" type="output"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="DIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="StringOut">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">StringOut</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="DATA" type="passive"/>
+        <pin num="3" name="5V" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="TXU0101">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TXU0101</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCA" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="A" type="input"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="OE" type="input"/>
+        <pin num="6" name="VCCB" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Review">
+      <uri>${KIPRJMOD}/StringCard.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="D1" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="J1" pin="A1" pinfunction="GND_A1" pintype="passive"/>
+      <node ref="J1" pin="B1" pinfunction="GND_B1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND_2" pintype="power_in"/>
+    </net>
+    <net code="2" name="IN_5V" class="StringPower">
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J1" pin="A2" pinfunction="5V_A2" pintype="passive"/>
+      <node ref="J1" pin="B2" pinfunction="5V_B2" pintype="passive"/>
+    </net>
+    <net code="3" name="PERIPH_3V3" class="LogicPower">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="VDD_1" pintype="power_in"/>
+      <node ref="J1" pin="A3" pinfunction="3V3_A3" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VCCA_1" pintype="power_in"/>
+      <node ref="U1" pin="5" pinfunction="OE_5" pintype="input"/>
+    </net>
+    <net code="4" name="SHUNT_HI" class="StringPower">
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="A4" pinfunction="SENSE+_A4" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="STATUS_DATA_IN" class="Default">
+      <node ref="D1" pin="4" pinfunction="DIN_4" pintype="input"/>
+      <node ref="J1" pin="A5" pinfunction="STATUS_IN_A5" pintype="passive"/>
+    </net>
+    <net code="6" name="STATUS_DATA_OUT" class="Default">
+      <node ref="D1" pin="2" pinfunction="DOUT_2" pintype="output"/>
+      <node ref="J1" pin="B5" pinfunction="STATUS_OUT_B5" pintype="passive"/>
+    </net>
+    <net code="7" name="STRING_5V" class="StringPower">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="J1" pin="B4" pinfunction="SENSE-_B4" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="5V_3" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="VCCB_6" pintype="power_in"/>
+    </net>
+    <net code="8" name="STRING_BUF" class="Default">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="Y_4" pintype="output"/>
+    </net>
+    <net code="9" name="STRING_DATA" class="Default">
+      <node ref="J2" pin="2" pinfunction="DATA_2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="STRING_DATA_IN" class="Default">
+      <node ref="J1" pin="B3" pinfunction="DATA_B3" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="A_3" pintype="input"/>
+    </net>
+    <net code="11" name="unconnected-(J1-RESERVED-PadA6)" class="Default">
+      <node ref="J1" pin="A6" pinfunction="RESERVED_A6" pintype="passive+no_connect"/>
+    </net>
+    <net code="12" name="unconnected-(J1-RESERVED-PadB6)" class="Default">
+      <node ref="J1" pin="B6" pinfunction="RESERVED_B6" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

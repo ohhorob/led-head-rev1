@@ -1,0 +1,12 @@
+Reference,Quantity_per_board,MPN,DigiKey_Part_Number,DigiKey_Direct_Stock,DigiKey_Unit_USD,Preferred_Supplier,Alternate_Order_Number,Supplier_URL,Notes,Footprints
+J1,1,XT60PW-M,,,,Jameco,2844439,https://www.jameco.com/z/XT60PW-M-Amass-XT60-Socket-Male-Terminals-45A-500V-2-Pin-Right-Angle-PCB-Mount_2844439.html,"Exact Amass right-angle part listed at $0.79, 301 stock in retrieved listing. No exact DigiKey match; no verified Mouser/Amazon offer found. Confirm supplied suffix against drawing.",HeadUnit:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal
+J5,1,0039281103,WM3804-ND,0,1.64,Mouser,538-39-28-1103,https://www.mouser.com/en/ProductDetail/Molex/39-28-1103?qs=KHty%2FoMxDPmmZSKus1aviw%3D%3D,Exact part. Mouser page retrieved today: 6634 in stock; $1.68 each. DigiKey direct expected 18-Dec-2026.,PowerManager:Molex_0039281103
+U1,1,TPS62091RGTR,296-46388-1-ND,2708,2.74,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,PowerManager:TI_RGT0016C_TPS62091
+C1 C2,2,CL31A226KAHNNNE,1276-3047-1-ND,95267,0.45,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Capacitor_SMD:C_1206_3216Metric
+L1,1,74439346010,732-74439346010CT-ND,0,4.05,Mouser,710-74439346010,https://www.mouser.com/en/ProductDetail/Wurth-Elektronik/74439346010?qs=rQFj71Wb1eVjgfvHnpR1NQ%3D%3D,"Exact part. Mouser indexed listing: 681 stock, crawled last week; verify checkout stock. DigiKey direct expected 25-Nov-2026.",Inductor_SMD:L_Wuerth_XHMI-6060
+C4,1,C0805C392J5GACTU,399-C0805C392J5GACTUCT-ND,3804,0.82,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Capacitor_SMD:C_0805_2012Metric
+C3,1,C0805C103K5RACTU,399-C0805C103K5RACTUCT-ND,1329018,0.15,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Capacitor_SMD:C_0805_2012Metric
+R1,1,RC0805FR-07499KL,311-499KCRCT-ND,344754,0.10,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Resistor_SMD:R_0805_2012Metric
+R2,1,RC0805FR-071KL,311-1.00KCRCT-ND,447743,0.10,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Resistor_SMD:R_0805_2012Metric
+D1,1,LTST-C170KGKT,160-1414-1-ND,397537,0.19,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,LED_SMD:LED_0805_2012Metric
+TP1 TP2 TP3,3,TSW-102-07-G-S,612-TSW-102-07-G-S-ND,68923,0.19,DigiKey,,,Direct stock verified in logged-in My Lists on 2026-11-23.,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical

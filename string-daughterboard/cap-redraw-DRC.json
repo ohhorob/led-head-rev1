@@ -1,0 +1,527 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-20T08:29:43",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [
+        {
+            "description": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder doesn't match footprint given by symbol (StringCard:C_0805_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 22.5375,
+                        "y": 15.0
+                    },
+                    "uuid": "f0739d7b-9dd2-4bd2-acce-81811bff6e27"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder doesn't match footprint given by symbol (StringCard:C_0805_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 20.0375,
+                        "y": 3.0
+                    },
+                    "uuid": "e17bf8f5-22da-49c0-af7f-43ec1174b6a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder doesn't match footprint given by symbol (StringCard:C_1206_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 6.0
+                    },
+                    "uuid": "b1224378-609c-457e-af8d-bd391ded5719"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder doesn't match footprint given by symbol (StringCard:C_0805_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 22.9625,
+                        "y": 27.0
+                    },
+                    "uuid": "137da927-1576-42a7-8fbe-3f1de23295c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm doesn't match footprint given by symbol (StringCard:Worldsemi_WS2812B_V6_5050_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 22.85,
+                        "y": 18.95
+                    },
+                    "uuid": "7d91f764-d6f0-4282-bac7-8ef23e704d09"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Fuse:Fuse_Littelfuse-NANO2-451_453 doesn't match footprint given by symbol (StringCard:Littelfuse_451_453_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint F1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 15.5
+                    },
+                    "uuid": "56d6368a-365e-4651-9ab4-9907f7b4b928"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder doesn't match footprint given by symbol (StringCard:R_0805_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 18.5,
+                        "y": 9.0
+                    },
+                    "uuid": "72340690-3c94-4785-acb0-1317fa6a8801"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Package_TO_SOT_SMD:SOT-23-6_Handsoldering doesn't match footprint given by symbol (StringCard:TI_TXU0101_DBV0006A_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 23.15,
+                        "y": 9.95
+                    },
+                    "uuid": "15c0daa1-8e8b-477a-b57a-b87729dd676c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        }
+    ],
+    "source": "string-daughterboard.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [PERIPH_3V3] on B.Cu, length 0.6607 mm",
+                    "pos": {
+                        "x": 23.18,
+                        "y": 9.48284
+                    },
+                    "uuid": "28a939e3-b210-483d-974a-701089a89bcb"
+                },
+                {
+                    "description": "Pad 1 [PERIPH_3V3] of C1 on B.Cu",
+                    "pos": {
+                        "x": 23.575,
+                        "y": 15.0
+                    },
+                    "uuid": "8c5dba3e-bc72-4f9a-a41f-c66e64cfd9d0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [PERIPH_3V3] of C1 on B.Cu",
+                    "pos": {
+                        "x": 23.575,
+                        "y": 15.0
+                    },
+                    "uuid": "8c5dba3e-bc72-4f9a-a41f-c66e64cfd9d0"
+                },
+                {
+                    "description": "Track [PERIPH_3V3] on F.Cu, length 2.9250 mm",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 21.4
+                    },
+                    "uuid": "e521dc85-1d2d-40bc-8351-03b70652afcb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad B2 [IN_5V] of J1 on B.Cu",
+                    "pos": {
+                        "x": 16.19,
+                        "y": 48.25
+                    },
+                    "uuid": "dff38255-b7ed-4113-8537-48eeeb80c85b"
+                },
+                {
+                    "description": "Track [IN_5V] on F.Cu, length 22.9850 mm",
+                    "pos": {
+                        "x": 16.19,
+                        "y": 48.25
+                    },
+                    "uuid": "433f8455-5c7a-4b5b-8fce-0c86af0535b1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad A4 [SHUNT_HI] of J1 on F.Cu",
+                    "pos": {
+                        "x": 21.27,
+                        "y": 48.25
+                    },
+                    "uuid": "81c10955-769f-42ec-bbcd-977ad823dbc9"
+                },
+                {
+                    "description": "Pad 2 [SHUNT_HI] of F1 on F.Cu",
+                    "pos": {
+                        "x": 13.045,
+                        "y": 15.5
+                    },
+                    "uuid": "5d553553-2b7b-4065-9dd1-fad05515e026"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad B3 [STRING_DATA_IN] of J1 on B.Cu",
+                    "pos": {
+                        "x": 18.73,
+                        "y": 48.25
+                    },
+                    "uuid": "8a1c64b6-cfd7-487c-8eb9-3049bdf73dbe"
+                },
+                {
+                    "description": "Pad 3 [STRING_DATA_IN] of U1 on B.Cu",
+                    "pos": {
+                        "x": 24.5,
+                        "y": 10.9
+                    },
+                    "uuid": "143275c4-20a2-40cd-a922-ba74f7ce7855"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [STRING_5V] of C3 on F.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 7.5625
+                    },
+                    "uuid": "dac6b2df-4066-4dac-90b6-c8647de9fe13"
+                },
+                {
+                    "description": "Track [STRING_5V] on B.Cu, length 1.0000 mm",
+                    "pos": {
+                        "x": 17.5,
+                        "y": 6.0
+                    },
+                    "uuid": "31c94e46-f097-4957-abd1-c654011cde78"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [STRING_5V] on F.Cu, length 1.0041 mm",
+                    "pos": {
+                        "x": 18.21,
+                        "y": 11.0
+                    },
+                    "uuid": "6ad03fe5-a193-42f3-98c4-90f9b6b0d525"
+                },
+                {
+                    "description": "Pad B4 [STRING_5V] of J1 on B.Cu",
+                    "pos": {
+                        "x": 21.27,
+                        "y": 48.25
+                    },
+                    "uuid": "d7ccb1e6-5f92-41e5-bb0b-a191e842c55d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [STRING_5V] on B.Cu, length 2.7577 mm",
+                    "pos": {
+                        "x": 23.75,
+                        "y": 7.05
+                    },
+                    "uuid": "f96df9de-8210-4fd7-8b79-2b4d2c9cfbc1"
+                },
+                {
+                    "description": "Track [STRING_5V] on F.Cu, length 0.2051 mm",
+                    "pos": {
+                        "x": 21.355,
+                        "y": 10.645
+                    },
+                    "uuid": "1b74a9a2-810a-4a16-aa53-2b3e8a05c330"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Clearance violation (rule 'No via in or against pad - 0.10mm copper gap' clearance 0.1000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad A1 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 13.65,
+                        "y": 48.25
+                    },
+                    "uuid": "34c48d10-a0bb-4202-a2d5-41c9f0994dc5"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 13.65,
+                        "y": 45.5
+                    },
+                    "uuid": "c42fff8e-4986-4e5f-96fc-5b86cba2a97c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'No via in or against pad - 0.10mm copper gap' clearance 0.1000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad B1 [GND] of J1 on B.Cu",
+                    "pos": {
+                        "x": 13.65,
+                        "y": 48.25
+                    },
+                    "uuid": "22976cff-8c3a-4b2a-adbc-dfd5e8db79ac"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 13.65,
+                        "y": 45.5
+                    },
+                    "uuid": "c42fff8e-4986-4e5f-96fc-5b86cba2a97c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'g_1' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 29.5,
+                        "y": 43.5
+                    },
+                    "uuid": "5839ffdd-ba96-466a-919d-4d3507ad754d"
+                },
+                {
+                    "description": "Pad 2 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 24.5,
+                        "y": 9.95
+                    },
+                    "uuid": "0098fcc2-8387-400e-b6f9-cc179db27346"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [STRING_5V] on F.Cu, length 0.2051 mm",
+                    "pos": {
+                        "x": 21.355,
+                        "y": 10.645
+                    },
+                    "uuid": "1b74a9a2-810a-4a16-aa53-2b3e8a05c330"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'GND  DATA  +5V' on F.Silkscreen",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 8.9
+                    },
+                    "uuid": "0b589086-e6a1-4828-a92c-d4832861df03"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C2",
+                    "pos": {
+                        "x": 20.0375,
+                        "y": 4.68
+                    },
+                    "uuid": "8bb56457-fff8-44c3-9d78-5cb8a3152f43"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'GND  DATA  +5V' on F.Silkscreen",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 8.9
+                    },
+                    "uuid": "0b589086-e6a1-4828-a92c-d4832861df03"
+                },
+                {
+                    "description": "Reference field of R1",
+                    "pos": {
+                        "x": 15.355,
+                        "y": 8.37
+                    },
+                    "uuid": "62e5b961-ae53-4484-b208-bafc7603a99b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0832 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'GND  DATA  +5V' on F.Silkscreen",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 8.9
+                    },
+                    "uuid": "0b589086-e6a1-4828-a92c-d4832861df03"
+                },
+                {
+                    "description": "Segment of R1 on F.Silkscreen",
+                    "pos": {
+                        "x": 13.555,
+                        "y": 9.29
+                    },
+                    "uuid": "df13985f-807b-4696-a2e4-3a554b841438"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1364 mm)",
+            "items": [
+                {
+                    "description": "Footprint text of D1 (1)",
+                    "pos": {
+                        "x": 21.25,
+                        "y": 22.95
+                    },
+                    "uuid": "aff45aa7-6ee1-42fe-81dc-d51437ae2f10"
+                },
+                {
+                    "description": "Segment of D1 on F.Silkscreen",
+                    "pos": {
+                        "x": 20.1,
+                        "y": 22.45
+                    },
+                    "uuid": "f91507f0-2916-4329-823a-9ad45811ee78"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

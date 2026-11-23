@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-20T17:01:36",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/208b49dd-47b9-49a3-9e20-e91fb4602b56",
+            "violations": []
+        },
+        {
+            "path": "/Pico core and peripherals/",
+            "uuid_path": "/208b49dd-47b9-49a3-9e20-e91fb4602b56/a17ec337-2b84-4400-98b3-a147211c6415",
+            "violations": []
+        },
+        {
+            "path": "/String sockets and monitor/",
+            "uuid_path": "/208b49dd-47b9-49a3-9e20-e91fb4602b56/60461b59-9bc0-4f97-9e39-5feec69632d9",
+            "violations": []
+        },
+        {
+            "path": "/Current monitoring/",
+            "uuid_path": "/208b49dd-47b9-49a3-9e20-e91fb4602b56/78cb7e3b-fa7e-4af9-bf50-522825d31be0",
+            "violations": []
+        }
+    ],
+    "source": "pico-carrier.kicad_sch"
+}

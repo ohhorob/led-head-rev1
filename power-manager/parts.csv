@@ -1,0 +1,15 @@
+Reference,Value,Manufacturer,MPN,Footprint
+J1,REGULATED 5V / XT60PW-M,AMASS,XT60PW-M,HeadUnit:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal
+J5,CARRIER POWER / 0039281103,Molex,0039281103,PowerManager:Molex_0039281103
+U1,TPS62091RGTR / FIXED 3V3,Texas Instruments,TPS62091RGTR,PowerManager:TI_RGT0016C_TPS62091
+C1,22u / VIN,Samsung Electro-Mechanics,CL31A226KAHNNNE,Capacitor_SMD:C_1206_3216Metric
+L1,1u / 74439346010,Wurth Elektronik,74439346010,Inductor_SMD:L_Wuerth_XHMI-6060
+C2,22u / VOUT,Samsung Electro-Mechanics,CL31A226KAHNNNE,Capacitor_SMD:C_1206_3216Metric
+C4,3.9n / SOFT START,KEMET,C0805C392J5GACTU,Capacitor_SMD:C_0805_2012Metric
+C3,10n / CP-CN,KEMET,C0805C103K5RACTU,Capacitor_SMD:C_0805_2012Metric
+R1,499k / PG PULL-UP,Yageo,RC0805FR-07499KL,Resistor_SMD:R_0805_2012Metric
+TP3,3V3 PG + GND,Generic 2.54mm header,2.54mm 1x02 male header,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+R2,1k / POWER LED,Yageo,RC0805FR-071KL,Resistor_SMD:R_0805_2012Metric
+D1,GREEN / 5V POWER,Lite-On,LTST-C170KGKT,LED_SMD:LED_0805_2012Metric
+TP1,IN_5V + GND,Generic 2.54mm header,2.54mm 1x02 male header,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+TP2,PERIPH_3V3 + GND,Generic 2.54mm header,2.54mm 1x02 male header,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical

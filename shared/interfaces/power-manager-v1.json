@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "status": "Dedicated 5V module implemented; battery module deferred. Carrier telemetry reserved for future battery module.",
+  "cables": [
+    {
+      "name": "Main power: straight-through ten-position Mini-Fit Jr",
+      "footprint": "Connector_Molex:Molex_Mini-Fit_Jr_5566-10A_2x05_P4.20mm_Vertical",
+      "contacts": {
+        "1": "IN_5V",
+        "2": "IN_5V",
+        "3": "IN_5V",
+        "4": "IN_5V",
+        "5": "PERIPH_3V3",
+        "6": "GND",
+        "7": "GND",
+        "8": "GND",
+        "9": "GND",
+        "10": "GND"
+      },
+      "endpoints": [
+        {
+          "project": "power-manager/power-manager",
+          "reference": "J5",
+          "footprint": "PowerManager:Molex_0039281103"
+        },
+        {
+          "project": "pico-carrier/pico-carrier",
+          "reference": "J19"
+        }
+      ]
+    },
+    {
+      "name": "Reserved carrier battery telemetry connector",
+      "footprint": "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical",
+      "contacts": {
+        "1": "GND",
+        "2": "PICO_3V3",
+        "3": "BAT_ADC",
+        "4": "PICO_PG",
+        "5": "PICO_BATT_SEL_N"
+      },
+      "endpoints": [
+        {
+          "project": "pico-carrier/pico-carrier",
+          "reference": "J20"
+        }
+      ],
+      "status": "reserved; not used by dedicated 5V module"
+    }
+  ]
+}

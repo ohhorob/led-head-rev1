@@ -1,0 +1,8 @@
+{
+  "connected_pad_assignments_verified": 39,
+  "erc_violations": 0,
+  "drc_violations": 1,
+  "schematic_parity_issues": 9,
+  "unrouted_connections": 29,
+  "status": "R3 removed; direct status input; PCB still unrouted"
+}

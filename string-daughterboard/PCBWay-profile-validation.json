@@ -1,0 +1,9 @@
+{
+  "profile": "PCBWay 2-layer FR4 1.6mm 1oz green ENIG",
+  "custom_rules_parsed": true,
+  "routing_items_preserved": 57,
+  "geometric_and_silk_findings": 8,
+  "unconnected": 4,
+  "schematic_parity_findings": 9,
+  "status": "Rules installed; existing findings need correction, not a fabrication release"
+}

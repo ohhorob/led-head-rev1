@@ -1,0 +1,47 @@
+UPDATED PACKAGE 9109e45e1b
+PCB W369080AS1C2 / assembly T-1C3W369080A
+Source PCB SHA-256: 9109e45e1bedbc0e2453a469f7d14635d43014dcc3bb90a9e073c7afc0f15b4a
+
+This package supersedes ALL earlier Gerbers, drills, placement data,
+assembly drawing, assembly notes and BOM files for this order.
+Gerbers, drills, paste, mask, silk, placements and drawing were freshly
+exported together from the current saved board after via-clearance edits.
+All 104 vias have at least 0.10 mm via-copper-ring to component-pad
+copper clearance. DRC: 0 violations, 0 unconnected, 0 parity issues.
+BOM and CPL match exactly: 71 SMT designators, 32 grouped BOM lines.
+Quantity is per board; assemble TWO boards, manufacture FIVE PCBs.
+
+FOR CAM / ASSEMBLY REVIEW - not approval to start production.
+The U5 mask/stencil/hidden-joint inspection query and assembly rail/tooling
+proposal remain pending. Please review those using these updated files.
+Keep the final board outline and component positions unchanged. Please
+provide any proposed CAM/panel/placement changes for approval.
+
+LED head revision 1 - PCBWay assembly instructions
+
+Order: W369080AS1C2 / T-1C3W369080A
+Quantity: manufacture 5 bare PCBs; assemble 2 boards, TOP side only.
+Fit only the 71 designators explicitly listed in PCBWay-BOM.xlsx / PCBWay-BOM.csv and SMT-CPL.csv.
+All through-hole components, Pico and Pololu modules are customer-installed.
+The assembly drawing shows mechanical context including unpopulated parts;
+the BOM is authoritative for the population list.
+
+Sourcing: use the specified manufacturer part numbers. Confirm availability
+of TPS25970ARPWR (U5) before accepting production. No design changes or
+unapproved IC substitutions. Quote any unavailable or ambiguous items first.
+D7/D8/D9: OPSCO SK6812-B-012, 5050 PLCC4, 3.1 mm pad pitch. Verify this exact part and pinout before procurement: pad 1 GND,
+pad 2 DIN, pad 3 VDD, pad 4 DOUT, per the PCB footprint. Do not substitute
+another pinout or package. Please include the proposed LED datasheet for review.
+
+Placement: all CPL positions are millimetres, top-side view, KiCad native
+counterclockwise rotations. X is the board's absolute X coordinate; Y is
+negative the board's downward-positive Y coordinate. All placements share
+this same origin. Please align using the board outline and designators, and
+confirm polarized/IC orientations against the numbered-pad assembly drawing.
+Do not assume arbitrary library rotation zero matches KiCad rotation zero.
+Please provide a placement/first-article preview for approval before assembly.
+
+PCB specification: 100 x 73 mm, four copper layers, 1.6 mm FR-4,
+1 oz finished copper on ALL layers, green mask, white silk both sides,
+ENIG 1 microinch. Gerbers/drills are authoritative for geometry.
+No functional testing or firmware programming requested.

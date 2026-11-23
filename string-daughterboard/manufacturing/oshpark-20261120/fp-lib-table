@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "StringCard") (type "KiCad") (uri "/Users/rob/Projects/pico-playground/led-head-rev1/string-daughterboard/StringCard.pretty") (options "") (descr "String card footprints")))

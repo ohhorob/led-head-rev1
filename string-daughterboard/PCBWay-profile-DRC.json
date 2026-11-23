@@ -1,0 +1,435 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-20T07:47:51",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [
+        {
+            "description": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder doesn't match footprint given by symbol (StringCard:C_0805_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 22.0375,
+                        "y": 19.5
+                    },
+                    "uuid": "f0739d7b-9dd2-4bd2-acce-81811bff6e27"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder doesn't match footprint given by symbol (StringCard:C_0805_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 23.0,
+                        "y": 10.0375
+                    },
+                    "uuid": "e17bf8f5-22da-49c0-af7f-43ec1174b6a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder doesn't match footprint given by symbol (StringCard:C_1206_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 21.5,
+                        "y": 12.0625
+                    },
+                    "uuid": "b1224378-609c-457e-af8d-bd391ded5719"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder doesn't match footprint given by symbol (StringCard:C_0805_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 22.9625,
+                        "y": 27.0
+                    },
+                    "uuid": "137da927-1576-42a7-8fbe-3f1de23295c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder doesn't match footprint given by symbol (StringCard:C_1206_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 22.9375,
+                        "y": 24.5
+                    },
+                    "uuid": "b8477ede-6345-4989-a027-cbb79105d156"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm doesn't match footprint given by symbol (StringCard:Worldsemi_WS2812B_V6_5050_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 22.85,
+                        "y": 18.95
+                    },
+                    "uuid": "7d91f764-d6f0-4282-bac7-8ef23e704d09"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Fuse:Fuse_Littelfuse-NANO2-451_453 doesn't match footprint given by symbol (StringCard:Littelfuse_451_453_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint F1",
+                    "pos": {
+                        "x": 17.5,
+                        "y": 21.5
+                    },
+                    "uuid": "56d6368a-365e-4651-9ab4-9907f7b4b928"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder doesn't match footprint given by symbol (StringCard:R_0805_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 10.0
+                    },
+                    "uuid": "72340690-3c94-4785-acb0-1317fa6a8801"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Package_TO_SOT_SMD:SOT-23-6_Handsoldering doesn't match footprint given by symbol (StringCard:TI_TXU0101_DBV0006A_Reflow)",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 20.95,
+                        "y": 15.15
+                    },
+                    "uuid": "15c0daa1-8e8b-477a-b57a-b87729dd676c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        }
+    ],
+    "source": "string-daughterboard.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [PERIPH_3V3] on F.Cu, length 2.9250 mm",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 21.4
+                    },
+                    "uuid": "e521dc85-1d2d-40bc-8351-03b70652afcb"
+                },
+                {
+                    "description": "Pad 1 [PERIPH_3V3] of C1 on B.Cu",
+                    "pos": {
+                        "x": 23.075,
+                        "y": 19.5
+                    },
+                    "uuid": "8c5dba3e-bc72-4f9a-a41f-c66e64cfd9d0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'g' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 10.5,
+                        "y": 43.5
+                    },
+                    "uuid": "179fadfe-62c7-4810-8429-c8a3592aeee5"
+                },
+                {
+                    "description": "Zone 'g_1' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 29.5,
+                        "y": 43.5
+                    },
+                    "uuid": "5839ffdd-ba96-466a-919d-4d3507ad754d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad A2 [IN_5V] of J1 on F.Cu",
+                    "pos": {
+                        "x": 16.19,
+                        "y": 48.25
+                    },
+                    "uuid": "a0baf232-cdb7-41a5-afc4-8eaef629ec3c"
+                },
+                {
+                    "description": "Pad B2 [IN_5V] of J1 on B.Cu",
+                    "pos": {
+                        "x": 16.19,
+                        "y": 48.25
+                    },
+                    "uuid": "dff38255-b7ed-4113-8537-48eeeb80c85b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [SHUNT_HI] on F.Cu, length 2.6900 mm",
+                    "pos": {
+                        "x": 17.5,
+                        "y": 19.045
+                    },
+                    "uuid": "e67fa49b-8ef7-4225-88ba-029f12d9969c"
+                },
+                {
+                    "description": "Pad A4 [SHUNT_HI] of J1 on F.Cu",
+                    "pos": {
+                        "x": 21.27,
+                        "y": 48.25
+                    },
+                    "uuid": "81c10955-769f-42ec-bbcd-977ad823dbc9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Clearance violation (rule 'No via in or against pad - 0.10mm copper gap' clearance 0.1000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad A1 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 13.65,
+                        "y": 48.25
+                    },
+                    "uuid": "34c48d10-a0bb-4202-a2d5-41c9f0994dc5"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 13.65,
+                        "y": 45.5
+                    },
+                    "uuid": "c42fff8e-4986-4e5f-96fc-5b86cba2a97c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'No via in or against pad - 0.10mm copper gap' clearance 0.1000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad B1 [GND] of J1 on B.Cu",
+                    "pos": {
+                        "x": 13.65,
+                        "y": 48.25
+                    },
+                    "uuid": "22976cff-8c3a-4b2a-adbc-dfd5e8db79ac"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 13.65,
+                        "y": 45.5
+                    },
+                    "uuid": "c42fff8e-4986-4e5f-96fc-5b86cba2a97c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of D1",
+                    "pos": {
+                        "x": 19.35,
+                        "y": 18.95
+                    },
+                    "uuid": "b57c372e-22f7-4433-a95f-d7b762bf4da6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C1",
+                    "pos": {
+                        "x": 22.0375,
+                        "y": 17.82
+                    },
+                    "uuid": "a0c12dd2-000b-4e2a-91a6-da7a04c82a84"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0611 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C6",
+                    "pos": {
+                        "x": 22.9625,
+                        "y": 25.32
+                    },
+                    "uuid": "77a3669a-df1b-434a-92d8-64bd451e6ade"
+                },
+                {
+                    "description": "Segment of C7 on F.Silkscreen",
+                    "pos": {
+                        "x": 22.226248,
+                        "y": 25.41
+                    },
+                    "uuid": "cfd429fa-fb86-40f5-99b3-857bce7fe6a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1364 mm)",
+            "items": [
+                {
+                    "description": "Footprint text of D1 (1)",
+                    "pos": {
+                        "x": 21.25,
+                        "y": 22.95
+                    },
+                    "uuid": "aff45aa7-6ee1-42fe-81dc-d51437ae2f10"
+                },
+                {
+                    "description": "Segment of D1 on F.Silkscreen",
+                    "pos": {
+                        "x": 20.1,
+                        "y": 22.45
+                    },
+                    "uuid": "f91507f0-2916-4329-823a-9ad45811ee78"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0844 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C7",
+                    "pos": {
+                        "x": 22.9375,
+                        "y": 22.65
+                    },
+                    "uuid": "b5759e3a-f748-43bf-b0c1-be6a1df3525b"
+                },
+                {
+                    "description": "Segment of D1 on F.Silkscreen",
+                    "pos": {
+                        "x": 20.1,
+                        "y": 22.45
+                    },
+                    "uuid": "f91507f0-2916-4329-823a-9ad45811ee78"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1177 mm)",
+            "items": [
+                {
+                    "description": "Segment of C2 on B.Silkscreen",
+                    "pos": {
+                        "x": 22.265,
+                        "y": 10.298752
+                    },
+                    "uuid": "0f711321-f8a2-4883-9658-67decc323d93"
+                },
+                {
+                    "description": "Reference field of R2",
+                    "pos": {
+                        "x": 21.65,
+                        "y": 10.0
+                    },
+                    "uuid": "ee4c3a9c-6f60-4f3f-8680-e370e646e8e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

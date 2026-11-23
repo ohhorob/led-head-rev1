@@ -1,0 +1,33 @@
+Item #,*Designator,*Qty,Manufacturer,*Mfg Part #,Description / Value,*Package/Footprint,Type,Your Instructions / Notes
+1,"C1,C11,C12,C13,C21,C22,C23,C40,C46,C53,C54,C55,C56,C57",14,KEMET,C0805C104K5RACTU,"100 nF, 50 V, X7R, +/-10% ceramic capacitor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+2,"C31,C32,C33,C58",4,Murata,GRM31CR71C106KA01L,"10 uF, 16 V, X7R, +/-10% ceramic capacitor",1206 (3216 metric),SMD,Top side. Quantity is per PCB.
+3,C41,1,Murata,GRM21BR71H225KA73L,"2.2 uF, 50 V, X7R, +/-10% ceramic capacitor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+4,C42,1,KEMET,C0805C682K5RACTU,"6.8 nF, 50 V, X7R, +/-10% ceramic capacitor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+5,C43,1,Murata,GRM21BR71H105KA12L,"1 uF, 50 V, X7R, +/-10% ceramic capacitor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+6,"C44,C45",2,Murata,GRM21BR71C475KA73L,"4.7 uF, 16 V, X7R, +/-10% ceramic capacitor",0805 (2012 metric),SMD,Top side. Quantity is per PCB. Legacy MPN; quote exact part or propose an electrically equivalent 0805 X7R part for approval. Do not silently substitute.
+7,D1,1,Vishay,SS14-E3/61T,"Schottky rectifier, 1 A, 40 V",SMA (DO-214AC),SMD,Top side. Quantity is per PCB.
+8,"D2,D3,D4",3,Diodes Incorporated,BAT54WS-7-F,"Schottky diode, 100 mA, 30 V",SOD-323,SMD,Top side. Quantity is per PCB.
+9,D5,1,Lite-On,LTST-C170KRKT,"Red LED, 0805, 20 mA test current",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+10,D6,1,Lite-On,LTST-C170KGKT,"Green LED, 0805, 20 mA test current",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+11,"D7,D8,D9",3,OPSCO,SK6812-B-012,"Addressable RGB LED, 5 V, 12 mA/channel, 24-bit, 800 kbit/s",5050 PLCC-4; 5.0 x 5.0 mm body,SMD,"Top side. Quantity is per PCB. Exact OPSCO black-body variant. Pin 1 GND, 2 DIN, 3 VDD, 4 DOUT. SAP 10201T6812A50034A0. Confirm footprint/orientation before assembly. Do not substitute generic SK6812 pinout."
+12,"F1,F2,F3",3,Littelfuse,0451003.MRL,"3 A, 125 V fast-acting NANO2 fuse",NANO2 451; 6.10 x 2.69 mm,SMD,Top side. Quantity is per PCB.
+13,J13,1,Samtec,FTSH-105-01-L-DV-TR,"10-pin male header, 2 x 5, 1.27 mm pitch, vertical SMT, all pins fitted",FTSH-105-01-L-DV SMT,SMD,Top side. Quantity is per PCB.
+14,Q1,1,Nexperia,"BSS84,215","P-channel MOSFET, -50 V, -130 mA",SOT-23,SMD,Top side. Quantity is per PCB.
+15,Q2,1,Nexperia,"2N7002,215","N-channel MOSFET, 60 V, 300 mA",SOT-23,SMD,Top side. Quantity is per PCB.
+16,R1,1,YAGEO,RC0805FR-0713K7L,"13.7 kohm, +/-1%, 0.125 W thick-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+17,"R11,R12,R13",3,Vishay,WSL2512R0500FEA,"0.050 ohm, 1 W, +/-1% current-sense resistor",2512,SMD,Top side. Quantity is per PCB.
+18,"R2,R4,R47",3,YAGEO,RC0805FR-07100KL,"100 kohm, +/-1%, 0.125 W thick-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+19,"R21,R22,R23",3,YAGEO,RC0805FR-07220RL,"220 ohm, +/-1%, 0.125 W thick-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+20,"R3,R5,R6,R44,R45,R46,R52",7,YAGEO,RC0805FR-0710KL,"10 kohm, +/-1%, 0.125 W thick-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+21,R41,1,YAGEO,RT0805BRD0734K8L,"34.8 kohm, +/-0.1%, 0.125 W thin-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+22,R42,1,YAGEO,RT0805BRD0710KL,"10 kohm, +/-0.1%, 0.125 W thin-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+23,R43,1,YAGEO,RC0805FR-07768RL,"768 ohm, +/-1%, 0.125 W thick-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+24,R48,1,YAGEO,RC0805FR-07680RL,"680 ohm, +/-1%, 0.125 W thick-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+25,R49,1,YAGEO,RC0805FR-071KL,"1 kohm, +/-1%, 0.125 W thick-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+26,R51,1,YAGEO,RC0805FR-0726K1L,"26.1 kohm, +/-1%, 0.125 W thick-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+27,"R7,R8",2,YAGEO,RC0805FR-074K7L,"4.7 kohm, +/-1%, 0.125 W thick-film resistor",0805 (2012 metric),SMD,Top side. Quantity is per PCB.
+28,"U1,U2,U3,U8",4,Texas Instruments,TXU0101DBVR,Single-bit noninverting voltage-level translator; VCCA/VCCB 1.1-5.5 V,SOT-23-6 (DBV),SMD,Top side. Quantity is per PCB.
+29,U4,1,Texas Instruments,INA3221AIRGVR,"Triple-channel shunt/bus voltage monitor, I2C, address 0x40","VQFN-16 with exposed pad, 4 x 4 mm (RGV)",SMD,Top side. Quantity is per PCB.
+30,U5,1,Texas Instruments,TPS25970ARPWR,"2.7-23 V, 7 A eFuse, adjustable current limit","VQFN-HR-10, 2 x 2 mm (RPW)",SMD,Top side. Quantity is per PCB. Exact A variant; verify availability and RPW land pattern.
+31,U6,1,Texas Instruments,TLV70433DBVR,"3.3 V fixed-output LDO, 150 mA, input up to 24 V",SOT-23-5 (DBV),SMD,Top side. Quantity is per PCB.
+32,U7,1,Texas Instruments,SN74LVC1G57DBVR,"Configurable multifunction logic gate, 1.65-5.5 V",SOT-23-6 (DBV),SMD,Top side. Quantity is per PCB.
