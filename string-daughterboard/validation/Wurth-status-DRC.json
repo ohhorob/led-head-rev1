@@ -1,0 +1,275 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-23T10:10:54",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "string-daughterboard.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [PERIPH_3V3] on B.Cu, length 1.2581 mm",
+                    "pos": {
+                        "x": 24.5,
+                        "y": 4.441874
+                    },
+                    "uuid": "799a911e-5834-4fa2-9c81-e183d44f0af3"
+                },
+                {
+                    "description": "Pad 2 [PERIPH_3V3] of D1 on F.Cu",
+                    "pos": {
+                        "x": 25.15,
+                        "y": 3.7
+                    },
+                    "uuid": "0cbe8553-2234-4846-b843-5b03932fa51e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [STATUS_DATA_OUT] of D1 on F.Cu",
+                    "pos": {
+                        "x": 25.15,
+                        "y": 5.4
+                    },
+                    "uuid": "df072f14-5ae1-47f8-b0cc-3150bf3907f5"
+                },
+                {
+                    "description": "Track [STATUS_DATA_OUT] on F.Cu, length 1.8500 mm",
+                    "pos": {
+                        "x": 27.65,
+                        "y": 7.0
+                    },
+                    "uuid": "492d9f14-aacf-4220-9b05-22d322513f55"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1598 mm)",
+            "items": [
+                {
+                    "description": "Via [PERIPH_3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 24.528126,
+                        "y": 4.47
+                    },
+                    "uuid": "583603c9-c15b-4ab5-9a47-00b79e561630"
+                },
+                {
+                    "description": "Pad 1 [STATUS_DATA_OUT] of D1 on F.Cu",
+                    "pos": {
+                        "x": 25.15,
+                        "y": 5.4
+                    },
+                    "uuid": "df072f14-5ae1-47f8-b0cc-3150bf3907f5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets PERIPH_3V3 and STATUS_DATA_IN)",
+            "items": [
+                {
+                    "description": "Pad 2 [PERIPH_3V3] of D1 on F.Cu",
+                    "pos": {
+                        "x": 25.15,
+                        "y": 3.7
+                    },
+                    "uuid": "0cbe8553-2234-4846-b843-5b03932fa51e"
+                },
+                {
+                    "description": "Track [STATUS_DATA_IN] on F.Cu, length 3.4648 mm",
+                    "pos": {
+                        "x": 24.35,
+                        "y": 2.1
+                    },
+                    "uuid": "530a7a1b-7471-44d4-94c6-9ce6fec1d071"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets STATUS_DATA_IN and GND)",
+            "items": [
+                {
+                    "description": "Track [STATUS_DATA_IN] on F.Cu, length 3.3155 mm",
+                    "pos": {
+                        "x": 26.8,
+                        "y": 4.55
+                    },
+                    "uuid": "ca2a9494-f61e-40f1-b9fe-3e8939923035"
+                },
+                {
+                    "description": "Pad 4 [GND] of D1 on F.Cu",
+                    "pos": {
+                        "x": 26.85,
+                        "y": 5.4
+                    },
+                    "uuid": "e24126d3-67c7-4590-ae37-3e674b4cb8df"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (rule 'No via in or against pad - 0.10mm copper gap' clearance 0.1000 mm; actual 0.0132 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [PERIPH_3V3] of D1 on F.Cu",
+                    "pos": {
+                        "x": 25.15,
+                        "y": 3.7
+                    },
+                    "uuid": "0cbe8553-2234-4846-b843-5b03932fa51e"
+                },
+                {
+                    "description": "Via [PERIPH_3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 24.528126,
+                        "y": 4.47
+                    },
+                    "uuid": "583603c9-c15b-4ab5-9a47-00b79e561630"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'g' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 18.5
+                    },
+                    "uuid": "179fadfe-62c7-4810-8429-c8a3592aeee5"
+                },
+                {
+                    "description": "Pad 4 [GND] of D1 on F.Cu",
+                    "pos": {
+                        "x": 26.85,
+                        "y": 5.4
+                    },
+                    "uuid": "e24126d3-67c7-4590-ae37-3e674b4cb8df"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [STATUS_DATA_IN] on F.Cu, length 3.3155 mm",
+                    "pos": {
+                        "x": 26.8,
+                        "y": 4.55
+                    },
+                    "uuid": "ca2a9494-f61e-40f1-b9fe-3e8939923035"
+                },
+                {
+                    "description": "Pad 4 [GND] of D1 on F.Cu",
+                    "pos": {
+                        "x": 26.85,
+                        "y": 5.4
+                    },
+                    "uuid": "e24126d3-67c7-4590-ae37-3e674b4cb8df"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [STATUS_DATA_IN] on F.Cu, length 3.4648 mm",
+                    "pos": {
+                        "x": 24.35,
+                        "y": 2.1
+                    },
+                    "uuid": "530a7a1b-7471-44d4-94c6-9ce6fec1d071"
+                },
+                {
+                    "description": "Pad 2 [PERIPH_3V3] of D1 on F.Cu",
+                    "pos": {
+                        "x": 25.15,
+                        "y": 3.7
+                    },
+                    "uuid": "0cbe8553-2234-4846-b843-5b03932fa51e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [STATUS_DATA_IN] on F.Cu, length 3.4648 mm",
+                    "pos": {
+                        "x": 24.35,
+                        "y": 2.1
+                    },
+                    "uuid": "530a7a1b-7471-44d4-94c6-9ce6fec1d071"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [STATUS_DATA_OUT] on F.Cu, length 1.8500 mm",
+                    "pos": {
+                        "x": 27.65,
+                        "y": 7.0
+                    },
+                    "uuid": "492d9f14-aacf-4220-9b05-22d322513f55"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

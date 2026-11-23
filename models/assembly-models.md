@@ -19,3 +19,5 @@ Molex_0039281103_simplified.step is a generated visualization, not manufacturer 
 ### J19 exact model replacement
 
 Replaced the simplified J19 model with the downloaded TraceParts/Molex exact-part 0039281103 STP, source archive 195927578-659-0039281103.zip (reference 39281103, no PCB retention pegs). Original kept as Molex_0039281103_source.stp. Normalized copy Molex_0039281103.step: x=-X+8.4, y=Z-2.55, z=Y. Body aligns with existing footprint: x=-2.7..19.5, y=-7.35..2.25; tail row centers y=0,-5.5; pin pitch 4.2; height 12.8; tail length 3.5. Solid validated. Model filename is the only PCB change. This supersedes the simplified-model notes above.
+
+2026-11-23: refreshed both daughtercard snapshots after replacing D1 with Würth 1312020030000, using the manufacturer footprint/model from KiCad_WL-ICLED rev26a. Existing insertion transform retained. Export includes the local fuse model and generic 2512 resistor body. PCB routing remains unfinished around the new D1 pads.

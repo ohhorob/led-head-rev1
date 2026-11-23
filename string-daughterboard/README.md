@@ -8,7 +8,7 @@ One string channel has:
 - **R1: Vishay WSL2512R0250FEA, 25 mOhm, 1%, 1 W, 2512.**
 - U1: TXU0101 data translator, followed by R2, 220 ohm.
 - J2: right-angle JST-XH output; pin 1 GND, pin 2 DATA, pin 3 string +5 V.
-- D1: Worldsemi WS2812B-V6 status pixel on peripheral 3.3 V.
+- D1: Würth 1312020030000 (2 × 2 mm) status pixel on peripheral 3.3 V.
 - C1/C2: 100 nF bypass capacitors. The schematic connects them directly beside their device supply pins.
 
 The new shunt value replaces 50 mOhm. At 2 A it drops 50 mV and dissipates 0.10 W. The carrier uses two PAC1934 monitors; the 100 mV sense range corresponds to nominal 4 A full scale with this resistor. Firmware must use 0.025 ohm. The 3 A fuse is not a precise 2 A current limiter.
@@ -33,7 +33,7 @@ J1 is the PCB edge itself, mating with a carrier-mounted Sullins EBC06DRAS. Do n
 
 A is front copper and B is back copper. Looking at the front with the insertion tip at the bottom, positions 1–6 run left to right. The carrier socket orientation is documented separately; this front-view convention must not be confused with the socket's component-side solder-tail view.
 
-The Kelvin pair carries measurement signals, not load current. Status pixel current comes from PERIPH_3V3 and is not included in the string shunt measurement. Use the specified WS2812B-V6 part; avoid driving an unpowered card. Swaps are power-off only. Enclosure guides must prevent reversed insertion.
+The Kelvin pair carries measurement signals, not load current. Status pixel current comes from PERIPH_3V3 and is not included in the string shunt measurement. Use the specified Würth 1312020030000 part; avoid driving an unpowered card. Swaps are power-off only. Enclosure guides must prevent reversed insertion.
 
 ## Validation and exports
 
@@ -44,3 +44,13 @@ Existing manufacturing folders are historical snapshots and were not regenerated
 Do not rerun the archived creation scripts over the routed board. Schematic UUIDs and PCB footprint paths must remain linked so F8 updates the same components.
 
 See [shared interface contract](../shared/README.md), [footprint audit](footprint-audit.md), and [carrier project](../pico-carrier/README.md).
+
+## Status LED update — 2026-11-23
+
+Restore point before this change: `3f7ae29`. D1 now uses Würth 1312020030000, with the manufacturer's rev26a footprint and matching STEP model. Library geometry is unchanged from Würth; its model path is project-relative. Symbol numbering is remapped while retaining existing schematic wires: 1 DOUT, 2 VDD (PERIPH_3V3), 3 DIN, 4 GND. The original D1 PCB position, rotation, UUID and schematic path are retained. All other footprints, traces, vias and outline geometry are unchanged. Copper zones were refilled.
+
+ERC passes; the board/library footprint and schematic pin mapping were verified. The original layout passed DRC before replacement; the smaller D1 pads require local rerouting. Current DRC reports shorts from existing STATUS_DATA_IN tracks to D1 supply/ground pads, supply-via clearance, dangling old DIN/DOUT tracks, and an incomplete D1 ground thermal. Reconnect all four D1 pins before fabrication. C1/C2 remain 100 nF in their existing positions; place the LED bypass close to the new supply/ground pads when rerouting. Manufacturing exports are historical and must not be used for this changed layout.
+
+Carrier assembly STEP snapshots have been refreshed to show the smaller LED. No carrier layout file changed. The shared interface checker currently flags pre-existing carrier GPIO and monitor-channel permutations against its older JSON contract; schematic and PCB agree with one another at those endpoints. These mappings were not changed here.
+
+Source: https://www.we-online.com/en/components/products/WL-ICLED — KiCad_WL-ICLED (rev26a).zip. Würth CAD license and attribution are retained in `Wurth-CAD-LICENSE.txt`. D1's manufacturer STEP is under `../models/U_Wurth_WL-ICLED_1312020030000.step`.
