@@ -52,8 +52,8 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 0.5,
-          "corner_smoothing": 2,
+          "corner_radius": 0.0,
+          "corner_smoothing": 1,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
@@ -63,9 +63,9 @@
           "min_clearance": 0.2,
           "min_island_area": 10.0,
           "min_thickness": 0.2,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.25,
+          "thermal_relief_gap": 0.2,
           "thermal_relief_spoke_width": 0.8
         }
       },
@@ -76,7 +76,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|75750000|68975000|80958d55-6104-426c-bfdb-3f4b3272d963|00000000-0000-0000-0000-000000000000",
+          "modified silkscreen to allow overhang board edge"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -797,7 +802,7 @@
         "uuid": "3c4f29e4-be62-4d4b-b487-693110afd9d7"
       }
     ],
-    "used_designators": "H1-4",
+    "used_designators": "5V1,H1-4",
     "variants": []
   },
   "sheets": [

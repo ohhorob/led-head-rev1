@@ -21,7 +21,7 @@
         {
           "project": "power-manager/power-manager",
           "reference": "J5",
-          "footprint": "PowerManager:Molex_0039281103"
+          "footprint": "PowerManager:Molex_0039300100"
         },
         {
           "project": "pico-carrier/pico-carrier",

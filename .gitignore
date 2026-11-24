@@ -7,3 +7,6 @@ fabrication/
 *.zip
 
 .history/
+
+/power-manager/output/*.json
+/power-manager/output/*.net

@@ -8,6 +8,7 @@
 		(title "Eight string daughtercard sockets")
 		(rev "0 - UNROUTED")
 	)
+
 	(lib_symbols
 		(symbol "Interfaces:StringCardInterface"
 			(pin_names
@@ -599,18 +600,11 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Carrier:Status_C" (pin_names (offset 1)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "U" (at 0 5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "C" (at 0 -5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "Status_C_0_1" (polyline (pts (xy -2.54 0) (xy -1 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1 -2.54) (xy -1 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1 0) (xy 2.54 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1 -2.54) (xy 1 2.54)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "Status_C_1_1" (pin passive line (at -7.62 0 0) (length 5.08) (name "" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1))))) (pin passive line (at 7.62 0 180) (length 5.08) (name "" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))) (embedded_fonts no))
+		(symbol "Carrier:Status_TXU0101" (pin_names (offset 1)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "U" (at 0 5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "TXU0101" (at 0 -5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "Status_TXU0101_0_1" (rectangle (start -10.16 9.08) (end 10.16 -9.08) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "Status_TXU0101_1_1" (pin power_in line (at -15.24 5.08 0) (length 5.08) (name "VCCA" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1))))) (pin power_in line (at -15.24 0 0) (length 5.08) (name "GND" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1))))) (pin input line (at -15.24 -5.08 0) (length 5.08) (name "A" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1))))) (pin output line (at 15.24 -5.08 180) (length 5.08) (name "Y" (effects (font (size 1 1)))) (number "4" (effects (font (size 1 1))))) (pin input line (at 15.24 0 180) (length 5.08) (name "OE" (effects (font (size 1 1)))) (number "5" (effects (font (size 1 1))))) (pin power_in line (at 15.24 5.08 180) (length 5.08) (name "VCCB" (effects (font (size 1 1)))) (number "6" (effects (font (size 1 1)))))) (embedded_fonts no))
+		(symbol "Carrier:Status_PWR_FLAG" (pin_names (offset 1)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "U" (at 0 5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "PWR_FLAG" (at 0 -5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "Status_PWR_FLAG_0_1" (rectangle (start -1 1) (end 1 2) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "Status_PWR_FLAG_1_1" (pin power_out line (at 0 0 90) (length 5.08) (name "pwr" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))) (embedded_fonts no))
 	)
-	(text "Status pixel chain: GP20 -> slot 1 -> ... -> slot 8. Last output unused.\nString data: 1=GP4, 2=GP5, 3=GP6, 4=GP2, 5=GP3, 6=GP11, 7=GP12, 8=GP13.\nFull 2 A load on eight strings is 16 A plus peripherals; main power interconnect is not yet sized."
-		(exclude_from_sim no)
-		(at 25.4 220.98 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "44939179-6584-4ee4-8128-b6bd424fc9a3")
-	)
+	(text "Status pixel chain: GP20 -> U6 (3.3 V to 5 V) -> slot 1 -> ... -> slot 8. Last output unused.\nString data: 1=GP4, 2=GP5, 3=GP6, 4=GP2, 5=GP3, 6=GP11, 7=GP12, 8=GP13.\nFull 2 A load on eight strings is 16 A plus peripherals; main power interconnect is not yet sized." (exclude_from_sim no) (at 25.4 220.98 0) (effects (font (size 1.4 1.4)) (justify left top)) (uuid "44939179-6584-4ee4-8128-b6bd424fc9a3"))
 	(text "EIGHT SLOTS \\u2014 strings 1\\u20134 measured by U4; strings 5\\u20138 by U5.\n25 m\\u03a9 daughtercard shunts. Sense fingers are Kelvin signals, not load-current paths."
 		(exclude_from_sim no)
 		(at 25.4 17.78 0)
@@ -2008,28 +2002,8 @@
 			)
 		)
 	)
-	(global_label "STATUS_RGB_GPIO"
-		(shape bidirectional)
-		(at 20.32 73.66 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left)
-		)
-		(uuid "4516c2ff-f253-431f-b98c-c01012242b52")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.32 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
+
+	(global_label "STATUS_RGB_5V" (shape bidirectional) (at 20.32 73.66 0) (effects (font (size 1.1 1.1)) (justify left)) (uuid "4516c2ff-f253-431f-b98c-c01012242b52") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 20.32 73.66 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))))
 	(global_label "IN_5V"
 		(shape bidirectional)
 		(at 190.5 58.42 0)
@@ -4075,4 +4049,33 @@
 			)
 		)
 	)
+	(symbol (lib_id "Carrier:Status_TXU0101") (at 91.44 248.92 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "1c2e5b98-63de-498e-9668-a72fda435477") (property "Reference" "U6" (at 91.44 239.92 0) (effects (font (size 1 1)))) (property "Value" "TXU0101DBVR" (at 91.44 242.42 0) (effects (font (size 1 1)))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" (at 91.44 248.92 0) (hide yes) (effects (font (size 1 1)))) (property "MPN" "TXU0101DBVR" (at 91.44 248.92 0) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "4c22cea8-853a-4cb3-9ca9-7b0f033b3d17")) (pin "2" (uuid "79ae5bde-113f-44d5-bebb-7f33f58081b1")) (pin "3" (uuid "4afd12b3-e5e2-4e7a-b1a4-62723778be33")) (pin "4" (uuid "9fac5d5e-4486-4aca-9813-1e59569edbbf")) (pin "5" (uuid "ba87f63c-751f-4430-bcc5-3c3ec24aa18c")) (pin "6" (uuid "3b25b3e6-75e8-4d39-b1e9-ce813038f383")) (instances (project "pico-carrier" (path "/208b49dd-47b9-49a3-9e20-e91fb4602b56/60461b59-9bc0-4f97-9e39-5feec69632d9" (reference "U6") (unit 1)))))
+	(wire (pts (xy 76.2 243.84) (xy 63.5 243.84)) (stroke (width 0) (type default)) (uuid "7d452f16-0bd8-4878-8bee-688147b03bb2"))
+	(global_label "PICO_3V3" (shape bidirectional) (at 63.5 243.84 180) (effects (font (size 1 1)) (justify right)) (uuid "3fec3fbb-7d53-4ff3-9a10-c1589a77feea") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 243.84 0) (hide yes) (effects (font (size 1 1)))))
+	(wire (pts (xy 76.2 248.92) (xy 63.5 248.92)) (stroke (width 0) (type default)) (uuid "9dda3b3b-aafd-4e82-9c4c-492f8ec52f76"))
+	(global_label "GND" (shape bidirectional) (at 63.5 248.92 180) (effects (font (size 1 1)) (justify right)) (uuid "c9588290-38bd-49e4-8e7b-6496ce87a545") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 248.92 0) (hide yes) (effects (font (size 1 1)))))
+	(wire (pts (xy 76.2 254.0) (xy 63.5 254.0)) (stroke (width 0) (type default)) (uuid "e853f056-5a98-4360-b957-83475efcf438"))
+	(global_label "STATUS_RGB_GPIO" (shape bidirectional) (at 63.5 254.0 180) (effects (font (size 1 1)) (justify right)) (uuid "52e3bf95-a736-4441-84f1-10655bc33d5a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 254.0 0) (hide yes) (effects (font (size 1 1)))))
+	(wire (pts (xy 106.68 254.0) (xy 119.38 254.0)) (stroke (width 0) (type default)) (uuid "3ae8cf09-62a8-40f8-9579-d3d03caee1b7"))
+	(global_label "STATUS_RGB_5V" (shape bidirectional) (at 119.38 254.0 0) (effects (font (size 1 1)) (justify left)) (uuid "761e44df-5f63-49cd-8e6e-4bac6fa10fc7") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 254.0 0) (hide yes) (effects (font (size 1 1)))))
+	(wire (pts (xy 106.68 248.92) (xy 119.38 248.92)) (stroke (width 0) (type default)) (uuid "cce0d741-de95-4f8a-a3ad-b4674129388a"))
+	(global_label "PICO_3V3" (shape bidirectional) (at 119.38 248.92 0) (effects (font (size 1 1)) (justify left)) (uuid "fcd5251b-a805-4ef5-90c4-f09ca96d7417") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 248.92 0) (hide yes) (effects (font (size 1 1)))))
+	(wire (pts (xy 106.68 243.84) (xy 119.38 243.84)) (stroke (width 0) (type default)) (uuid "d8440daa-2aca-4824-b436-0ef04eed9112"))
+	(global_label "IN_5V" (shape bidirectional) (at 119.38 243.84 0) (effects (font (size 1 1)) (justify left)) (uuid "a114c498-212e-479d-9ae9-5ebf253dcf12") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 243.84 0) (hide yes) (effects (font (size 1 1)))))
+	(symbol (lib_id "Carrier:Status_C") (at 184.15 243.84 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "3b710fbb-4370-4baa-a662-f6fb31617a9c") (property "Reference" "C44" (at 184.15 234.84 0) (effects (font (size 1 1)))) (property "Value" "100n" (at 184.15 237.34 0) (effects (font (size 1 1)))) (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 184.15 243.84 0) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "5041dfd0-ecaf-411a-91e8-ef94dffe832f")) (pin "2" (uuid "00e3b3f3-c51b-48bc-b208-1b229cb4430c")) (instances (project "pico-carrier" (path "/208b49dd-47b9-49a3-9e20-e91fb4602b56/60461b59-9bc0-4f97-9e39-5feec69632d9" (reference "C44") (unit 1)))))
+	(wire (pts (xy 176.53 243.84) (xy 166.37 243.84)) (stroke (width 0) (type default)) (uuid "085e199a-9701-4d15-bb29-9ede8b4a9a49"))
+	(global_label "PICO_3V3" (shape bidirectional) (at 166.37 243.84 180) (effects (font (size 1 1)) (justify right)) (uuid "74801439-9e20-4142-87bc-98a873b80c00") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.37 243.84 0) (hide yes) (effects (font (size 1 1)))))
+	(wire (pts (xy 191.77 243.84) (xy 201.93 243.84)) (stroke (width 0) (type default)) (uuid "3ca0b134-b9ac-46f4-a574-c95635e19ac8"))
+	(global_label "GND" (shape bidirectional) (at 201.93 243.84 0) (effects (font (size 1 1)) (justify left)) (uuid "3bab7927-1909-4a19-865d-3851a412f765") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 201.93 243.84 0) (hide yes) (effects (font (size 1 1)))))
+	(symbol (lib_id "Carrier:Status_C") (at 184.15 264.16 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "604a3dba-1142-4433-9744-48751c8e0328") (property "Reference" "C45" (at 184.15 255.16 0) (effects (font (size 1 1)))) (property "Value" "100n" (at 184.15 257.66 0) (effects (font (size 1 1)))) (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 184.15 264.16 0) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "aa57091b-9e51-4ae0-acc0-0a46a9a9316b")) (pin "2" (uuid "648e1f2f-5e9e-4c58-9bcc-763859d50869")) (instances (project "pico-carrier" (path "/208b49dd-47b9-49a3-9e20-e91fb4602b56/60461b59-9bc0-4f97-9e39-5feec69632d9" (reference "C45") (unit 1)))))
+	(wire (pts (xy 176.53 264.16) (xy 166.37 264.16)) (stroke (width 0) (type default)) (uuid "5a82ad50-b37e-465c-9f31-63d58f3ebca8"))
+	(global_label "IN_5V" (shape bidirectional) (at 166.37 264.16 180) (effects (font (size 1 1)) (justify right)) (uuid "fbe0f0ec-6d91-4f55-b534-e1ad4c618b72") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.37 264.16 0) (hide yes) (effects (font (size 1 1)))))
+	(wire (pts (xy 191.77 264.16) (xy 201.93 264.16)) (stroke (width 0) (type default)) (uuid "d093d865-3eeb-4323-8f11-b73334209dcf"))
+	(global_label "GND" (shape bidirectional) (at 201.93 264.16 0) (effects (font (size 1 1)) (justify left)) (uuid "a53b5449-f49d-41d0-bf5f-97fd7d620297") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 201.93 264.16 0) (hide yes) (effects (font (size 1 1)))))
+	(symbol (lib_id "Carrier:Status_PWR_FLAG") (at 250.19 241.3 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "65a6c069-95ac-4795-8d82-ba73e952a0b7") (property "Reference" "#FLG21" (at 250.19 232.3 0) (effects (font (size 1 1))) (hide yes)) (property "Value" "PWR_FLAG" (at 250.19 234.8 0) (effects (font (size 1 1)))) (property "Footprint" "" (at 250.19 241.3 0) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "cbda0b41-3197-43cf-b845-151126b94ec1")) (instances (project "pico-carrier" (path "/208b49dd-47b9-49a3-9e20-e91fb4602b56/60461b59-9bc0-4f97-9e39-5feec69632d9" (reference "#FLG21") (unit 1)))))
+	(wire (pts (xy 250.19 241.3) (xy 260.35 241.3)) (stroke (width 0) (type default)) (uuid "bf44035f-b443-405d-a1e3-c9ff6160221d"))
+	(global_label "PICO_3V3" (shape bidirectional) (at 260.35 241.3 0) (effects (font (size 1 1)) (justify left)) (uuid "9c210cc4-02cc-4a44-947b-d852fbbe19d6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 260.35 241.3 0) (hide yes) (effects (font (size 1 1)))))
+	(symbol (lib_id "Carrier:Status_PWR_FLAG") (at 250.19 259.08 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "a003d5e1-bca9-45b5-a4a8-4580a4420413") (property "Reference" "#FLG22" (at 250.19 250.08 0) (effects (font (size 1 1))) (hide yes)) (property "Value" "PWR_FLAG" (at 250.19 252.58 0) (effects (font (size 1 1)))) (property "Footprint" "" (at 250.19 259.08 0) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "d76a7ac9-25f9-43df-ac4c-3ca590ac1caf")) (instances (project "pico-carrier" (path "/208b49dd-47b9-49a3-9e20-e91fb4602b56/60461b59-9bc0-4f97-9e39-5feec69632d9" (reference "#FLG22") (unit 1)))))
+	(wire (pts (xy 250.19 259.08) (xy 260.35 259.08)) (stroke (width 0) (type default)) (uuid "41028bc4-08f5-4c50-afdd-d743061ea78d"))
+	(global_label "IN_5V" (shape bidirectional) (at 260.35 259.08 0) (effects (font (size 1 1)) (justify left)) (uuid "196f672a-40de-4a4c-a63f-9c378fd926c7") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 260.35 259.08 0) (hide yes) (effects (font (size 1 1)))))
 )

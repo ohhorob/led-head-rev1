@@ -5,10 +5,10 @@ Open `pico-carrier.kicad_pro` through KiCad Project Manager. This is a populated
 The root schematic links two sheets:
 
 - `control.kicad_sch`: Pico sockets, UART0, SPI0, two I2C buses and probe headers, ADC breakout, SWD header and J-Link connector.
-- `string-slots.kicad_sch`: eight EBC06DRAS sockets.
+- `string-slots.kicad_sch`: eight vertical Sullins EBC06DCWN sockets.
 - `current-monitoring.kicad_sch`: two PAC1934 monitors, bypass capacitors wired directly to VDD/VDD_IO, and source/PG pull-ups.
 
-String data for slots 1–8 uses GP4, GP5, GP6, GP2, GP3, GP11, GP12 and GP13 respectively. The eight daughtercard status pixels are chained from GP20; the last pixel's output is intentionally unused. The PAC1934 monitor bus uses GP8/GP9 on I2C0, with pull-ups to the external peripheral 3.3 V rail. NeoTrellis uses GP14/GP15 on I2C1, with no added pull-ups. Its connector pin 2 now supplies **5 V VIN**, rather than the Pico's 3.3 V output. Wire the harness to the tile's VIN input and retain 3.3 V I2C pull-ups.
+String data for slots 1–8 uses GP4, GP5, GP6, GP2, GP3, GP11, GP12 and GP13 respectively. GP20 drives U6 (TXU0101DBVR), which translates the head of the eight-pixel status chain to 5 V before J21 A5. The last pixel's output is intentionally unused. The PAC1934 monitor bus uses GP8/GP9 on I2C0, with pull-ups to the external peripheral 3.3 V rail. NeoTrellis uses GP14/GP15 on I2C1, with no added pull-ups. Its connector pin 2 now supplies **5 V VIN**, rather than the Pico's 3.3 V output. Wire the harness to the tile's VIN input and retain 3.3 V I2C pull-ups.
 
 `PICO_3V3` is the Pico regulator output and debugger reference. `PERIPH_3V3` is the separate regulator's output; they are distinct nets. The Pico's VSYS is supplied through the existing SS14 isolation diode from `IN_5V`. `PICO_PG`, `PICO_BATT_SEL_N` and the battery ADC path await the power-manager interface; their protective scaling/voltage behavior is not complete here.
 
@@ -18,9 +18,9 @@ U4 and U5 are PAC1934T-I/JQ, 4 × 4 mm UQFN with 0.65 mm pitch. U4 ADDRSEL is gr
 
 ## Socket footprint
 
-The new common socket land pattern follows the manufacturer C10876 Rev K component-side recommendation: 2.54 mm column pitch, 3.96 mm row spacing, 1.10 mm finished drill (drawing minimum 1.09 mm), 1.90 mm pads and two 3.20 mm mounting holes on 29.85 mm centres. The manufacturer's component-side view places A above B, with contact 1 at the right. The fabrication body rectangle is a conservative assembly envelope, not a detailed 3D housing model. Physical mating and the card's facing direction still need verification before fabrication. Socket screws and printed card rails are separate mechanical provisions; this does not restore mounting holes on the daughtercard.
+J21–J28 use the vertical **Sullins EBC06DCWN**. The footprint has 12 plated contacts, a 2.54 mm column pitch, 5.08 mm between rows, 1.10 mm finished drills, and 1.70 × 2.20 mm pads. The no-ear housing measures 21.84 × 9.40 mm and sits 15.49 mm above the board. The printed card rails provide retention and must prevent reversed insertion. Test-fit a socket and a daughtercard to confirm contact orientation and clearance.
 
-Source: [Sullins C10876-K drawing, pages 1, 2 and 4](https://www.ic-components.fr/files/cc/EBC10DRAS.pdf).
+See the [Sullins C11424 Rev D drawing](../shared/reference/Sullins_C11424_RevD_CW_CT.pdf) and [footprint verification notes](../models/Sullins_EBC06DCWN_model-notes.md).
 
 ## Checks and remaining work
 
@@ -57,3 +57,7 @@ The power-manager project is now the simple dedicated-5-V module: one XT60, the 
 Carrier J20 remains a reserved five-pin telemetry connector for a future separate battery module: 1 GND, 2 PICO_3V3, 3 BAT_ADC, 4 PICO_PG, 5 PICO_BATT_SEL_N. It is parked outside the outline at (110,135) mm. It has no matching connector on the dedicated 5 V module and is not needed for that module to supply power. The future battery-module interface is deferred.
 
 The shared power interface checker verifies the implemented main cable and the reserved carrier-side telemetry pinout separately. No carrier layout or routing was changed while replacing the combined power-manager design with the dedicated-supply module.
+
+## Status chain at 5 V — 2026-11-24
+
+U6 sits on front copper near the Pico socket, with C44 on VCCA (PICO_3V3) and C45 on VCCB (IN_5V). OE is tied to PICO_3V3. The 5 V output STATUS_RGB_5V goes to slot 1 (J21 A5). The existing inter-slot status links are unchanged. Use the matching daughterboard revision with D1 powered from fused 5 V before its shunt. A6 and B6 remain reserved.

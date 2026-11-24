@@ -90,7 +90,7 @@
         "B3": "GP4",
         "A4": "S1_SHUNT_HI",
         "B4": "S1_5V",
-        "A5": "STATUS_RGB_GPIO",
+        "A5": "STATUS_RGB_5V",
         "B5": "STATUS_LINK_1",
         "A6": null,
         "B6": null

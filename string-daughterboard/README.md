@@ -8,8 +8,8 @@ One string channel has:
 - **R1: Vishay WSL2512R0250FEA, 25 mOhm, 1%, 1 W, 2512.**
 - U1: TXU0101 data translator, followed by R2, 220 ohm.
 - J2: right-angle JST-XH output; pin 1 GND, pin 2 DATA, pin 3 string +5 V.
-- D1: Würth 1312020030000 (2 × 2 mm) status pixel on peripheral 3.3 V.
-- C1/C2: 100 nF bypass capacitors. The schematic connects them directly beside their device supply pins.
+- D1: Würth 1312020030000 (2 × 2 mm) status pixel on fused 5 V before the shunt (SHUNT_HI).
+- C1/C2: 100 nF bypass capacitors for the TXU0101 supplies. C3 is a dedicated 100 nF bypass for D1 on the back of the card.
 
 The new shunt value replaces 50 mOhm. At 2 A it drops 50 mV and dissipates 0.10 W. The carrier uses two PAC1934 monitors; the 100 mV sense range corresponds to nominal 4 A full scale with this resistor. Firmware must use 0.025 ohm. The 3 A fuse is not a precise 2 A current limiter.
 
@@ -23,17 +23,17 @@ J1 is the PCB edge itself, mating with a carrier-mounted Sullins EBC06DRAS. Do n
 | --- | --- | --- |
 | A1, B1 | GND | Parallel power returns |
 | A2, B2 | IN_5V | Parallel regulated 5 V input contacts, 2 A nominal total |
-| A3 | PERIPH_3V3 | Driver input/status supply |
+| A3 | PERIPH_3V3 | String translator input-side supply |
 | B3 | STRING_DATA_IN | 3.3 V string data |
 | A4 | SHUNT_HI | Kelvin sense upstream of the shunt, after fuse |
 | B4 | STRING_5V | Kelvin sense downstream of shunt |
-| A5 | STATUS_DATA_IN | Status pixel input |
+| A5 | STATUS_DATA_IN | 5 V logic status pixel input |
 | B5 | STATUS_DATA_OUT | Regenerated status output to next slot |
 | A6, B6 | Unconnected | Reserved |
 
 A is front copper and B is back copper. Looking at the front with the insertion tip at the bottom, positions 1–6 run left to right. The carrier socket orientation is documented separately; this front-view convention must not be confused with the socket's component-side solder-tail view.
 
-The Kelvin pair carries measurement signals, not load current. Status pixel current comes from PERIPH_3V3 and is not included in the string shunt measurement. Use the specified Würth 1312020030000 part; avoid driving an unpowered card. Swaps are power-off only. Enclosure guides must prevent reversed insertion.
+The Kelvin pair carries measurement signals, not load current. The status pixel draws from the fused 5 V node upstream of R1, so its current does not flow through the string shunt. The carrier translates GP20 to 5 V before slot 1. Use this card revision throughout the chain. Use the specified Würth 1312020030000 part; avoid driving an unpowered card. Swaps are power-off only. Enclosure guides must prevent reversed insertion.
 
 ## Validation and exports
 
@@ -54,3 +54,7 @@ ERC passes; the board/library footprint and schematic pin mapping were verified.
 Carrier assembly STEP snapshots have been refreshed to show the smaller LED. No carrier layout file changed. The shared interface checker currently flags pre-existing carrier GPIO and monitor-channel permutations against its older JSON contract; schematic and PCB agree with one another at those endpoints. These mappings were not changed here.
 
 Source: https://www.we-online.com/en/components/products/WL-ICLED — KiCad_WL-ICLED (rev26a).zip. Würth CAD license and attribution are retained in `Wurth-CAD-LICENSE.txt`. D1's manufacturer STEP is under `../models/U_Wurth_WL-ICLED_1312020030000.step`.
+
+## Status chain at 5 V — 2026-11-24
+
+D1 retains the Würth 1312020030000 and its footprint. D1 VDD now connects to SHUNT_HI, with C3 providing local bypass. The interface pin assignments are unchanged. Use the matching carrier revision with U6 and generate fresh fabrication files for this routed revision.
