@@ -1,0 +1,66 @@
+{
+  "baseline": "265531fab44996e0d69467f4a7c851bf6b56fe77",
+  "builds": {
+    "power-manager": 1,
+    "pico-carrier": 1,
+    "string-daughterboard": 6
+  },
+  "assembly": "self",
+  "carrier_slots": 8,
+  "omit": {
+    "pico-carrier": [
+      "J20"
+    ]
+  },
+  "owned": {
+    "pico-carrier": [
+      "J14",
+      "J15",
+      "J16",
+      "J18",
+      "TP2",
+      "TP3",
+      "TP4",
+      "TP5"
+    ]
+  },
+  "inventory_notes": [
+    "Pico 2 WH owned; verify physical stock before order.",
+    "Adafruit 4423 XH-compatible kit and crimper owned; check housing count, terminal wire range and load rating.",
+    "Standard 2.54 mm male headers owned; verify dual-row geometry and lengths."
+  ],
+  "spares": {
+    "passive": 2,
+    "semiconductor": 2,
+    "connector": 1,
+    "other": 2
+  },
+  "power_harness": {
+    "gauge_awg": 16,
+    "lengths_mm": [
+      75,
+      150,
+      300
+    ],
+    "red_per_length": 6,
+    "black_per_length": 6,
+    "housing_mpn": "0039012100",
+    "housing_quantity": 5,
+    "assembled_cables": 2,
+    "pin_mapping": "1:1 through 10:10",
+    "lead_candidates": [
+      "2153401121",
+      "2153402121",
+      "2153401122",
+      "2153402122",
+      "2153401124",
+      "2153402124"
+    ]
+  },
+  "amazon": {
+    "xt60_asin": "B09XTN9N9S",
+    "pack_quantity": 1,
+    "verification": "pending seller, authenticity and drawing"
+  },
+  "release": "blocked pending independent verification"
+}
