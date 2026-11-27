@@ -81,14 +81,25 @@
     "optimise_price_breaks": true,
     "accessories": [
       {
-        "mpn": "0011030044",
-        "supplier": "DigiKey",
-        "sku": "WM9918-ND",
+        "asin": "B0DYDT3R9P",
+        "supplier": "Amazon",
         "quantity": 1,
-        "status": "candidate; confirm stock and price"
+        "status": "user-selected; exact terminal compatibility not independently verified"
+      },
+      {
+        "mpn": "SMD291SNL10T4",
+        "supplier": "DigiKey",
+        "quantity": 1,
+        "status": "candidate"
+      },
+      {
+        "mpn": "SMD291NL-10M",
+        "supplier": "DigiKey",
+        "quantity": 1,
+        "status": "candidate"
       }
     ],
-    "assembly_supplies": "include; equipment inventory not yet established",
+    "assembly_supplies": "Only solder paste and flux needed; other equipment owned. No stencils ordered; optional DIY laser-compatible PET or professionally made stencil if required.",
     "operational_qualification": "actual string currents, software limits and sustained load thermal tests deferred to controlled commissioning; conservative electrical compatibility and protection still required before energizing"
   }
 }
