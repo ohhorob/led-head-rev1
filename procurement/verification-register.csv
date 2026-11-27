@@ -22,7 +22,7 @@ RC0805FR-074K7L,pending,pending,pending,pending,,,Candidate only; independent ve
 RC1206FR-071KL,pending,pending,pending,pending,,,Candidate only; independent verification required,,,,,,,,,,,,,,,
 RC1206FR-07499KL,pending,pending,pending,pending,,,Candidate only; independent verification required,,,,,,,,,,,,,,,
 S3B-XH-A(LF)(SN),pending,pending,pending,pending,,,Candidate only; independent verification required,,,,,,,,,,,,,,,
-SS14,pending,pending,pending,pending,,,Candidate only; independent verification required,,,,,,,,,,,,,,,
+"SS14-E3/61T","verified","pending","n/a","pending","https://www.vishay.com/docs/88746/ss12.pdf","ChatGPT","User approved exact MPN; drawing screenshot unavailable; supplier indexed only","265531fab44996e0d69467f4a7c851bf6b56fe77","Vishay","23-Apr-2020 (reported)","Document 88746; ratings and package drawing p4","1 A 40 V Schottky; VF max 0.50 V at 1 A; Pico VSYS feed only","SMA terminal dimensions consistent with PCB 2.5 x 1.8 mm pads at ±2 mm; final drawing visual check pending","No mating connector","DigiKey","SS14-E3/61TGICT-ND","Cut tape","0.47 USD indexed","https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/SS14-E3-61T/1091668","2026-11-27","1","99299"
 TPS62091RGTR,pending,pending,pending,pending,,,Candidate only; independent verification required,,,,,,,,,,,,,,,
 TXU0101DBVR,pending,pending,pending,pending,,,Candidate only; independent verification required,,,,,,,,,,,,,,,
 WSL2512R0250FEA,pending,pending,pending,pending,,,Candidate only; independent verification required,,,,,,,,,,,,,,,
