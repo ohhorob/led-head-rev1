@@ -5,7 +5,7 @@ board,ref,value,footprint,mpn,disposition,source
 "pico-carrier","C43","100n / U5 pin 15","Capacitor_SMD:C_0805_2012Metric","C0805C104K5RACTU","buy","pico-carrier/current-monitoring.kicad_sch"
 "pico-carrier","C44","100n","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","C0805C104K5RACTU","buy","pico-carrier/string-slots.kicad_sch"
 "pico-carrier","C45","100n","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","C0805C104K5RACTU","buy","pico-carrier/string-slots.kicad_sch"
-"pico-carrier","D1","SS14","Diode_SMD:D_SMA","SS14","buy","pico-carrier/control.kicad_sch"
+"pico-carrier","D1","SS14","Diode_SMD:D_SMA","SS14-E3/61T","buy","pico-carrier/control.kicad_sch"
 "pico-carrier","J10","Pico socket 1-20","Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical","PPPC201LFBN-RC","buy","pico-carrier/control.kicad_sch"
 "pico-carrier","J11","Pico socket 21-40","Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical","PPPC201LFBN-RC","buy","pico-carrier/control.kicad_sch"
 "pico-carrier","J12","NEOTRELLIS JST-PH","Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical","B4B-PH-K-S","buy","pico-carrier/control.kicad_sch"
