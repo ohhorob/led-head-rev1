@@ -62,5 +62,17 @@
     "pack_quantity": 1,
     "verification": "pending seller, authenticity and drawing"
   },
-  "release": "blocked pending independent verification"
+  "release": "blocked pending independent verification",
+  "peripheral_harness_candidates": {
+    "PHR-4": 2,
+    "PHR-6": 2,
+    "SPH-002T-P0.5S": 20
+  },
+  "system_reviews": {
+    "power_and_protection": {},
+    "six_card_status_chain": {},
+    "inventory_and_assembly": {},
+    "xt60_authenticity_and_source_cable": {},
+    "harness_and_peripheral_coverage": {}
+  }
 }

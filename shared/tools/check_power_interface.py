@@ -2,9 +2,10 @@
 """Verify the two power-manager/carrier cables against fresh KiCad netlists and PCB pads."""
 from pathlib import Path
 import json, subprocess, tempfile, xml.etree.ElementTree as ET
+import shutil
 from check_interfaces import parse, kids, kid, value
 ROOT=Path(__file__).resolve().parents[2]
-CLI='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli'
+CLI=shutil.which('kicad-cli') or '/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli'
 def main():
     contract=json.loads((ROOT/'shared/interfaces/power-manager-v1.json').read_text())
     errors=[];checks=[];projects={}
