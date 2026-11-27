@@ -87,19 +87,22 @@
         "status": "user-selected; exact terminal compatibility not independently verified"
       },
       {
-        "mpn": "SMD291SNL10T4",
+        "mpn": "SMD291AXT4",
+        "sku": "SMD291AXT4-ND",
         "supplier": "DigiKey",
         "quantity": 1,
-        "status": "candidate"
+        "status": "user approved alloy and mesh; indexed 330 stock, 17.99 USD; checkout pending",
+        "evidence": "https://www.digikey.com/en/products/detail/chip-quik-inc/SMD291AXT4/8543521"
       },
       {
-        "mpn": "SMD291NL-10M",
+        "mpn": "SMD291-10M",
         "supplier": "DigiKey",
         "quantity": 1,
-        "status": "candidate"
+        "status": "no-clean tack flux candidate; checkout pending",
+        "evidence": "https://www.digikey.com/en/products/detail/chip-quik-inc/SMD291-10M/14636534"
       }
     ],
-    "assembly_supplies": "Only solder paste and flux needed; other equipment owned. No stencils ordered; optional DIY laser-compatible PET or professionally made stencil if required.",
+    "assembly_supplies": "Sn63/Pb37 Type 4 no-clean solder paste and compatible no-clean tack flux only; other equipment owned. No stencils ordered.",
     "operational_qualification": "actual string currents, software limits and sustained load thermal tests deferred to controlled commissioning; conservative electrical compatibility and protection still required before energizing"
   }
 }
