@@ -27,7 +27,8 @@
   "inventory_notes": [
     "Pico 2 WH owned; verify physical stock before order.",
     "Adafruit 4423 XH-compatible kit and crimper owned; check housing count, terminal wire range and load rating.",
-    "Standard 2.54 mm male headers owned; verify dual-row geometry and lengths."
+    "Standard 2.54 mm male headers owned; verify dual-row geometry and lengths.",
+    "User confirmed 2026-11-27: owns XT60 female supply cable, suitable JST-PH peripheral cables, and daughtercard harness wire. Verify physical fit/polarity before energizing."
   ],
   "spares": {
     "passive": 2,
@@ -63,16 +64,31 @@
     "verification": "pending seller, authenticity and drawing"
   },
   "release": "blocked pending independent verification",
-  "peripheral_harness_candidates": {
-    "PHR-4": 2,
-    "PHR-6": 2,
-    "SPH-002T-P0.5S": 20
-  },
+  "peripheral_harness_candidates": {},
   "system_reviews": {
     "power_and_protection": {},
     "six_card_status_chain": {},
     "inventory_and_assembly": {},
     "xt60_authenticity_and_source_cable": {},
     "harness_and_peripheral_coverage": {}
+  },
+  "purchasing_preferences": {
+    "confirmed_on": "2026-11-27",
+    "additional_suppliers": [
+      "Newark",
+      "TME"
+    ],
+    "optimise_price_breaks": true,
+    "accessories": [
+      {
+        "mpn": "0011030044",
+        "supplier": "DigiKey",
+        "sku": "WM9918-ND",
+        "quantity": 1,
+        "status": "candidate; confirm stock and price"
+      }
+    ],
+    "assembly_supplies": "include; equipment inventory not yet established",
+    "operational_qualification": "actual string currents, software limits and sustained load thermal tests deferred to controlled commissioning; conservative electrical compatibility and protection still required before energizing"
   }
 }
